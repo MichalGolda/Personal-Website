@@ -15,11 +15,17 @@ export const GlobalStyle = createGlobalStyle`
 
     body {
         font-family: ${font.style.fontFamily};
-        background-image: url('/endorments.svg');
+        background-image: url('/endorments.svg')
     }
 
     input,
     textarea {
         font-family: ${font.style.fontFamily};
+    }
+
+    h1, h2 {
+        background: ${({ theme }) => theme.colors.primary};
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 `;
