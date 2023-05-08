@@ -3,7 +3,7 @@ import { Lato } from "next/font/google";
 
 const font = Lato({
   subsets: ["latin", "latin-ext"],
-  weight: ["400", "700", "900"],
+  weight: ["300", "400", "700", "900"],
 });
 
 export const GlobalStyle = createGlobalStyle`
@@ -14,6 +14,12 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body {
+        font-family: ${font.style.fontFamily};
+        background-image: url('/endorments.svg');
+    }
+
+    input,
+    textarea {
         font-family: ${font.style.fontFamily};
     }
 `;
