@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   StyledForm,
   StyledInputGroup,
@@ -6,17 +7,21 @@ import {
   StyledTextarea,
   StyledSubmitButton,
 } from "./ContactForm.styled";
+import { useContactForm } from "./useContactForm";
 
 export default function ContactForm() {
+  const { handleSubmit, handleChangeEmail, handleChangeMessage } =
+    useContactForm();
+
   return (
-    <StyledForm>
+    <StyledForm onSubmit={handleSubmit}>
       <StyledInputGroup>
         <StyledLabel>E-mail</StyledLabel>
-        <StyledInput type="email" />
+        <StyledInput onChange={handleChangeEmail} type="email" required />
       </StyledInputGroup>
       <StyledInputGroup>
         <StyledLabel>Wiadomość</StyledLabel>
-        <StyledTextarea />
+        <StyledTextarea onChange={handleChangeMessage} required />
       </StyledInputGroup>
       <StyledSubmitButton variant="outlined" type="submit">
         Wyślij
