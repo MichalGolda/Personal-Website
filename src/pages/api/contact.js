@@ -25,7 +25,10 @@ export default function handler(req, res) {
         `,
       };
 
-      transporter.sendMail(message);
+      transporter
+        .sendMail(message)
+        .then(() => console.log("Email message successfully sent"))
+        .catch((err) => console.error(err));
 
       res.status(200).json({ msg: "Ok" });
       break;
