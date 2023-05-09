@@ -1,6 +1,6 @@
 import nodemailer from "nodemailer";
 
-export default async function handler(req, res) {
+export default function handler(req, res) {
   switch (req.method) {
     case "POST":
       const body = req.body;
@@ -25,7 +25,7 @@ export default async function handler(req, res) {
         `,
       };
 
-      await transporter.sendMail(message);
+      transporter.sendMail(message);
 
       res.status(200).json({ msg: "Ok" });
       break;
