@@ -1,6 +1,6 @@
 import nodemailer from "nodemailer";
 
-export default function handler(req, res) {
+export default async function handler(req, res) {
   switch (req.method) {
     case "POST":
       const body = req.body;
@@ -25,7 +25,7 @@ export default function handler(req, res) {
         `,
       };
 
-      transporter
+      await transporter
         .sendMail(message)
         .then(() => console.log("Email message successfully sent"))
         .catch((err) => console.error(err));
