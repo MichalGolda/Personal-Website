@@ -1,3 +1,4 @@
+import { css } from "styled-components";
 import styled from "styled-components";
 import Button from "../Button/Button";
 
@@ -23,23 +24,21 @@ export const StyledLabel = styled.label`
   font-size: 1rem;
 `;
 
-export const StyledInput = styled.input`
+const inputCss = css`
   border: none;
   width: 100%;
-  outline: none;
   font-size: 1rem;
+  padding: 16px;
   border-bottom: 2px solid ${({ theme }) => theme.colors.secondary};
-  padding: 16px 0 16px 0;
+`;
+
+export const StyledInput = styled.input`
+  ${inputCss}
 `;
 
 export const StyledTextarea = styled.textarea`
-  border: none;
-  width: 100%;
-  font-size: 1rem;
+  ${inputCss}
   min-height: 256px;
-  outline: none;
-  border-bottom: 2px solid ${({ theme }) => theme.colors.secondary};
-  padding: 16px 0 16px 0;
   resize: none;
 `;
 
