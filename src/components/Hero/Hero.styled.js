@@ -6,6 +6,7 @@ export const StyledHero = styled.div`
   row-gap: 16px;
   justify-content: left;
   flex-direction: column;
+  margin-top: -48px;
 
   @media (${({ theme }) => theme.breakpoints.md}) {
     flex-direction: row;
