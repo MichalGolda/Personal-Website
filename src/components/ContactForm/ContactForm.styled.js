@@ -16,13 +16,13 @@ export const StyledForm = styled.form`
 
 export const StyledInputGroup = styled.div`
   display: flex;
-  row-gap: 4px;
   flex-direction: column;
 `;
 
 export const StyledLabel = styled.label`
   font-weight: 700;
   font-size: 1rem;
+  margin-bottom: 4px;
 `;
 
 const inputCss = css`
