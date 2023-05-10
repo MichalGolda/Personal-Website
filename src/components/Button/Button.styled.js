@@ -29,6 +29,13 @@ export const StyledButton = styled.button`
           color: "white",
         },
       },
+      outlinedLoading: {
+        pointerEvents: "none",
+        color: "tertiary",
+        borderColor: "tertiary",
+        borderWidth: "2px",
+        borderStyle: "solid",
+      },
     },
   })};
 `;
