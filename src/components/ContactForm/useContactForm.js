@@ -5,6 +5,7 @@ export const useContactForm = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [alert, setAlert] = useState(null);
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (e, setFunction) => setFunction(e.target.value);
   const handleChangeEmail = (e) => handleChange(e, setEmail);
@@ -18,13 +19,22 @@ export const useContactForm = () => {
       return;
     }
 
-    contactRequest({ email, message }).then(() =>
-      setAlert("Poszło! Dzięki za wiadomość ♥️")
-    );
+    setLoading(true);
+
+    contactRequest({ email, message })
+      .then(() => {
+        setAlert("Poszło! Dzięki za wiadomość ♥️");
+        setLoading(false);
+      })
+      .catch(() => {
+        setAlert("Coś poszło nie tak! Spróbuj ponownie.");
+        setLoading(false);
+      });
   };
 
   return {
     alert,
+    loading,
     handleSubmit,
     handleChangeEmail,
     handleChangeMessage,

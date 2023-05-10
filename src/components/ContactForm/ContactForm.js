@@ -10,8 +10,13 @@ import {
 import { useContactForm } from "./useContactForm";
 
 export default function ContactForm() {
-  const { alert, handleSubmit, handleChangeEmail, handleChangeMessage } =
-    useContactForm();
+  const {
+    loading,
+    alert,
+    handleSubmit,
+    handleChangeEmail,
+    handleChangeMessage,
+  } = useContactForm();
 
   return (
     <StyledForm onSubmit={handleSubmit}>
@@ -24,8 +29,11 @@ export default function ContactForm() {
         <StyledTextarea onChange={handleChangeMessage} />
       </StyledInputGroup>
       {alert && <StyledAlert>{alert}</StyledAlert>}
-      <StyledSubmitButton variant="outlined" type="submit">
-        Wyślij
+      <StyledSubmitButton
+        variant={loading ? "outlinedLoading" : "outlined"}
+        type="submit"
+      >
+        {loading ? "•••" : "Wyślij"}
       </StyledSubmitButton>
     </StyledForm>
   );
