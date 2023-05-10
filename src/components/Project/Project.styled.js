@@ -59,7 +59,10 @@ export const StyledImageContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 512px;
+
+  @media (${({ theme }) => theme.breakpoints.md}) {
+    max-width: 512px;
+  }
 `;
 
 const StyledLink = styled.a`
