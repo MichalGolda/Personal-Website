@@ -9,8 +9,13 @@ import ContactForm from "@/components/ContactForm/ContactForm";
 const StyledContainer = styled.div`
   width: 100%;
   min-height: 100vh;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  @media (${({ theme }) => theme.breakpoints.small}) {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
 
   @media (${({ theme }) => theme.breakpoints.sm}) {
     padding-left: 64px;
