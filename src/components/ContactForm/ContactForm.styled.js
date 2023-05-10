@@ -45,3 +45,7 @@ export const StyledTextarea = styled.textarea`
 export const StyledSubmitButton = styled(Button)`
   margin: 0 auto;
 `;
+
+export const StyledAlert = styled.p`
+  text-align: center;
+`;

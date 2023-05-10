@@ -4,6 +4,7 @@ import { contactRequest } from "@/api/contact";
 export const useContactForm = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [alert, setAlert] = useState(null);
 
   const handleChange = (e, setFunction) => setFunction(e.target.value);
   const handleChangeEmail = (e) => handleChange(e, setEmail);
@@ -12,10 +13,18 @@ export const useContactForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    contactRequest({ email, message });
+    if (email.length === 0 || message.length === 0) {
+      setAlert("Hej, zanim wyślesz:  wpisz swój email i napisz wiadomość");
+      return;
+    }
+
+    contactRequest({ email, message }).then(() =>
+      setAlert("Poszło! Dzięki za wiadomość ♥️")
+    );
   };
 
   return {
+    alert,
     handleSubmit,
     handleChangeEmail,
     handleChangeMessage,
