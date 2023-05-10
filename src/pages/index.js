@@ -24,14 +24,14 @@ const StyledContainer = styled.div`
 `;
 
 const StyledSectionTitle = styled.h2`
-  font-size: 36px;
+  font-size: 2.25rem;
   padding-top: 32px;
   font-weight: 900;
   padding-bottom: 32px;
   text-transform: uppercase;
 
   @media (${({ theme }) => theme.breakpoints.md}) {
-    font-size: 48px;
+    font-size: 3rem;
   }
 `;
 

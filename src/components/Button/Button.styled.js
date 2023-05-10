@@ -10,7 +10,7 @@ export const StyledButton = styled.button`
   cursor: pointer;
   width: fit-content;
   background-color: transparent;
-  font-size: 16px;
+  font-size: 1rem;
   transition: ${({ theme }) => theme.transition};
 
   ${variant({

@@ -15,24 +15,24 @@ export const StyledHero = styled.div`
 `;
 
 export const StyledTitle = styled.h1`
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 900;
   line-height: 100.5%;
   text-transform: uppercase;
 
   @media (${({ theme }) => theme.breakpoints.md}) {
-    font-size: 64px;
+    font-size: 4rem;
   }
 `;
 
 export const StyledDescription = styled.p`
-  font-size: 20px;
+  font-size: 1.25rem;
   color: ${({ theme }) => theme.colors.secondary};
 `;
 
 export const StyledTextContainer = styled.div`
   display: flex;
-  row-gap: 16px;
+  row-gap: 1rem;
   flex-direction: column;
 `;
 

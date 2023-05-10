@@ -20,11 +20,11 @@ export const StyledHeader = styled.div`
 
 export const StyledName = styled.h3`
   font-weight: 900;
-  font-size: 24px;
+  font-size: 1.5rem;
   color: ${({ theme }) => theme.secondary};
 
   @media (${({ theme }) => theme.breakpoints.md}) {
-    font-size: 32px;
+    font-size: 2rem;
   }
 `;
 
