@@ -4,9 +4,10 @@ import Button from "../Button/Button";
 
 export const StyledForm = styled.form`
   display: flex;
-  row-gap: 32px;
+  row-gap: 16px;
   width: 100%;
   flex-direction: column;
+  padding: 16px;
 
   @media (${({ theme }) => theme.breakpoints.md}) {
     max-width: 400px;
@@ -26,10 +27,20 @@ export const StyledLabel = styled.label`
 
 const inputCss = css`
   border: none;
+  outline: none;
   width: 100%;
   font-size: 1rem;
   padding: 16px;
   border-bottom: 2px solid ${({ theme }) => theme.colors.secondary};
+  border-top: 1px solid transparent;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+
+  &:focus {
+    border-top: 1px solid ${({ theme }) => theme.colors.secondary};
+    border-left: 1px solid ${({ theme }) => theme.colors.secondary};
+    border-right: 1px solid ${({ theme }) => theme.colors.secondary};
+  }
 `;
 
 export const StyledInput = styled.input`
