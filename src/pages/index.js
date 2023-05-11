@@ -5,27 +5,10 @@ import Header from "@/components/Header/Header";
 import Project from "@/components/Project/Project";
 import Footer from "@/components/Footer/Footer";
 import ContactForm from "@/components/ContactForm/ContactForm";
+import Container from "@/components/Container";
 
-const StyledContainer = styled.div`
-  width: 100%;
+const StyledContainer = styled(Container)`
   min-height: 100vh;
-  padding-left: 16px;
-  padding-right: 16px;
-
-  @media (${({ theme }) => theme.breakpoints.small}) {
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-
-  @media (${({ theme }) => theme.breakpoints.sm}) {
-    padding-left: 64px;
-    padding-right: 64px;
-  }
-
-  @media (${({ theme }) => theme.breakpoints.md}) {
-    margin: 0 auto;
-    max-width: 1024px;
-  }
 `;
 
 const StyledSectionTitle = styled.h2`
