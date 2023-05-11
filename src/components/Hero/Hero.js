@@ -22,7 +22,7 @@ export default function Hero() {
         </a>
       </StyledTextContainer>
       <StyledImageContainer>
-        <StyledImage src="hero-illustration.svg" fill />
+        <StyledImage src="hero-illustration.svg" alt="hero illustration" fill />
       </StyledImageContainer>
     </StyledHero>
   );

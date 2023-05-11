@@ -48,7 +48,7 @@ export default function Project({
         </StyledLinkInTextContainer>
       </StyledTextContainer>
       <StyledImageContainer>
-        <StyledImage src={imageSrc} fill />
+        <StyledImage src={imageSrc} alt={name} fill />
       </StyledImageContainer>
       <StyledLinkInProject href={githubLink}>
         <Button variant="outlined">Github</Button>
