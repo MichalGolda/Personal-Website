@@ -74,7 +74,7 @@ export default function Home() {
         <StyledProjects>
           <Project
             name="Cashly"
-            description={`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sem odio, faucibus a magna non, ornare mattis erat. Vivamus cursus arcu ut magna suscipit, sit amet finibus libero facilisis. Vestibulum libero sem, porta malesuada posuere vel, consequat a tellus. Proin nec iaculis sapien, sit amet laoreet lacus.`}
+            description={`Aplikacja umożliwia użytkownikom analizowanie swoich osobistych wydatków. Użytkownik może dodawać wydatki oraz ich kategorie. Na podstawie tych danych aplikacja generuje analitykę w postaci wykresów i liczbowych statystyk. Backend aplikacji został napisany w języku Python zgodnie z zasadami czystej architektury, co pozwoliło na oddzielenie logiki biznesowej od wykorzystywanych frameworków i bibliotek. Z kolei frontend został zaimplementowany w JavaScript przy wykorzystaniu frameworka Next.js, co przełożyło się na wydajność działania aplikacji.`}
             imageSrc="/cashly.jpg"
             githubLink="https://github.com/michalgolda/cashly"
             technologyStack={["Python", "Fast API", "JS", "NextJS", "Docker"]}
@@ -93,8 +93,8 @@ export default function Home() {
         <StyledContact>
           <StyledContactWrapper>
             <p>
-              Aenean interdum nulla sed massa sodales convallis. Quisque maximus
-              eu ante quis scelerisque.
+              Możesz mnie znaleźć w paru miejscach w sieci lub skorzystać z
+              formularza i napisać wiadomość.
             </p>
             <StyledContactLinks>
               <a href="https://github.com/michalgolda">

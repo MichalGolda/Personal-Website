@@ -12,10 +12,11 @@ export default function Hero() {
   return (
     <StyledHero>
       <StyledTextContainer>
-        <StyledTitle>fullstack developer</StyledTitle>
+        <StyledTitle>Fullstack Developer</StyledTitle>
         <StyledDescription>
-          Vivamus posuere velit in ullamcorper rhoncus. Aenean odio eros,
-          iaculis at tincidunt id, feugiat ac nisl. Pellentesque volutpat.
+          Moją pasją jest programowanie, od kilku lat rozwijam się w tym
+          kierunku poprzez realizację projektów. Dostarczam oprogramowanie szyte
+          na miarę.
         </StyledDescription>
         <a href="#contact">
           <Button variant="primary">Kontakt</Button>
