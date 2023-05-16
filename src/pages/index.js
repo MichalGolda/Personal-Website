@@ -79,13 +79,6 @@ export default function Home() {
             githubLink="https://github.com/michalgolda/cashly"
             technologyStack={["Python", "Fast API", "JS", "NextJS", "Docker"]}
           />
-          <Project
-            name="Quizilla"
-            description={`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sem odio, faucibus a magna non, ornare mattis erat. Vivamus cursus arcu ut magna suscipit, sit amet finibus libero facilisis. Vestibulum libero sem, porta malesuada posuere vel, consequat a tellus. Proin nec iaculis sapien, sit amet laoreet lacus.`}
-            imageSrc="/cashly.jpg"
-            githubLink="https://github.com/michalgolda/quizilla"
-            technologyStack={["Python", "Fast API", "JS", "NextJS", "Docker"]}
-          />
         </StyledProjects>
       </StyledContainer>
       <StyledContainer>
