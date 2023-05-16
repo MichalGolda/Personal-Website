@@ -108,14 +108,6 @@ export default function Home() {
                   alt="linkedin"
                 />
               </a>
-              <a href="#">
-                <Image
-                  src="/messenger.svg"
-                  width={64}
-                  height={64}
-                  alt="messenger"
-                />
-              </a>
             </StyledContactLinks>
           </StyledContactWrapper>
           <ContactForm />
