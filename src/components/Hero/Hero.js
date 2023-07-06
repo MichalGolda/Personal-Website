@@ -14,9 +14,10 @@ export default function Hero() {
       <StyledTextContainer>
         <StyledTitle>Fullstack Developer</StyledTitle>
         <StyledDescription>
-          Moją pasją jest programowanie, od kilku lat rozwijam się w tym
-          kierunku poprzez realizację projektów. Dostarczam oprogramowanie szyte
-          na miarę.
+          Cześć! Mam na imię Michał, od kilku lat interesuje się programowaniem
+          i tworzeniem stron internetowych. Do realizacji projektów wykorzystuje
+          technologie oraz techniki, które pozwalają zachować najwyższą jakość
+          świadczonych usług.
         </StyledDescription>
         <a href="#contact">
           <Button variant="primary">Kontakt</Button>
