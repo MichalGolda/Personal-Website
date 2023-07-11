@@ -39,12 +39,6 @@ export const StyledDescription = styled.p`
   color: ${({ theme }) => theme.colors.secondary};
 `;
 
-export const StyledImage = styled(Image)`
-  height: auto !important;
-  border-radius: 2px;
-  position: inherit !important;
-`;
-
 export const StyledTextContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -55,7 +49,7 @@ export const StyledTextContainer = styled.div`
   }
 `;
 
-export const StyledImageContainer = styled.div`
+export const StyledCover = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -63,6 +57,12 @@ export const StyledImageContainer = styled.div`
   @media (${({ theme }) => theme.breakpoints.md}) {
     max-width: 512px;
   }
+`;
+
+export const StyledCoverImage = styled(Image)`
+  height: auto !important;
+  border-radius: 2px;
+  position: inherit !important;
 `;
 
 const StyledLink = styled.a`

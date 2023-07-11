@@ -4,10 +4,10 @@ import {
   StyledProject,
   StyledDescription,
   StyledTechnologyStack,
-  StyledImage,
+  StyledCover,
+  StyledCoverImage,
   StyledHeader,
   StyledTextContainer,
-  StyledImageContainer,
   StyledLinkInProject,
   StyledLinkInTextContainer,
 } from "./Project.styled";
@@ -31,7 +31,7 @@ const TechnologyStack = ({ technologyStack }) => {
 export default function Project({
   name,
   description,
-  imageSrc,
+  coverImageSrc,
   githubLink,
   technologyStack,
 }) {
@@ -47,9 +47,13 @@ export default function Project({
           <Button variant="outlined">Github</Button>
         </StyledLinkInTextContainer>
       </StyledTextContainer>
-      <StyledImageContainer>
-        <StyledImage src={imageSrc} alt={name} fill />
-      </StyledImageContainer>
+      <StyledCover>
+        <StyledCoverImage
+          src={coverImageSrc}
+          alt={`Cover image of ${name} project`}
+          fill
+        />
+      </StyledCover>
       <StyledLinkInProject href={githubLink}>
         <Button variant="outlined">Github</Button>
       </StyledLinkInProject>
