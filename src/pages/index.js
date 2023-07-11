@@ -6,6 +6,7 @@ import Project from "@/components/Project/Project";
 import Footer from "@/components/Footer/Footer";
 import ContactForm from "@/components/ContactForm/ContactForm";
 import Container from "@/components/Container";
+import { loadProjects } from "@/lib/loadProjects";
 
 const StyledContainer = styled(Container)`
   min-height: 100vh;
@@ -57,7 +58,7 @@ export const StyledContact = styled.div`
 
 export const StyledContactWrapper = styled.div``;
 
-export default function Home() {
+export default function Home({ projects }) {
   return (
     <>
       <Head>
@@ -72,27 +73,18 @@ export default function Home() {
       <StyledContainer>
         <StyledSectionTitle id="projects">Projekty</StyledSectionTitle>
         <StyledProjects>
-          <Project
-            name="Cashly"
-            description={`Aplikacja umożliwia użytkownikom analizowanie swoich osobistych wydatków. Użytkownik może dodawać wydatki oraz ich kategorie. Na podstawie tych danych aplikacja generuje analitykę w postaci wykresów i liczbowych statystyk. Backend aplikacji został napisany w języku Python zgodnie z zasadami czystej architektury, co pozwoliło na oddzielenie logiki biznesowej od wykorzystywanych frameworków i bibliotek. Z kolei frontend został zaimplementowany w JavaScript przy wykorzystaniu frameworka Next.js, co przełożyło się na wydajność działania aplikacji.`}
-            coverImageSrc="/cashly.jpg"
-            githubLink="https://github.com/michalgolda/cashly"
-            technologyStack={[
-              "Python",
-              "Fast API",
-              "JS",
-              "NextJS",
-              "Docker",
-              "Styled-components",
-            ]}
-          />
-          <Project
-            name="Animal-Houses"
-            description={`Aplikacja umożliwia zarządzanie sprzedażą domków dla zwierząt. Użytkownik ma możliwość tworzenia produktów wraz z ich atrybutami np. przeznaczenie czy miejsce montażu. W aplikacji dostępna jest także wyszukiwarka, która umożliwia łatwe odnajdywanie potrzebnych informacji. Dane prezentowane są w czytelnej tabeli, gdzie użytkownik może sortować je oraz dostosowywać widoczność kolumn. Dodatkowo, istnieje funkcjonalność filtrowania produktów przy użyciu wcześniej zdefiniowanych atrybutów, a także możliwość zmiany waluty w jakiej wyświetlana jest cena. Cała aplikacja została oparta na frameworku NuxtJS, a podczas jej tworzenia zastosowałem techniki i narzędzia mające na celu poprawienie jakości kodu, takie jak DRY, YAGNI, KISS, Prettier oraz ESlint.`}
-            coverImageSrc="/animal-houses.jpg"
-            githubLink="https://github.com/michalgolda/animal-houses"
-            technologyStack={["TS", "NuxtJS", "VueJS", "Vercel", "Tailwindcss"]}
-          />
+          {projects.map((project) => {
+            return (
+              <Project
+                key={project.name}
+                name={project.name}
+                description={project.description}
+                coverImageSrc={project.coverImageSrc}
+                githubLink={project.githubLink}
+                technologyStack={project.technologyStack}
+              />
+            );
+          })}
         </StyledProjects>
       </StyledContainer>
       <StyledContainer>
@@ -124,3 +116,13 @@ export default function Home() {
     </>
   );
 }
+
+export const getStaticProps = async () => {
+  const projects = await loadProjects();
+
+  return {
+    props: {
+      projects,
+    },
+  };
+};
