@@ -73,7 +73,7 @@ export default function Home({ projects }) {
       <StyledContainer>
         <StyledSectionTitle id="projects">Projekty</StyledSectionTitle>
         <StyledProjects>
-          {projects.map((project) => {
+          {projects.map((project, index) => {
             return (
               <Project
                 key={project.name}
@@ -82,6 +82,7 @@ export default function Home({ projects }) {
                 coverImageSrc={project.coverImageSrc}
                 githubLink={project.githubLink}
                 technologyStack={project.technologyStack}
+                changeCoverPosition={index % 2 !== 0}
               />
             );
           })}

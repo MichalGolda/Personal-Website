@@ -18,6 +18,7 @@ export default function Project({
   coverImageSrc,
   githubLink,
   technologyStack,
+  changeCoverPosition,
 }) {
   return (
     <StyledProject>
@@ -31,7 +32,7 @@ export default function Project({
           <Button variant="outlined">Github</Button>
         </StyledLinkInTextContainer>
       </StyledTextContainer>
-      <StyledCover>
+      <StyledCover changeCoverPosition={changeCoverPosition}>
         <StyledCoverImage
           src={coverImageSrc}
           alt={`Cover image of ${name} project`}

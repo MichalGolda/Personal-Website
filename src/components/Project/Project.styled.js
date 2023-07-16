@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import Image from "next/image";
 
 export const StyledProject = styled.div`
@@ -46,9 +46,15 @@ export const StyledCover = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  order: initial;
 
   @media (${({ theme }) => theme.breakpoints.md}) {
     max-width: 512px;
+    ${({ changeCoverPosition }) =>
+      changeCoverPosition &&
+      css`
+        order: -1;
+      `}
   }
 `;
 
