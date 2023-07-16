@@ -28,13 +28,6 @@ export const StyledName = styled.h3`
   }
 `;
 
-export const StyledTechnologyStack = styled.div`
-  display: flex;
-  column-gap: 8px;
-  flex-wrap: wrap;
-  justify-content: left;
-`;
-
 export const StyledDescription = styled.p`
   color: ${({ theme }) => theme.colors.secondary};
 `;
