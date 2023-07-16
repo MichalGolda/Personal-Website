@@ -37,8 +37,12 @@ export const StyledTextContainer = styled.div`
 `;
 
 export const StyledImageContainer = styled.div`
-  max-width: 512px;
-  width: 100%;
+  min-width: 420px;
+  display: none;
+
+  @media (${({ theme }) => theme.breakpoints.lg}) {
+    display: initial;
+  }
 `;
 
 export const StyledImage = styled(Image)`
