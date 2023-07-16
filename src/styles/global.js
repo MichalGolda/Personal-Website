@@ -11,16 +11,11 @@ export const GlobalStyle = createGlobalStyle`
         padding: 0;
         margin: 0;
         box-sizing: border-box;
+        font-family: ${font.style.fontFamily};
     }
 
     body {
-        font-family: ${font.style.fontFamily};
         background-image: url('/endorments.svg')
-    }
-
-    input,
-    textarea {
-        font-family: ${font.style.fontFamily};
     }
 
     h1, h2 {
