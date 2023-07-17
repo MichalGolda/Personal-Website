@@ -18,6 +18,9 @@ export default function ContactForm() {
     handleChangeMessage,
   } = useContactForm();
 
+  const submitButtonVariant = loading ? "outlinedLoading" : "outlined";
+  const submitButtonLabel = loading ? "•••" : "Wyślij";
+
   return (
     <StyledForm onSubmit={handleSubmit}>
       <StyledInputGroup>
@@ -29,11 +32,8 @@ export default function ContactForm() {
         <StyledTextarea onChange={handleChangeMessage} />
       </StyledInputGroup>
       {alert && <StyledAlert>{alert}</StyledAlert>}
-      <StyledSubmitButton
-        variant={loading ? "outlinedLoading" : "outlined"}
-        type="submit"
-      >
-        {loading ? "•••" : "Wyślij"}
+      <StyledSubmitButton variant={submitButtonVariant} type="submit">
+        {submitButtonLabel}
       </StyledSubmitButton>
     </StyledForm>
   );

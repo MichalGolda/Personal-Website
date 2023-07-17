@@ -6,7 +6,7 @@ export const StyledProject = styled.div`
   row-gap: 16px;
   flex-direction: column;
 
-  @media (${({ theme }) => theme.breakpoints.lg}) {
+  @media (${({ theme }) => theme.mediaQuery.lg}) {
     flex-direction: row;
     column-gap: 16px;
   }
@@ -23,7 +23,7 @@ export const StyledName = styled.h3`
   font-size: 1.5rem;
   color: ${({ theme }) => theme.secondary};
 
-  @media (${({ theme }) => theme.breakpoints.lg}) {
+  @media (${({ theme }) => theme.mediaQuery.lg}) {
     font-size: 2rem;
   }
 `;
@@ -37,18 +37,18 @@ export const StyledTextContainer = styled.div`
   flex-direction: column;
   row-gap: 16px;
 
-  @media (${({ theme }) => theme.breakpoints.lg}) {
+  @media (${({ theme }) => theme.mediaQuery.lg}) {
     width: 100%;
   }
 `;
 
-export const StyledCover = styled.div`
+export const StyledCover = styled.div<{ changeCoverPosition?: boolean }>`
   display: flex;
   justify-content: center;
   align-items: center;
   order: initial;
 
-  @media (${({ theme }) => theme.breakpoints.lg}) {
+  @media (${({ theme }) => theme.mediaQuery.lg}) {
     max-width: 512px;
     ${({ changeCoverPosition }) =>
       changeCoverPosition &&
@@ -71,7 +71,7 @@ const StyledLink = styled.a`
 export const StyledLinkInTextContainer = styled(StyledLink)`
   display: none;
 
-  @media (${({ theme }) => theme.breakpoints.lg}) {
+  @media (${({ theme }) => theme.mediaQuery.lg}) {
     display: inherit;
   }
 `;
@@ -79,7 +79,7 @@ export const StyledLinkInTextContainer = styled(StyledLink)`
 export const StyledLinkInProject = styled(StyledLink)`
   display: inherit;
 
-  @media (${({ theme }) => theme.breakpoints.lg}) {
+  @media (${({ theme }) => theme.mediaQuery.lg}) {
     display: none;
   }
 `;

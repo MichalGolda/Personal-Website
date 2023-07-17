@@ -6,7 +6,7 @@ import {
   StyledImage,
   StyledImageContainer,
 } from "./Hero.styled";
-import Button from "../Button/Button";
+import LinkButton from "../LinkButton/LinkButton";
 
 export default function Hero() {
   return (
@@ -19,9 +19,9 @@ export default function Hero() {
           technologie oraz techniki, które pozwalają zachować najwyższą jakość
           świadczonych usług.
         </StyledDescription>
-        <a href="#contact">
-          <Button variant="primary">Kontakt</Button>
-        </a>
+        <LinkButton href="#contact" variant="primary">
+          Kontakt
+        </LinkButton>
       </StyledTextContainer>
       <StyledImageContainer>
         <StyledImage src="hero-illustration.svg" alt="hero illustration" fill />

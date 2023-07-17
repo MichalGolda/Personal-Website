@@ -11,6 +11,11 @@ import {
   StyledLinkInProject,
   StyledLinkInTextContainer,
 } from "./Project.styled";
+import { Project } from "@/types";
+
+export type ProjectProps = Project & {
+  changeCoverPosition?: boolean;
+};
 
 export default function Project({
   name,
@@ -19,7 +24,7 @@ export default function Project({
   githubLink,
   technologyStack,
   changeCoverPosition,
-}) {
+}: ProjectProps) {
   return (
     <StyledProject>
       <StyledTextContainer>

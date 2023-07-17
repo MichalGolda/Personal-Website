@@ -1,17 +1,18 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { contactRequest } from "@/api/contact";
 
 export const useContactForm = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  const [alert, setAlert] = useState(null);
+  const [alert, setAlert] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
 
-  const handleChange = (e, setFunction) => setFunction(e.target.value);
-  const handleChangeEmail = (e) => handleChange(e, setEmail);
-  const handleChangeMessage = (e) => handleChange(e, setMessage);
+  const handleChangeEmail = (e: React.ChangeEvent<HTMLInputElement>) =>
+    setEmail(e.target.value);
+  const handleChangeMessage = (e: React.ChangeEvent<HTMLTextAreaElement>) =>
+    setMessage(e.target.value);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     if (email.length === 0 || message.length === 0) {

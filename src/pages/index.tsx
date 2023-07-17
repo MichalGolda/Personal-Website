@@ -6,7 +6,8 @@ import Project from "@/components/Project/Project";
 import Footer from "@/components/Footer/Footer";
 import ContactForm from "@/components/ContactForm/ContactForm";
 import Container from "@/components/Container";
-import { loadProjects } from "@/lib/loadProjects";
+import { getProjects } from "@/lib/getProjects";
+import type { Project as ProjectType } from "@/types";
 
 const StyledContainer = styled(Container)`
   min-height: 100vh;
@@ -19,7 +20,7 @@ const StyledSectionTitle = styled.h2`
   padding-bottom: 32px;
   text-transform: uppercase;
 
-  @media (${({ theme }) => theme.breakpoints.md}) {
+  @media (${({ theme }) => theme.mediaQuery.md}) {
     font-size: 3rem;
   }
 `;
@@ -40,7 +41,7 @@ const StyledContactLinks = styled.div`
   margin-top: 64px;
   margin-bottom: 128px;
 
-  @media (${({ theme }) => theme.breakpoints.md}) {
+  @media (${({ theme }) => theme.mediaQuery.md}) {
     justify-content: left;
   }
 `;
@@ -49,7 +50,7 @@ export const StyledContact = styled.div`
   display: flex;
   flex-direction: column;
 
-  @media (${({ theme }) => theme.breakpoints.md}) {
+  @media (${({ theme }) => theme.mediaQuery.md}) {
     display: flex;
     flex-direction: row;
     column-gap: 32px;
@@ -58,7 +59,11 @@ export const StyledContact = styled.div`
 
 export const StyledContactWrapper = styled.div``;
 
-export default function Home({ projects }) {
+export type HomeProps = {
+  projects: ProjectType[];
+};
+
+export default function Home({ projects }: HomeProps) {
   return (
     <>
       <Head>
@@ -119,7 +124,7 @@ export default function Home({ projects }) {
 }
 
 export const getStaticProps = async () => {
-  const projects = await loadProjects();
+  const projects = await getProjects();
 
   return {
     props: {

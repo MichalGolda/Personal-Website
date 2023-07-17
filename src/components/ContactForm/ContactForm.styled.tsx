@@ -9,7 +9,7 @@ export const StyledForm = styled.form`
   flex-direction: column;
   padding: 16px;
 
-  @media (${({ theme }) => theme.breakpoints.md}) {
+  @media (${({ theme }) => theme.mediaQuery.md}) {
     max-width: 400px;
   }
 `;

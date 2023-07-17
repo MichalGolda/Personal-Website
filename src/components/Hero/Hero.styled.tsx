@@ -8,7 +8,7 @@ export const StyledHero = styled.div`
   flex-direction: column;
   margin-top: -48px;
 
-  @media (${({ theme }) => theme.breakpoints.md}) {
+  @media (${({ theme }) => theme.mediaQuery.md}) {
     flex-direction: row;
     justify-content: space-between;
   }
@@ -20,7 +20,7 @@ export const StyledTitle = styled.h1`
   line-height: 100.5%;
   text-transform: uppercase;
 
-  @media (${({ theme }) => theme.breakpoints.md}) {
+  @media (${({ theme }) => theme.mediaQuery.md}) {
     font-size: 4rem;
   }
 `;
@@ -40,7 +40,7 @@ export const StyledImageContainer = styled.div`
   min-width: 420px;
   display: none;
 
-  @media (${({ theme }) => theme.breakpoints.lg}) {
+  @media (${({ theme }) => theme.mediaQuery.lg}) {
     display: initial;
   }
 `;
@@ -49,7 +49,7 @@ export const StyledImage = styled(Image)`
   position: inherit !important;
   display: none;
 
-  @media (${({ theme }) => theme.breakpoints.md}) {
+  @media (${({ theme }) => theme.mediaQuery.md}) {
     display: inherit;
   }
 `;

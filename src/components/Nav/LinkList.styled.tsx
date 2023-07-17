@@ -6,7 +6,7 @@ export const StyledList = styled.ul`
   z-index: 9999;
   display: none;
 
-  @media (${({ theme }) => theme.breakpoints.md}) {
+  @media (${({ theme }) => theme.mediaQuery.md}) {
     display: flex;
     column-gap: 64px;
   }

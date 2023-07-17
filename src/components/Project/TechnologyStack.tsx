@@ -1,7 +1,13 @@
 import { Fragment } from "react";
 import { StyledTechnologyStack } from "./TechnologyStack.styled";
 
-export default function TechnologyStack({ technologyStack }) {
+export type TechnologyStackProps = {
+  technologyStack: string[];
+};
+
+export default function TechnologyStack({
+  technologyStack,
+}: TechnologyStackProps) {
   return (
     <StyledTechnologyStack>
       {technologyStack.map((technology, index) => {
