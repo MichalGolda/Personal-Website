@@ -1,9 +1,12 @@
 import { StyledFooter, StyledText } from "./Footer.styled";
+import { getCurrentYear } from "@/utils/getCurrentYear";
 
 export default function Footer() {
   return (
     <StyledFooter>
-      <StyledText>© 2023 Michał Gołda. All rights reserved</StyledText>
+      <StyledText>
+        © {getCurrentYear()} Michał Gołda. All rights reserved
+      </StyledText>
     </StyledFooter>
   );
 }
