@@ -3,7 +3,7 @@ import Head from "next/head";
 export default function Helmet() {
   return (
     <Head>
-      <title>Michał Gołda - Personal Website</title>
+      <title>Michał Gołda</title>
       <meta charSet="utf-8" />
       <meta name="revisit-after" content="1 day" />
       <meta name="author" content="Michał Gołda" />
