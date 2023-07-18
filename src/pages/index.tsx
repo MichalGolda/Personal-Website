@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Image from "next/image";
 import styled from "styled-components";
 import Header from "@/components/Header/Header";
@@ -8,6 +7,7 @@ import ContactForm from "@/components/ContactForm/ContactForm";
 import Container from "@/components/Container";
 import { getProjects } from "@/lib/getProjects";
 import type { Project as ProjectType } from "@/types";
+import Helmet from "@/components/Helmet/Helmet";
 
 const StyledContainer = styled(Container)`
   min-height: 100vh;
@@ -66,12 +66,7 @@ export type HomeProps = {
 export default function Home({ projects }: HomeProps) {
   return (
     <>
-      <Head>
-        <title>michalgolda</title>
-        <meta name="description" content="My personal website" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <Helmet />
       <StyledContainer id="home">
         <Header />
       </StyledContainer>
