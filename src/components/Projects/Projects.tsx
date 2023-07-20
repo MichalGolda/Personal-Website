@@ -1,8 +1,7 @@
-import Container from "@/components/Container";
 import Project from "@/components/Project/Project";
 import SectionTitle from "../SectionTitle";
 import type { Project as ProjectType } from "@/types";
-import { StyledProjectList } from "./Projects.styled";
+import { StyledContainer, StyledProjectList } from "./Projects.styled";
 
 export type ProjectsProps = {
   projects: ProjectType[];
@@ -10,7 +9,7 @@ export type ProjectsProps = {
 
 export default function ProjectsProps({ projects }: ProjectsProps) {
   return (
-    <Container id="projects" as="section">
+    <StyledContainer id="projects" as="section">
       <SectionTitle>Projekty</SectionTitle>
       <StyledProjectList>
         {projects.map((project, index) => (
@@ -25,6 +24,6 @@ export default function ProjectsProps({ projects }: ProjectsProps) {
           />
         ))}
       </StyledProjectList>
-    </Container>
+    </StyledContainer>
   );
 }
