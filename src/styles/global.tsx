@@ -17,10 +17,4 @@ export const GlobalStyle = createGlobalStyle`
     body {
         background-image: url('/endorments.svg')
     }
-
-    h1, h2 {
-        background: ${({ theme }) => theme.colors.primary};
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
 `;
