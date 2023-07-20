@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 const SectionTitle = styled.h2`
   font-size: 2.25rem;
-  padding-top: 32px;
   font-weight: 900;
   padding-bottom: 32px;
   text-transform: uppercase;
