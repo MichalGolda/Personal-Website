@@ -1,12 +1,28 @@
-import Hero from "../Hero/Hero";
-import Nav from "../Nav/Nav";
-import { StyledHeader } from "./Header.styled";
+import {
+  StyledHeaderContainer,
+  StyledInscription,
+  StyledList,
+  StyledLink,
+  StyledListItem,
+} from "./Header.styled";
 
 export default function Header() {
   return (
-    <StyledHeader>
-      <Nav />
-      <Hero />
-    </StyledHeader>
+    <StyledHeaderContainer as="header">
+      <StyledInscription>
+        michal<span>golda</span>
+      </StyledInscription>
+      <StyledList>
+        <StyledLink href="#start">
+          <StyledListItem>Start</StyledListItem>
+        </StyledLink>
+        <StyledLink href="#projects">
+          <StyledListItem>Projekty</StyledListItem>
+        </StyledLink>
+        <StyledLink href="#contact">
+          <StyledListItem>Kontakt</StyledListItem>
+        </StyledLink>
+      </StyledList>
+    </StyledHeaderContainer>
   );
 }
