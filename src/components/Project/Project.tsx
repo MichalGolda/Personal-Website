@@ -1,4 +1,4 @@
-import Button from "../Button/Button";
+import LinkButton from "../LinkButton/LinkButton";
 import TechnologyStack from "./TechnologyStack";
 import {
   StyledName,
@@ -8,8 +8,6 @@ import {
   StyledCoverImage,
   StyledHeader,
   StyledTextContainer,
-  StyledLinkInProject,
-  StyledLinkInTextContainer,
 } from "./Project.styled";
 import { Project } from "@/types";
 
@@ -33,9 +31,6 @@ export default function Project({
           <TechnologyStack technologyStack={technologyStack} />
         </StyledHeader>
         <StyledDescription>{description}</StyledDescription>
-        <StyledLinkInTextContainer href={githubLink}>
-          <Button variant="outlined">Github</Button>
-        </StyledLinkInTextContainer>
       </StyledTextContainer>
       <StyledCover changeCoverPosition={changeCoverPosition}>
         <StyledCoverImage
@@ -44,9 +39,9 @@ export default function Project({
           fill
         />
       </StyledCover>
-      <StyledLinkInProject href={githubLink}>
-        <Button variant="outlined">Github</Button>
-      </StyledLinkInProject>
+      <LinkButton href={githubLink} variant="outlined">
+        Github
+      </LinkButton>
     </StyledProject>
   );
 }

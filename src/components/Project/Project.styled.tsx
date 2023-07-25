@@ -5,11 +5,6 @@ export const StyledProject = styled.div`
   display: flex;
   row-gap: 16px;
   flex-direction: column;
-
-  @media (${({ theme }) => theme.mediaQuery.lg}) {
-    flex-direction: row;
-    column-gap: 16px;
-  }
 `;
 
 export const StyledHeader = styled.div`
@@ -42,44 +37,14 @@ export const StyledTextContainer = styled.div`
   }
 `;
 
-export const StyledCover = styled.div<{ changeCoverPosition?: boolean }>`
+export const StyledCover = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  order: initial;
-
-  @media (${({ theme }) => theme.mediaQuery.lg}) {
-    max-width: 512px;
-    ${({ changeCoverPosition }) =>
-      changeCoverPosition &&
-      css`
-        order: -1;
-      `}
-  }
 `;
 
 export const StyledCoverImage = styled(Image)`
   height: auto !important;
   border-radius: 2px;
   position: inherit !important;
-`;
-
-const StyledLink = styled.a`
-  text-decoration: none;
-`;
-
-export const StyledLinkInTextContainer = styled(StyledLink)`
-  display: none;
-
-  @media (${({ theme }) => theme.mediaQuery.lg}) {
-    display: inherit;
-  }
-`;
-
-export const StyledLinkInProject = styled(StyledLink)`
-  display: inherit;
-
-  @media (${({ theme }) => theme.mediaQuery.lg}) {
-    display: none;
-  }
 `;
