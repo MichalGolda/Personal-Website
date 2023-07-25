@@ -8,14 +8,11 @@ import {
   StyledCoverImage,
   StyledHeader,
   StyledTextContainer,
-  StyledList,
   StyledTechnologyStackList,
 } from "./Project.styled";
 import { Project } from "@/types";
 
-export type ProjectProps = Project & {
-  changeCoverPosition?: boolean;
-};
+export type ProjectProps = Project;
 
 export default function Project({
   name,
