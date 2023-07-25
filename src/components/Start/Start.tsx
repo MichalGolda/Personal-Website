@@ -6,7 +6,7 @@ export default function Start() {
     <StyledContainer id="start" as="section">
       <StyledArticle>
         <h1>
-          Frontend <br /> Developer.
+          Fullstack <br /> Developer.
         </h1>
         <p>
           Koduję świat pełen możliwości - tworząc aplikacje webowe, wpisuję
