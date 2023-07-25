@@ -13,15 +13,15 @@ export default function ProjectsProps({ projects }: ProjectsProps) {
       <SectionTitle>Projekty</SectionTitle>
       <StyledProjectList>
         {projects.map((project, index) => (
-          <Project
-            key={index}
-            name={project.name}
-            description={project.description}
-            coverImageSrc={project.coverImageSrc}
-            githubLink={project.githubLink}
-            technologyStack={project.technologyStack}
-            changeCoverPosition={index % 2 !== 0}
-          />
+          <li key={index}>
+            <Project
+              name={project.name}
+              description={project.description}
+              coverImageSrc={project.coverImageSrc}
+              githubLink={project.githubLink}
+              technologyStack={project.technologyStack}
+            />
+          </li>
         ))}
       </StyledProjectList>
     </StyledContainer>
