@@ -48,3 +48,11 @@ export const StyledCoverImage = styled(Image)`
   border-radius: 2px;
   position: inherit !important;
 `;
+
+export const StyledTechnologyStackList = styled.ul`
+  list-style: none;
+  display: flex;
+  column-gap: 8px;
+  flex-wrap: wrap;
+  justify-content: left;
+`;

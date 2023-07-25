@@ -1,5 +1,5 @@
+import { Fragment } from "react";
 import LinkButton from "../LinkButton/LinkButton";
-import TechnologyStack from "./TechnologyStack";
 import {
   StyledName,
   StyledProject,
@@ -8,6 +8,8 @@ import {
   StyledCoverImage,
   StyledHeader,
   StyledTextContainer,
+  StyledList,
+  StyledTechnologyStackList,
 } from "./Project.styled";
 import { Project } from "@/types";
 
@@ -21,18 +23,27 @@ export default function Project({
   coverImageSrc,
   githubLink,
   technologyStack,
-  changeCoverPosition,
 }: ProjectProps) {
   return (
     <StyledProject>
       <StyledTextContainer>
         <StyledHeader>
           <StyledName>{name}</StyledName>
-          <TechnologyStack technologyStack={technologyStack} />
+          <StyledTechnologyStackList>
+            {technologyStack.map((technology, index) => {
+              const isNotLastElement = index !== technologyStack.length - 1;
+              return (
+                <Fragment key={index}>
+                  <li>{technology}</li>
+                  {isNotLastElement && <li>/</li>}
+                </Fragment>
+              );
+            })}
+          </StyledTechnologyStackList>
         </StyledHeader>
         <StyledDescription>{description}</StyledDescription>
       </StyledTextContainer>
-      <StyledCover changeCoverPosition={changeCoverPosition}>
+      <StyledCover>
         <StyledCoverImage
           src={coverImageSrc}
           alt={`Cover image of ${name} project`}
