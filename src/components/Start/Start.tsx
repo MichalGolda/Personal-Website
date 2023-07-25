@@ -9,8 +9,8 @@ export default function Start() {
           Frontend <br /> Developer.
         </h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus vero
-          iure, optio modi.
+          Koduję świat pełen możliwości - tworząc aplikacje webowe, wpisuję
+          swoją pasję w cyfrową rzeczywistość.
         </p>
         <LinkButton href="#contact" variant="primary">
           Kontakt
