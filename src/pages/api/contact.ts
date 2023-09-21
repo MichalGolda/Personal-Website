@@ -10,6 +10,7 @@ export default async function handler(
       const body = req.body;
 
       const transporter = nodemailer.createTransport({
+        // @ts-ignore
         host: process.env.EMAIL_HOST,
         port: process.env.EMAIL_PORT,
         secure: false,
