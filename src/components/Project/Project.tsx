@@ -47,9 +47,11 @@ export default function Project({
           fill
         />
       </StyledCover>
-      <LinkButton href={githubLink} variant="outlined">
-        Github
-      </LinkButton>
+      {githubLink && (
+        <LinkButton href={githubLink} variant="outlined">
+          Github
+        </LinkButton>
+      )}
     </StyledProject>
   );
 }
