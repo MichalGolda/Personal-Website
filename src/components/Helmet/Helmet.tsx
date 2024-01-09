@@ -3,16 +3,6 @@ import Head from "next/head";
 export default function Helmet() {
   return (
     <Head>
-      <!-- Google tag (gtag.js) -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-5LGQ62V141"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-5LGQ62V141');
-      </script>
-
       <title>Michał Gołda</title>
       <meta charSet="utf-8" />
       <meta name="revisit-after" content="1 day" />
