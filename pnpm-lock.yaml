@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@next/third-parties':
-    specifier: ^14.0.4
-    version: 14.0.4(next@13.4.10)(react@18.2.0)
+    specifier: 14.0.5-canary.45
+    version: 14.0.5-canary.45(next@13.4.10)(react@18.2.0)
   '@types/node':
     specifier: 20.4.2
     version: 20.4.2
@@ -1598,8 +1598,8 @@ packages:
     dev: false
     optional: true
 
-  /@next/third-parties@14.0.4(next@13.4.10)(react@18.2.0):
-    resolution: {integrity: sha512-K17BnacV2QOnI2o5DpeuwW/hnRjIgb8TSSMJC+y36330zh4skERb10FRhdc/0QTVuUc6k8jVJhURxdJu097GOQ==}
+  /@next/third-parties@14.0.5-canary.45(next@13.4.10)(react@18.2.0):
+    resolution: {integrity: sha512-MqYYLK/NafsahQF0synDGr8Xu8qzf4XD9C+WtSXnweT+VQIvsYIEvH7ZdwhSUjrc0zkOs8JD8qRgxshTWC1omQ==}
     peerDependencies:
       next: ^13.0.0 || ^14.0.0
       react: ^18.2.0

@@ -6,7 +6,7 @@ import Contact from "@/components/Contact/Contact";
 import Footer from "@/components/Footer/Footer";
 import { getProjects } from "@/lib/getProjects";
 import type { Project } from "@/types";
-import { GoogleTagManager } from "@next/third-parties/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 export type IndexProps = {
   projects: Project[];
@@ -23,7 +23,7 @@ export default function Index({ projects }: IndexProps) {
         <Contact />
       </main>
       <Footer />
-      <GoogleTagManager gtmId="G-5LGQ62V141" />
+      <GoogleAnalytics gaId="G-5LGQ62V141" />
     </>
   );
 }
