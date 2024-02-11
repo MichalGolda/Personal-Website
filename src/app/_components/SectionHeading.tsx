@@ -1,12 +1,15 @@
-export type SectionHeadingProps = {
+export type SectionHeadingProps = React.PropsWithChildren<{
   title: string;
   headline: string;
   body?: string;
-};
+}>;
 
-export const SectionHeading: React.FC<
-  React.PropsWithChildren<SectionHeadingProps>
-> = ({ title, headline, body, ...props }) => {
+export const SectionHeading: React.FC<SectionHeadingProps> = ({
+  title,
+  headline,
+  body,
+  ...props
+}) => {
   return (
     <div className="text-center max-w-3xl" {...props}>
       <span className="text-primary font-semibold text-xl uppercase">
