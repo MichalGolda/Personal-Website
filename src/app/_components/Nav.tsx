@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Nav() {
   return (
-    <nav className="flex flex-row justify-between">
+    <nav className="flex flex-row justify-between pt-8">
       <Image src="/logo.svg" alt="logo" width={151} height={29} />
       <ul className="flex flex-row gap-x-8 list-none">
         <li>
