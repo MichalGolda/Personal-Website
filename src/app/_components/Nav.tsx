@@ -1,6 +1,9 @@
+import Image from "next/image";
+
 export default function Nav() {
   return (
-    <nav>
+    <nav className="flex flex-row justify-between">
+      <Image src="/logo.svg" alt="logo" width={151} height={29} />
       <ul className="flex flex-row gap-x-8 list-none">
         <li>
           <a
