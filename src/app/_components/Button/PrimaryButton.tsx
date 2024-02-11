@@ -8,7 +8,7 @@ const PrimaryButton: React.FC<React.PropsWithChildren<ButtonProps>> = ({
 }) => {
   return (
     <Button
-      className={`bg-primary text-white hover:bg-primary/90 active:bg-primary/80 ${className}`}
+      className={`bg-primary text-white hover:bg-primary/90 active:bg-primary/80 border border-transparent border-solid ${className}`}
       {...props}
     >
       {children}

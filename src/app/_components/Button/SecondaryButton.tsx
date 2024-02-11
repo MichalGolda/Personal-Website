@@ -8,7 +8,7 @@ const SecondaryButton: React.FC<React.PropsWithChildren<ButtonProps>> = ({
 }) => {
   return (
     <Button
-      className={`bg-secondary text-white hover:bg-secondary/90 active:bg-secondary/80 ${className}`}
+      className={`bg-secondary text-white hover:bg-secondary/90 active:bg-secondary/80 border border-transparent ${className}`}
       {...props}
     >
       {children}
