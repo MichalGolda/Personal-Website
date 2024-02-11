@@ -1,6 +1,6 @@
-export type ButtonProps = {
+export type ButtonProps = React.ButtonHTMLAttributes<{
   className?: string;
-};
+}>;
 
 const Button: React.FC<React.PropsWithChildren<ButtonProps>> = ({
   className = "",
