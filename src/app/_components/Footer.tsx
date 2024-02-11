@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="flex flex-row justify-between items-center py-8">
+    <footer className="flex flex-row justify-between items-center py-8 max-w-[1320px] mx-auto">
       <Image src="/logo.svg" width={151} height={29} alt="logo" />
       <span className="text-body text-xs">
         © 2024 Wszelkie prawa zastrzeżone.{" "}
