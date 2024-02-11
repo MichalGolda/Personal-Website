@@ -11,7 +11,7 @@ export const SectionHeading: React.FC<SectionHeadingProps> = ({
   ...props
 }) => {
   return (
-    <div className="text-center max-w-3xl" {...props}>
+    <div className="text-center max-w-3xl mx-auto" {...props}>
       <span className="text-primary font-semibold text-xl uppercase">
         {headline}
       </span>

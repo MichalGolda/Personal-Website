@@ -6,7 +6,7 @@ export type FormProps = React.FormHTMLAttributes<{}>;
 
 export const Form: React.FC<FormProps> = (props) => {
   return (
-    <form className="flex flex-col gap-y-8" {...props}>
+    <form className="flex flex-col gap-y-8 max-w-lg w-full" {...props}>
       <h4 className="text-2xl font-bold">Formularz kontaktowy</h4>
       <TextField
         label="E-mail"

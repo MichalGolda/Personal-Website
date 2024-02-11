@@ -7,7 +7,6 @@ export default function Header() {
     <header className="w-full h-screen">
       <Nav />
       <Hero />
-      <ScrollDown />
     </header>
   );
 }
