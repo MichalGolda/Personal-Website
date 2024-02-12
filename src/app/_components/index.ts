@@ -16,3 +16,5 @@ export { default as Button } from "./Button/Button";
 export { default as PrimaryButton } from "./Button/PrimaryButton";
 export { default as SecondaryButton } from "./Button/SecondaryButton";
 export { default as SecondaryOutlinedButton } from "./Button/SecondaryOutlinedButton";
+export { default as SuccessAlert } from "./Alert/SuccessAlert";
+export { default as ErrorAlert } from "./Alert/ErrorAlert";
