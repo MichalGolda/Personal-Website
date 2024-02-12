@@ -4,7 +4,7 @@ export type SectionHeadingProps = React.PropsWithChildren<{
   body?: string;
 }>;
 
-export const SectionHeading: React.FC<SectionHeadingProps> = ({
+const SectionHeading: React.FC<SectionHeadingProps> = ({
   title,
   headline,
   body,
@@ -20,3 +20,5 @@ export const SectionHeading: React.FC<SectionHeadingProps> = ({
     </div>
   );
 };
+
+export default SectionHeading;

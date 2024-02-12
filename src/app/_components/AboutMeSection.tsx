@@ -1,4 +1,4 @@
-import { SectionHeading } from "./SectionHeading";
+import { SectionHeading } from "@/app/_components";
 
 export default function AboutMeSection() {
   return (

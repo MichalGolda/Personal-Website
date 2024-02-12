@@ -4,12 +4,7 @@ export type TextField = {
   as: (className: string) => React.ReactNode;
 };
 
-export const TextField: React.FC<TextField> = ({
-  label,
-  labelFor,
-  as,
-  ...props
-}) => {
+const TextField: React.FC<TextField> = ({ label, labelFor, as, ...props }) => {
   return (
     <div className="w-full flex flex-col gap-y-1" {...props}>
       <label
@@ -24,3 +19,5 @@ export const TextField: React.FC<TextField> = ({
     </div>
   );
 };
+
+export default TextField;

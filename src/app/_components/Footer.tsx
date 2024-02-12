@@ -1,11 +1,16 @@
+"use client";
+
 import Image from "next/image";
+import { useCurrentYear } from "@/app/_hooks/useCurrentYear";
 
 export default function Footer() {
+  const currentYear = useCurrentYear();
+
   return (
     <footer className="flex flex-row justify-between items-center py-8 max-w-[1320px] mx-auto">
       <Image src="/logo.svg" width={151} height={29} alt="logo" />
       <span className="text-body text-xs">
-        © 2024 Wszelkie prawa zastrzeżone.{" "}
+        © {currentYear} Wszelkie prawa zastrzeżone.{" "}
         <span className="font-medium">
           Zaprojektowane & Wdrożone przez Michał Gołda
         </span>

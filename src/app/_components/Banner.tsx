@@ -1,4 +1,4 @@
-import { SecondaryButton } from "./Button";
+import { SecondaryButton } from "@/app/_components";
 
 export default function Banner() {
   return (
