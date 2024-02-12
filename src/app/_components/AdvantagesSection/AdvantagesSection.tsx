@@ -3,7 +3,7 @@ import { SectionHeading } from "@/app/_components";
 
 export default function AdvantagesSection() {
   return (
-    <section className="max-w-[1320px] mx-auto my-64">
+    <section id="advantages" className="max-w-[1320px] mx-auto my-64">
       <SectionHeading headline="zalety" title="Dlaczego warto mi zaufać?" />
       <div className="my-16 flex flex-row gap-x-16 items-start">
         <AdvantageCard

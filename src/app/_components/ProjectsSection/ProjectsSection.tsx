@@ -4,7 +4,7 @@ import YourProjectCard from "./YourProjectCard";
 
 export default function ProjectsSection() {
   return (
-    <div className="max-w-[1320px] mx-auto my-64">
+    <div id="portfolio" className="max-w-[1320px] mx-auto my-64">
       <SectionHeading
         headline="portfolio"
         title="Ostatnio zrezlizowane projekty"

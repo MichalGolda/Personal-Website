@@ -2,7 +2,7 @@ import { SectionHeading } from "@/app/_components";
 
 export default function AboutMeSection() {
   return (
-    <section className="max-w-[1320px] mx-auto mt-16 mb-64">
+    <section id="about-me" className="max-w-[1320px] mx-auto mt-16 mb-64">
       <SectionHeading headline="O mnie" title="Kilka słów o tym kim jestem" />
       <p className="mt-16 text-body max-w-3xl mx-auto text-center">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempus

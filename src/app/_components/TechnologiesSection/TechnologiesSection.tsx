@@ -3,7 +3,7 @@ import TechnologyCard from "./TechnologyCard";
 
 export default function TechnologiesSection() {
   return (
-    <section className="max-w-[1320px] mx-auto my-64">
+    <section id="technologies" className="max-w-[1320px] mx-auto my-64">
       <SectionHeading
         headline="technologie"
         title="Pracuje z technologiami przyszłości"

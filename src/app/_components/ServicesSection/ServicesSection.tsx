@@ -3,7 +3,7 @@ import ServiceCard from "./ServiceCard";
 
 export default function ServicesSection() {
   return (
-    <section className="w-full bg-lightBlue py-32">
+    <section id="services" className="w-full bg-lightBlue py-32">
       <div className="max-w-[1320px] mx-auto">
         <SectionHeading headline="usługi" title="Moje usługi" />
         <div className="my-16 grid grid-rows-2 grid-cols-2 gap-16">

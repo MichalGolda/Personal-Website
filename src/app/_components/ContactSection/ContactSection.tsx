@@ -4,7 +4,7 @@ import ContactDetails from "./ContactDetails";
 
 export default function ContactSection() {
   return (
-    <section className="my-64 max-w-[1320px] mx-auto">
+    <section id="contact" className="my-64 max-w-[1320px] mx-auto">
       <SectionHeading
         headline="kontakt"
         title="Skonktaktuj się ze mną"
