@@ -17,6 +17,7 @@ const ContactForm: React.FC<ContactFormProps> = (props) => {
             className={className}
             name="email"
             type="email"
+            required
           />
         )}
       />
@@ -29,6 +30,7 @@ const ContactForm: React.FC<ContactFormProps> = (props) => {
             className={className}
             name="phoneNumber"
             type="tel"
+            required
           />
         )}
       />
@@ -40,6 +42,7 @@ const ContactForm: React.FC<ContactFormProps> = (props) => {
             id="message-content-input"
             className={`min-h-64 max-h-96 ${className}`}
             name="messageContent"
+            required
           ></textarea>
         )}
       />
@@ -47,6 +50,7 @@ const ContactForm: React.FC<ContactFormProps> = (props) => {
         id="agreement"
         label="Wyrażam zgodę na przetwarzanie danych osobowych"
         name="agreement"
+        required
       />
       <PrimaryButton className="w-fit" type="submit">
         Wyślij
