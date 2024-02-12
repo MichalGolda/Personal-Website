@@ -16,9 +16,11 @@ export default function Banner() {
           Platon
         </span>
       </div>
-      <SecondaryButton className="w-fit" type="button">
-        Skontaktuj się
-      </SecondaryButton>
+      <a href="#contact">
+        <SecondaryButton className="w-fit" type="button">
+          Skontaktuj się
+        </SecondaryButton>
+      </a>
     </div>
   );
 }

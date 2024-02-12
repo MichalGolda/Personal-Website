@@ -14,10 +14,14 @@ export default function Hero() {
           pasję w cyfrową rzeczywistość.
         </p>
         <div className="space-x-8 mt-10">
-          <PrimaryButton className="w-64">Stwórzmy coś razem</PrimaryButton>
-          <SecondaryOutlinedButton className="w-64">
-            Portfolio
-          </SecondaryOutlinedButton>
+          <a href="#contact">
+            <PrimaryButton className="w-64">Stwórzmy coś razem</PrimaryButton>
+          </a>
+          <a href="#portfolio">
+            <SecondaryOutlinedButton className="w-64">
+              Portfolio
+            </SecondaryOutlinedButton>
+          </a>
         </div>
       </div>
     </div>

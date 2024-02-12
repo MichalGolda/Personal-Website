@@ -8,7 +8,7 @@ export default function Nav() {
         <li>
           <a
             className="font-medium hover:text-secondary duration-500 transition-all text-secondary decoration-none"
-            href="#"
+            href="#top"
           >
             Start
             <span className="w-2/3 bg-primary h-0.5 block"></span>
@@ -17,7 +17,7 @@ export default function Nav() {
         <li>
           <a
             className="font-medium hover:text-secondary duration-500 transition-all text-body decoration-none"
-            href="#"
+            href="#about-me"
           >
             O mnie
           </a>
@@ -25,7 +25,7 @@ export default function Nav() {
         <li>
           <a
             className="font-medium hover:text-secondary duration-500 transition-all text-body decoration-none"
-            href="#"
+            href="#services"
           >
             Usługi
           </a>
@@ -33,7 +33,7 @@ export default function Nav() {
         <li>
           <a
             className="font-medium hover:text-secondary duration-500 transition-all text-body decoration-none"
-            href="#"
+            href="#portfolio"
           >
             Portfolio
           </a>
@@ -41,7 +41,7 @@ export default function Nav() {
         <li>
           <a
             className="font-medium hover:text-secondary duration-500 transition-all text-body decoration-none"
-            href="#"
+            href="#contact"
           >
             Kontakt
           </a>
