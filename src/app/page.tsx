@@ -10,6 +10,8 @@ import {
   ServicesSection,
   TechnologiesSection,
   ProjectsSection,
+  SuccessAlert,
+  ErrorAlert,
 } from "@/app/_components";
 
 export default function Index() {
