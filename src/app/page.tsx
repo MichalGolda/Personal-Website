@@ -24,10 +24,10 @@ export default function Index() {
         <AdvantagesSection />
         <ServicesSection />
         <Banner />
-        <TechnologiesSection />
         <ProjectsSection />
-        <ContactSection />
+        <TechnologiesSection />
         <FAQSection />
+        <ContactSection />
       </main>
       <Footer />
     </>
