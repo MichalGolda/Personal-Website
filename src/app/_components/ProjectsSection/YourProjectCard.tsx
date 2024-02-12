@@ -7,7 +7,9 @@ export default function YourProjectCard() {
         <h4 className="text-white font-bold text-2xl">
           Miejsce na twój projekt
         </h4>
-        <PrimaryButton className="w-fit">Skontaktuj się</PrimaryButton>
+        <a href="#contact">
+          <PrimaryButton className="w-fit">Skontaktuj się</PrimaryButton>
+        </a>
       </div>
     </div>
   );
