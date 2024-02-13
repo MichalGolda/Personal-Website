@@ -13,6 +13,7 @@ import {
   ErrorAlert,
 } from "@/app/_components";
 import { useEffect, useState } from "react";
+import SubmitButton from "./SubmitButton";
 
 export type ContactFormProps = React.FormHTMLAttributes<{}>;
 export type FormState = {
@@ -96,9 +97,7 @@ const ContactForm: React.FC<ContactFormProps> = (props) => {
           name="agreement"
           required
         />
-        <PrimaryButton className="w-fit" type="submit">
-          Wyślij
-        </PrimaryButton>
+        <SubmitButton />
       </form>
     </>
   );
