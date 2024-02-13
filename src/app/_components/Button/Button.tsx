@@ -9,7 +9,7 @@ const Button: React.FC<React.PropsWithChildren<ButtonProps>> = ({
 }) => {
   return (
     <button
-      className={`py-4 px-8 font-bold transition-all duration-500 disabled:bg-lightGrey disabled:text-body ${className}`}
+      className={`py-4 px-8 font-bold text-sm md:text-base transition-all duration-500 disabled:bg-lightGrey disabled:text-body ${className}`}
       {...props}
     >
       {children}

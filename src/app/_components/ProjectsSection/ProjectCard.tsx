@@ -17,11 +17,13 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 }) => {
   return (
     <div className="flex flex-col gap-y-4">
-      <h3 className="text-secondary font-bold text-3xl">{title}</h3>
+      <h3 className="text-secondary font-bold text-xl md:text-2xl lg:text-3xl">
+        {title}
+      </h3>
       <div className="flex flex-row gap-x-4">
         {showUrl && (
           <a
-            className="text-primary font-bold flex flex-row gap-x-4"
+            className="text-primary text-sm md:text-base font-bold flex flex-row gap-x-4"
             href={showUrl}
           >
             Pokaż

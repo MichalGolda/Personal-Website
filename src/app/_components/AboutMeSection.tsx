@@ -5,7 +5,7 @@ export default function AboutMeSection() {
     <section id="about-me" className="mt-16 mb-64">
       <Container>
         <SectionHeading headline="O mnie" title="Kilka słów o tym kim jestem" />
-        <p className="mt-16 text-body max-w-3xl mx-auto text-center">
+        <p className="mt-16 text-body max-w-3xl text-sm md:text-base mx-auto text-center">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempus
           velit augue, eu venenatis quam venenatis quis. Mauris sodales urna
           dignissim libero dictum accumsan. Vivamus sed tempor mi, vitae sodales

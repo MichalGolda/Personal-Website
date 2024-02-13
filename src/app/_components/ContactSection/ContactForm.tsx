@@ -46,12 +46,12 @@ const ContactForm: React.FC<ContactFormProps> = (props) => {
         <ErrorAlert message="Podczas wysyłania wiadomości wystąpił nieoczekiwany błąd. Spróbuj ponownie." />
       )}
       <form
-        className="flex flex-col gap-y-8 max-w-2xl w-full"
+        className="flex flex-col gap-y-8 lg:max-w-2xl w-full"
         action={formAction}
         autoComplete="off"
         {...props}
       >
-        <h4 className="text-2xl text-secondary font-bold">
+        <h4 className="text-lg md:text-xl lg:text-2xl text-secondary font-bold">
           Formularz kontaktowy
         </h4>
         <TextField

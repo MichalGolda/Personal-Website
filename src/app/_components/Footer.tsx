@@ -9,10 +9,10 @@ export default function Footer() {
 
   return (
     <footer className="py-8">
-      <Container className="flex flex-row justify-between items-center">
+      <Container className="flex flex-col gap-y-4 lg:flex-row justify-between items-center">
         <Image src="/logo.svg" width={151} height={29} alt="logo" />
-        <span className="text-body text-xs">
-          © {currentYear} Wszelkie prawa zastrzeżone.{" "}
+        <span className="text-body text-xs text-center">
+          © {currentYear} Wszelkie prawa zastrzeżone. <br />
           <span className="font-medium">
             Zaprojektowane & Wdrożone przez Michał Gołda
           </span>

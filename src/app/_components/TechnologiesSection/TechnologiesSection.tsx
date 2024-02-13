@@ -10,14 +10,16 @@ export default function TechnologiesSection() {
           title="Pracuje z technologiami przyszłości"
           body="Stosuje najnowsze technologie i rozwiązania używane w zaawansowanych aplikacjach webowych."
         />
-        <div className="grid grid-rows-2 grid-cols-2 gap-16 mt-16">
+        <div className="grid grid-rows-2 grid-cols-1 md:grid-cols-2 gap-16 mt-16">
           <TechnologyCard
             title="Frontend"
             content="Spójny, wykonany z dbałością o szczegóły, SEO-friendy, responsywny, działający na dowolnym urządzeniu: TypeScript, React, Next.js, Nuxt.js, Headless."
           />
           <TechnologyCard
             title="Backend"
-            content="Wydajność, skalowalność, globalna dostępność i bezpieczeństwo. Osiągamy to dzięki sprawdzonym rozwiązaniom i frameworkom: Python, Django, PHP, Laravel, Wordpress, PosgreSQL, DynamoDB, AWS, Docker, integrujemy się z dowolnym systemem za pomocą API, budujemy aplikacje oparte o mikrousługi."
+            content="Wydajno, skalowalno, globalna dostpno i bezpieczestwo. Osigamy to dziki sprawdzonym rozwizaniom i frameworkom:Python,Django,PHP,Laravel,
+            Wordpress,PosgreSQL,
+            DynamoDB,AWS, Docker, integrujemy si z dowolnym systemem za pomoc API, budujemy aplikacje oparte o mikrousugi."
           />
           <TechnologyCard
             title="QA"

@@ -6,7 +6,7 @@ export default function ServicesSection() {
     <section id="services" className="w-full bg-lightBlue py-32">
       <Container>
         <SectionHeading headline="usługi" title="Moje usługi" />
-        <div className="my-16 grid grid-rows-2 grid-cols-2 gap-16">
+        <div className="my-16 grid grid-cols-1 md:grid-rows-2 md:grid-cols-2 lg:gap-16 md:gap-x-8 md:gap-y-16 gap-16">
           <ServiceCard
             title="Rozwiązania oparte o WordPress CMS"
             content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit justo sit amet orci interdum, facilisis commodo elit gravida. Suspendisse potenti. Cras non erat et magna aliquam convallis vel ac dolor. Vivamus eu nunc massa. Curabitur viverra neque et ligula."

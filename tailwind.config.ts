@@ -18,6 +18,11 @@ const config: Config = {
       error: "#D20032",
       white: "#fff",
       transparent: "transparent"
+    },
+    screens: {
+      sm: '576px',
+      md: '768px',
+      lg: '1024px'
     }
   },
   plugins: [],

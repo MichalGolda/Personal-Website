@@ -16,11 +16,13 @@ const FAQBar: React.FC<FAQBarProps> = ({
 }) => {
   return (
     <div>
-      <div className="w-full h-auto py-4 px-8 bg-lightGrey flex flex-row justify-between items-center">
-        <h4 className="text-2xl font-bold text-secondary">{title}</h4>
+      <div className="w-full h-auto py-4 px-8 gap-x-2 bg-lightGrey flex flex-row justify-between items-center">
+        <h4 className="text-lg md:text-xl lg:text-2xl font-bold text-secondary">
+          {title}
+        </h4>
         {!showContent ? (
           <Image
-            className="hover:cursor-pointer"
+            className="hover:cursor-pointer w-[16px] md:w-[24px]"
             onClick={onClick}
             src="/plus.svg"
             alt="plus"
@@ -29,7 +31,7 @@ const FAQBar: React.FC<FAQBarProps> = ({
           />
         ) : (
           <Image
-            className="hover:cursor-pointer"
+            className="hover:cursor-pointer w-[16px] md:w-[24px]"
             onClick={onClick}
             src="/minus.svg"
             alt="minus"

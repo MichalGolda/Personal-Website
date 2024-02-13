@@ -4,7 +4,7 @@ export default function YourProjectCard() {
   return (
     <div className="w-full h-full bg-secondary flex items-center justify-center">
       <div className="flex flex-col gap-y-4 items-center">
-        <h4 className="text-white font-bold text-2xl">
+        <h4 className="text-white text-lg md:text-xl lg:text-2xl font-bold">
           Miejsce na twój projekt
         </h4>
         <a href="#contact">

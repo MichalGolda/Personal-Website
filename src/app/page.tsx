@@ -10,15 +10,16 @@ import {
   ServicesSection,
   TechnologiesSection,
   ProjectsSection,
+  Container,
 } from "@/app/_components";
 
 export default function Index() {
   return (
     <>
       <Header />
-      <div className="max-w-[1320px] mx-auto">
+      <Container>
         <ScrollDown />
-      </div>
+      </Container>
       <main>
         <AboutMeSection />
         <AdvantagesSection />

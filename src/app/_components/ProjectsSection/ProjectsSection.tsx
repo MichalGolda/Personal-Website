@@ -10,7 +10,7 @@ export default function ProjectsSection() {
           headline="portfolio"
           title="Ostatnio zrezlizowane projekty"
         />
-        <div className="grid mt-16 grid-cols-2 grid-rows-2 gap-16">
+        <div className="grid mt-16 grid-cols-1 auto-cols-fr auto-rows-fr lg:grid-cols-2 lg:grid-rows-2 gap-16">
           <ProjectCard
             title="Pichkrakow.pl"
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut purus congue, varius neque posuere, egestas magna. Vivamus lacinia urna sed sapien tincidunt, in feugiat libero auctor."
