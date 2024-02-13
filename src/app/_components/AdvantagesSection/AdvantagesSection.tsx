@@ -1,27 +1,29 @@
 import AdvantageCard from "./AdvantageCard";
-import { SectionHeading } from "@/app/_components";
+import { Container, SectionHeading } from "@/app/_components";
 
 export default function AdvantagesSection() {
   return (
-    <section id="advantages" className="max-w-[1320px] mx-auto my-64">
-      <SectionHeading headline="zalety" title="Dlaczego warto mi zaufać?" />
-      <div className="my-16 flex flex-row gap-x-16 items-start">
-        <AdvantageCard
-          title="Rozwiązania dopasowane do oczekiwań klienta"
-          content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit justo sit amet orci interdum, facilisis commodo elit gravida. Suspendisse potenti. Cras non erat et magna aliquam convallis vel ac dolor."
-          iconSrc="/measure.svg"
-        />
-        <AdvantageCard
-          title="Przejrzyste rozliczenia"
-          content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit justo sit amet orci interdum, facilisis commodo elit gravida. Suspendisse potenti. Cras non erat et magna aliquam convallis vel ac dolor."
-          iconSrc="/dollar.svg"
-        />
-        <AdvantageCard
-          title="Realizacja w określonym terminie"
-          content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit justo sit amet orci interdum, facilisis commodo elit gravida. Suspendisse potenti. Cras non erat et magna aliquam convallis vel ac dolor."
-          iconSrc="/calendar.svg"
-        />
-      </div>
+    <section id="advantages" className="my-64">
+      <Container>
+        <SectionHeading headline="zalety" title="Dlaczego warto mi zaufać?" />
+        <div className="my-16 flex flex-row gap-x-16 items-start">
+          <AdvantageCard
+            title="Rozwiązania dopasowane do oczekiwań klienta"
+            content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit justo sit amet orci interdum, facilisis commodo elit gravida. Suspendisse potenti. Cras non erat et magna aliquam convallis vel ac dolor."
+            iconSrc="/measure.svg"
+          />
+          <AdvantageCard
+            title="Przejrzyste rozliczenia"
+            content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit justo sit amet orci interdum, facilisis commodo elit gravida. Suspendisse potenti. Cras non erat et magna aliquam convallis vel ac dolor."
+            iconSrc="/dollar.svg"
+          />
+          <AdvantageCard
+            title="Realizacja w określonym terminie"
+            content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit justo sit amet orci interdum, facilisis commodo elit gravida. Suspendisse potenti. Cras non erat et magna aliquam convallis vel ac dolor."
+            iconSrc="/calendar.svg"
+          />
+        </div>
+      </Container>
     </section>
   );
 }
