@@ -48,6 +48,7 @@ const ContactForm: React.FC<ContactFormProps> = (props) => {
       <form
         className="flex flex-col gap-y-8 max-w-2xl w-full"
         action={formAction}
+        autoComplete="off"
         {...props}
       >
         <h4 className="text-2xl text-secondary font-bold">
