@@ -38,6 +38,7 @@ export default function FAQStack() {
     <div className="flex flex-col gap-y-8 mt-16">
       {FAQData.map(({ title, content }) => (
         <FAQBar
+          key={title}
           title={title}
           content={content}
           showContent={currentVisibleFAQAnswer === title}
