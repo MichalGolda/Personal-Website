@@ -6,7 +6,7 @@ import MenuItem from "./MenuItem";
 export default function Nav() {
   const menuItems = [
     ["Start", "#top"],
-    ["O mnie", "#contact"],
+    ["O mnie", "#about-me"],
     ["Uslugi", "#services"],
     ["Portfolio", "#portfolio"],
     ["Kontakt", "#contact"],
