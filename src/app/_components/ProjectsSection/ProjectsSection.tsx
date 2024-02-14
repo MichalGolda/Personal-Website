@@ -1,8 +1,17 @@
+import { promises as fs } from "fs";
+import { Project } from "@/app/_types/project";
 import { SectionHeading, Container } from "@/app/_components";
 import ProjectCard from "./ProjectCard";
 import YourProjectCard from "./YourProjectCard";
 
-export default function ProjectsSection() {
+const fetchProjects = (): Promise<Project[]> =>
+  fs
+    .readFile(`${process.env.contentFolderPath}/projects.json`, "utf-8")
+    .then((value) => JSON.parse(value));
+
+export default async function ProjectsSection() {
+  const projects = await fetchProjects();
+
   return (
     <div id="portfolio" className="my-64">
       <Container>
@@ -11,24 +20,17 @@ export default function ProjectsSection() {
           title="Ostatnio zrezlizowane projekty"
         />
         <div className="grid mt-16 grid-cols-1 auto-cols-fr auto-rows-fr lg:grid-cols-2 lg:grid-rows-2 gap-16">
-          <ProjectCard
-            title="Pichkrakow.pl"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut purus congue, varius neque posuere, egestas magna. Vivamus lacinia urna sed sapien tincidunt, in feugiat libero auctor."
-            showUrl="https://pichkrakow.pl/beta"
-            coverImageUrl="/pichkrakow.jpg"
-          />
-          <ProjectCard
-            title="Pichkrakow.pl"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut purus congue, varius neque posuere, egestas magna. Vivamus lacinia urna sed sapien tincidunt, in feugiat libero auctor."
-            showUrl="https://pichkrakow.pl/beta"
-            coverImageUrl="/pichkrakow.jpg"
-          />
-          <ProjectCard
-            title="Pichkrakow.pl"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut purus congue, varius neque posuere, egestas magna. Vivamus lacinia urna sed sapien tincidunt, in feugiat libero auctor."
-            showUrl="https://pichkrakow.pl/beta"
-            coverImageUrl="/pichkrakow.jpg"
-          />
+          {projects.map((project) => {
+            return (
+              <ProjectCard
+                name={project.name}
+                description={project.description}
+                githubUrl={project.githubUrl}
+                coverImageSrc={project.coverImageSrc}
+                showUrl={project.showUrl}
+              />
+            );
+          })}
           <YourProjectCard />
         </div>
       </Container>
