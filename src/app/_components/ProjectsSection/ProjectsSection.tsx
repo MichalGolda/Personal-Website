@@ -20,6 +20,7 @@ export default async function ProjectsSection() {
           {projects.map((project) => {
             return (
               <ProjectCard
+                key={project.name}
                 name={project.name}
                 description={project.description}
                 githubUrl={project.githubUrl}
