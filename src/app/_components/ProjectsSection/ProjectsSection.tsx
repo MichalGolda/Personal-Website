@@ -1,13 +1,10 @@
-import { promises as fs } from "fs";
+import { fetchContent } from "@/app/_utils/fetchContent";
 import { Project } from "@/app/_types/project";
 import { SectionHeading, Container } from "@/app/_components";
 import ProjectCard from "./ProjectCard";
 import YourProjectCard from "./YourProjectCard";
 
-const fetchProjects = (): Promise<Project[]> =>
-  fs
-    .readFile(`${process.env.contentFolderPath}/projects.json`, "utf-8")
-    .then((value) => JSON.parse(value));
+const fetchProjects = (): Promise<Project[]> => fetchContent("projects.json");
 
 export default async function ProjectsSection() {
   const projects = await fetchProjects();

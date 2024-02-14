@@ -1,48 +1,39 @@
 "use client";
 
+import { FAQ } from "@/app/_types/faq";
 import { useState } from "react";
 import FAQBar from "./FAQBar";
 
-export default function FAQStack() {
-  const FAQData = [
-    {
-      title: "Jak długo trwa realizacja projektu?a",
-      content: "asdf",
-    },
-    {
-      title: "Jak długo trwa realizacja projektu?b",
-      content: "asdf",
-    },
-    {
-      title: "Jak długo trwa realizacja projektu?c",
-      content: "asdf",
-    },
-  ];
+export type FAQStackProps = {
+  data: FAQ[];
+};
+
+export default function FAQStack({ data }: FAQStackProps) {
   const [currentVisibleFAQAnswer, setCurrentVisibleFAQAnswer] = useState<
     string | null
   >();
 
-  const handleClick = (title: string) => {
+  const handleClick = (question: string) => {
     if (currentVisibleFAQAnswer) {
-      if (currentVisibleFAQAnswer === title) {
+      if (currentVisibleFAQAnswer === question) {
         setCurrentVisibleFAQAnswer(null);
       } else {
-        setCurrentVisibleFAQAnswer(title);
+        setCurrentVisibleFAQAnswer(question);
       }
     } else {
-      setCurrentVisibleFAQAnswer(title);
+      setCurrentVisibleFAQAnswer(question);
     }
   };
 
   return (
     <div className="flex flex-col gap-y-8 mt-16">
-      {FAQData.map(({ title, content }) => (
+      {data.map(({ question, answer }) => (
         <FAQBar
-          key={title}
-          title={title}
-          content={content}
-          showContent={currentVisibleFAQAnswer === title}
-          onClick={() => handleClick(title)}
+          key={question}
+          question={question}
+          answer={answer}
+          showContent={currentVisibleFAQAnswer === question}
+          onClick={() => handleClick(question)}
         />
       ))}
     </div>

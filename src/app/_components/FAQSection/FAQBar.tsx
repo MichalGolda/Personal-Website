@@ -2,15 +2,15 @@ import Image from "next/image";
 import { MouseEventHandler } from "react";
 
 export type FAQBarProps = {
-  title: string;
-  content: string;
+  question: string;
+  answer: string;
   showContent?: boolean;
   onClick: MouseEventHandler<HTMLImageElement>;
 };
 
 const FAQBar: React.FC<FAQBarProps> = ({
-  title,
-  content,
+  question,
+  answer,
   showContent = false,
   onClick,
 }) => {
@@ -18,7 +18,7 @@ const FAQBar: React.FC<FAQBarProps> = ({
     <div>
       <div className="w-full h-auto py-4 px-8 gap-x-2 bg-lightGrey flex flex-row justify-between items-center">
         <h4 className="text-lg md:text-xl lg:text-2xl font-bold text-secondary">
-          {title}
+          {question}
         </h4>
         {!showContent ? (
           <Image
@@ -40,7 +40,7 @@ const FAQBar: React.FC<FAQBarProps> = ({
           />
         )}
       </div>
-      {showContent && <p className="text-body mt-4">{content}</p>}
+      {showContent && <p className="text-body mt-4">{answer}</p>}
     </div>
   );
 };
