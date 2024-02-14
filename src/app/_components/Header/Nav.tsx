@@ -1,6 +1,17 @@
+"use client";
+
 import Image from "next/image";
+import MenuItem from "./MenuItem";
 
 export default function Nav() {
+  const menuItems = [
+    ["Start", "#top"],
+    ["O mnie", "#contact"],
+    ["Uslugi", "#services"],
+    ["Portfolio", "#portfolio"],
+    ["Kontakt", "#contact"],
+  ];
+
   return (
     <nav className="flex flex-row justify-between pt-8 items-center">
       <Image src="/logo.svg" alt="logo" width={151} height={29} />
@@ -9,47 +20,9 @@ export default function Nav() {
         <div className="block w-8 bg-secondary h-0.5"></div>
       </div>
       <ul className="lg:flex lg:flex-row lg:gap-x-8 lg:list-none hidden">
-        <li>
-          <a
-            className="font-medium hover:text-secondary duration-500 transition-all text-secondary decoration-none"
-            href="#top"
-          >
-            Start
-            <span className="w-2/3 bg-primary h-0.5 block"></span>
-          </a>
-        </li>
-        <li>
-          <a
-            className="font-medium hover:text-secondary duration-500 transition-all text-body decoration-none"
-            href="#about-me"
-          >
-            O mnie
-          </a>
-        </li>
-        <li>
-          <a
-            className="font-medium hover:text-secondary duration-500 transition-all text-body decoration-none"
-            href="#services"
-          >
-            Usługi
-          </a>
-        </li>
-        <li>
-          <a
-            className="font-medium hover:text-secondary duration-500 transition-all text-body decoration-none"
-            href="#portfolio"
-          >
-            Portfolio
-          </a>
-        </li>
-        <li>
-          <a
-            className="font-medium hover:text-secondary duration-500 transition-all text-body decoration-none"
-            href="#contact"
-          >
-            Kontakt
-          </a>
-        </li>
+        {menuItems.map((menuItem) => {
+          return <MenuItem name={menuItem[0]} href={menuItem[1]} />;
+        })}
       </ul>
     </nav>
   );
