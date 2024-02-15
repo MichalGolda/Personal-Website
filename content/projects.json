@@ -9,12 +9,13 @@
     "name": "Animal-Houses",
     "description": "Aplikacja umożliwia zarządzanie sprzedażą domków dla zwierząt.",
     "coverImageSrc": "/animal-houses.webp",
-    "githubLink": "https://github.com/michalgolda/animal-houses"
+    "githubUrl": "https://github.com/michalgolda/animal-houses",
+    "showUrl": "https://animal-houses.vercel.app/"
   },
   {
     "name": "Cashly",
     "description": "Aplikację do zarządzania prywatnymi finansami.",
     "coverImageSrc": "/cashly.webp",
-    "githubLink": "https://github.com/michalgolda/cashly"
+    "githubUrl": "https://github.com/michalgolda/cashly"
   }
 ]
