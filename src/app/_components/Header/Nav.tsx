@@ -5,11 +5,26 @@ import MenuItem from "./MenuItem";
 
 export default function Nav() {
   const menuItems = [
-    ["Start", "#top"],
-    ["O mnie", "#about-me"],
-    ["Uslugi", "#services"],
-    ["Portfolio", "#portfolio"],
-    ["Kontakt", "#contact"],
+    {
+      name: "Start",
+      href: "#top",
+    },
+    {
+      name: "O mnie",
+      href: "#about-me",
+    },
+    {
+      name: "Usługi",
+      href: "#services",
+    },
+    {
+      name: "Portfolio",
+      href: "#portfolio",
+    },
+    {
+      name: "Kontakt",
+      href: "#contact",
+    },
   ];
 
   return (
@@ -20,8 +35,8 @@ export default function Nav() {
         <div className="block w-8 bg-secondary h-0.5"></div>
       </div>
       <ul className="lg:flex lg:flex-row lg:gap-x-8 lg:list-none hidden">
-        {menuItems.map((menuItem) => {
-          return <MenuItem name={menuItem[0]} href={menuItem[1]} />;
+        {menuItems.map(({ name, href }) => {
+          return <MenuItem name={name} href={href} />;
         })}
       </ul>
     </nav>
