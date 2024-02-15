@@ -47,7 +47,9 @@ export default function Nav() {
           stickyNav ? "" : "!px-0"
         }`}
       >
-        <Image src="/logo.svg" alt="logo" width={151} height={29} />
+        <a href="#top">
+          <Image src="/logo.svg" alt="logo" width={151} height={29} />
+        </a>
         <div className="flex flex-col gap-y-2 cursor-pointer lg:hidden">
           <div className="block w-8 bg-secondary h-0.5"></div>
           <div className="block w-8 bg-secondary h-0.5"></div>
