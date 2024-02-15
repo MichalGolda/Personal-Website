@@ -12,6 +12,7 @@ import {
   ProjectsSection,
   Container,
 } from "@/app/_components";
+import ScrollUpBtn from "./_components/ScrollUpButton";
 
 export default function Index() {
   return (
@@ -30,6 +31,7 @@ export default function Index() {
         <FAQSection />
         <ContactSection />
       </main>
+      <ScrollUpBtn />
       <Footer />
     </>
   );

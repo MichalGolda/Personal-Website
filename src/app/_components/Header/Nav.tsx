@@ -31,7 +31,7 @@ export default function Nav() {
   const [stickyNav, setStickyNav] = useState<boolean>(false);
 
   useEffect(() => {
-    window.onscroll = () => setStickyNav(window.scrollY > 128);
+    window.addEventListener("scroll", () => setStickyNav(window.scrollY > 128));
   }, []);
 
   return (
