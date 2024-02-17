@@ -56,7 +56,7 @@ export default function Nav() {
         </div>
         <ul className="lg:flex lg:flex-row lg:gap-x-8 lg:list-none hidden">
           {menuItems.map(({ name, href }) => {
-            return <MenuItem name={name} href={href} />;
+            return <MenuItem key={name} name={name} href={href} />;
           })}
         </ul>
       </Container>
