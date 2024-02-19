@@ -1,6 +1,5 @@
 "use client";
 
-import { fetchContent } from "@/app/_utils/fetchContent";
 import { Project } from "@/app/_types/project";
 import { SectionHeading, Container } from "@/app/_components";
 import ProjectCard from "./ProjectCard";
