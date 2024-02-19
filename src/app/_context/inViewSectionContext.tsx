@@ -31,8 +31,6 @@ export const useInViewSection = (id: string) => {
   const { setSection } = useInViewSectionContext();
 
   useEffect(() => {
-    console.log(id, inView);
-
     inView && setSection(id);
   }, [inView]);
 
