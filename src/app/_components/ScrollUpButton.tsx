@@ -13,7 +13,9 @@ export default function ScrollUpBtn() {
 
   return (
     <a
-      className={`fixed bottom-0 right-0 mb-8 mr-8 ${show ? "" : "hidden"}`}
+      className={`fixed bottom-0 right-0 mb-8 mr-8 translate-x-[100vw] transition-transform duration-500 ${
+        show && "!translate-x-[0]"
+      }`}
       href="#top"
     >
       <PrimaryButton className="!px-2 !py-2">
