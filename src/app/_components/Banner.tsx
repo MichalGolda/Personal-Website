@@ -1,8 +1,16 @@
+"use client";
+
 import { SecondaryButton } from "@/app/_components";
+import { useInViewSection } from "../_context/inViewSectionContext";
 
 export default function Banner() {
+  const { ref } = useInViewSection("");
+
   return (
-    <div className="bg-primary w-full py-16 px-4 flex flex-col gap-y-8 text-center items-center">
+    <div
+      ref={ref}
+      className="bg-primary w-full py-16 px-4 flex flex-col gap-y-8 text-center items-center"
+    >
       <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white max-w-3xl">
         Masz pomysł na projekt? Skontaktuj się ze mną i stwórzmy razem coś
         wyjątkowego

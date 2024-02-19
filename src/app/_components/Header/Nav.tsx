@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import MenuItem from "./MenuItem";
 import { Container } from "@/app/_components";
+import { useInViewSectionContext } from "@/app/_context/inViewSectionContext";
 
 export default function Nav() {
   const menuItems = [
@@ -29,6 +30,7 @@ export default function Nav() {
     },
   ];
   const [stickyNav, setStickyNav] = useState<boolean>(false);
+  const { section } = useInViewSectionContext();
 
   useEffect(() => {
     window.addEventListener("scroll", () => setStickyNav(window.scrollY > 128));
@@ -55,7 +57,14 @@ export default function Nav() {
         </div>
         <ul className="lg:flex lg:flex-row lg:gap-x-8 lg:list-none hidden">
           {menuItems.map(({ name, href }) => {
-            return <MenuItem key={name} name={name} href={href} />;
+            return (
+              <MenuItem
+                key={name}
+                name={name}
+                href={href}
+                current={href === section}
+              />
+            );
           })}
         </ul>
       </Container>

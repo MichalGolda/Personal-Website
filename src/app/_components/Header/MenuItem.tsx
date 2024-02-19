@@ -3,9 +3,10 @@ import { useState } from "react";
 export type MenuItemProps = {
   href: string;
   name: string;
+  current: boolean;
 };
 
-export default function MenuItem({ href, name }: MenuItemProps) {
+export default function MenuItem({ href, name, current }: MenuItemProps) {
   const [hover, setHover] = useState<boolean>(false);
 
   return (
@@ -19,7 +20,7 @@ export default function MenuItem({ href, name }: MenuItemProps) {
         {name}
         <span
           className={`w-0 bg-transparent transition-all duration-500 h-0.5  block ${
-            hover ? "!bg-primary !w-2/3" : ""
+            hover || current ? "!bg-primary !w-2/3" : ""
           }`}
         ></span>
       </a>

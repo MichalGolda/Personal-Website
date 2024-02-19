@@ -1,9 +1,14 @@
+"use client";
+
 import { SectionHeading, Container } from "@/app/_components";
 import ServiceCard from "./ServiceCard";
+import { useInViewSection } from "@/app/_context/inViewSectionContext";
 
 export default function ServicesSection() {
+  const { ref } = useInViewSection("#services");
+
   return (
-    <section id="services" className="w-full bg-lightBlue py-32">
+    <section ref={ref} id="services" className="w-full bg-lightBlue py-32">
       <Container>
         <SectionHeading headline="usługi" title="Moje usługi" />
         <div className="my-16 grid grid-cols-1 md:grid-rows-2 md:grid-cols-2 lg:gap-16 md:gap-x-8 md:gap-y-16 gap-16">

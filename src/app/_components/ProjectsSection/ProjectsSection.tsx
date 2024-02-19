@@ -1,23 +1,28 @@
+"use client";
+
 import { fetchContent } from "@/app/_utils/fetchContent";
 import { Project } from "@/app/_types/project";
 import { SectionHeading, Container } from "@/app/_components";
 import ProjectCard from "./ProjectCard";
 import YourProjectCard from "./YourProjectCard";
+import { useInViewSection } from "@/app/_context/inViewSectionContext";
 
-const fetchProjects = (): Promise<Project[]> => fetchContent("projects.json");
+export type ProjectsSectionProps = {
+  data: Project[];
+};
 
-export default async function ProjectsSection() {
-  const projects = await fetchProjects();
+export default function ProjectsSection({ data }: ProjectsSectionProps) {
+  const { ref } = useInViewSection("#portfolio");
 
   return (
-    <div id="portfolio" className="my-64">
+    <div ref={ref} id="portfolio" className="my-64">
       <Container>
         <SectionHeading
           headline="portfolio"
           title="Ostatnio zrezlizowane projekty"
         />
         <div className="grid mt-16 grid-cols-1 auto-cols-fr auto-rows-fr lg:grid-cols-2 lg:grid-rows-2 gap-16">
-          {projects.map((project) => {
+          {data.map((project) => {
             return (
               <ProjectCard
                 key={project.name}

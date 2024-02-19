@@ -12,9 +12,18 @@ import {
   ProjectsSection,
   Container,
 } from "@/app/_components";
-import ScrollUpBtn from "./_components/ScrollUpButton";
+import ScrollUpBtn from "@/app/_components/ScrollUpButton";
+import { FAQ } from "@/app/_types/faq";
+import { fetchContent } from "@/app/_utils/fetchContent";
+import { Project } from "@/app/_types/project";
 
-export default function Index() {
+const fetchFAQ = (): Promise<FAQ[]> => fetchContent("faq.json");
+const fetchProjects = (): Promise<Project[]> => fetchContent("projects.json");
+
+export default async function Index() {
+  const faqSectionData = await fetchFAQ();
+  const portfolioSectionData = await fetchProjects();
+
   return (
     <>
       <Header />
@@ -26,9 +35,9 @@ export default function Index() {
         <AdvantagesSection />
         <ServicesSection />
         <Banner />
-        <ProjectsSection />
+        <ProjectsSection data={portfolioSectionData} />
         <TechnologiesSection />
-        <FAQSection />
+        <FAQSection data={faqSectionData} />
         <ContactSection />
       </main>
       <ScrollUpBtn />

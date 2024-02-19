@@ -1,9 +1,14 @@
+"use client";
+
+import { useInViewSection } from "@/app/_context/inViewSectionContext";
 import AdvantageCard from "./AdvantageCard";
 import { Container, SectionHeading } from "@/app/_components";
 
 export default function AdvantagesSection() {
+  const { ref } = useInViewSection("#about-me");
+
   return (
-    <section id="advantages" className="my-64">
+    <section ref={ref} id="advantages" className="my-64">
       <Container>
         <SectionHeading headline="zalety" title="Dlaczego warto mi zaufać?" />
         <div className="my-16 lg:flex lg:flex-row gap-16 flex flex-col gap-y-16 md:grid md:grid-cols-2 items-start">

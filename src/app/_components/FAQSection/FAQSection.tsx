@@ -1,18 +1,23 @@
+"use client";
+
 import { FAQ } from "@/app/_types/faq";
 import FAQStack from "./FAQStack";
 import { SectionHeading, Container } from "@/app/_components";
 import { fetchContent } from "@/app/_utils/fetchContent";
+import { useInViewSection } from "@/app/_context/inViewSectionContext";
 
-const fetchFAQ = (): Promise<FAQ[]> => fetchContent("faq.json");
+export type FAQSectionProps = {
+  data: FAQ[];
+};
 
-export default async function FAQSection() {
-  const faqs = await fetchFAQ();
+export default function FAQSection({ data }: FAQSectionProps) {
+  const { ref } = useInViewSection("");
 
   return (
-    <section id="faq" className="my-64">
+    <section ref={ref} id="faq" className="my-64">
       <Container>
         <SectionHeading headline="FAQ" title="Najczęściej zadawane pytania" />
-        <FAQStack data={faqs} />
+        <FAQStack data={data} />
       </Container>
     </section>
   );

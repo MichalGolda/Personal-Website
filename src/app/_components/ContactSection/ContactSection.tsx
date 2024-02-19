@@ -1,10 +1,15 @@
+"use client";
+
 import { SectionHeading, Container } from "@/app/_components";
 import ContactForm from "./ContactForm";
 import ContactDetails from "./ContactDetails";
+import { useInViewSection } from "@/app/_context/inViewSectionContext";
 
 export default function ContactSection() {
+  const { ref } = useInViewSection("#contact");
+
   return (
-    <section id="contact" className="my-64">
+    <section ref={ref} id="contact" className="my-64">
       <Container>
         <SectionHeading
           headline="kontakt"

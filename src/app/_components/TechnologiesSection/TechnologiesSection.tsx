@@ -1,9 +1,14 @@
+"use client";
+
 import { Container, SectionHeading } from "@/app/_components";
 import TechnologyCard from "./TechnologyCard";
+import { useInViewSection } from "@/app/_context/inViewSectionContext";
 
 export default function TechnologiesSection() {
+  const { ref } = useInViewSection("");
+
   return (
-    <section id="technologies" className="my-64">
+    <section ref={ref} id="technologies" className="my-64">
       <Container>
         <SectionHeading
           headline="technologie"
