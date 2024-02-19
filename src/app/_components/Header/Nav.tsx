@@ -8,7 +8,7 @@ import { useInViewSectionContext } from "@/app/_context/inViewSectionContext";
 import { useNavContext } from "@/app/_context/navContext";
 
 const useStickyNav = () => {
-  const { sticky, setSticky } = useNavContext();
+  const { sticky, setSticky, hamburger, setHambuger } = useNavContext();
 
   const isSticky = () => window.scrollY > 128;
 
@@ -22,6 +22,8 @@ const useStickyNav = () => {
 
   return {
     sticky,
+    hamburger,
+    setHambuger,
   };
 };
 
@@ -48,7 +50,7 @@ export default function Nav() {
       href: "#contact",
     },
   ];
-  const { sticky } = useStickyNav();
+  const { sticky, hamburger, setHambuger } = useStickyNav();
   const { section } = useInViewSectionContext();
 
   return (
@@ -66,17 +68,38 @@ export default function Nav() {
         <a href="#top">
           <Image src="/logo.svg" alt="logo" width={151} height={29} />
         </a>
-        <div className="flex flex-col gap-y-2 cursor-pointer lg:hidden">
+        <div
+          onClick={() => setHambuger(!hamburger)}
+          className="flex flex-col gap-y-2 cursor-pointer lg:hidden"
+        >
           <div className="block w-8 bg-secondary h-0.5"></div>
           <div className="block w-8 bg-secondary h-0.5"></div>
         </div>
-        <ul className="lg:flex lg:flex-row lg:gap-x-8 lg:list-none hidden">
+        <ul
+          className={`w-full h-full bg-lightBlue flex transition-transform duration-500 left-0 flex-col items-center pt-16 gap-y-8 fixed ${
+            sticky ? "top-[61px]" : "top-[93.8px]"
+          } ${hamburger ? "translate-x-[0]" : "translate-x-[-200%]"} lg:hidden`}
+        >
           {menuItems.map(({ name, href }) => {
             return (
               <MenuItem
                 key={name}
                 name={name}
                 href={href}
+                onClick={() => setHambuger(false)}
+                current={href === section}
+              />
+            );
+          })}
+        </ul>
+        <ul className={`hidden lg:flex lg:flex-row lg:gap-x-8`}>
+          {menuItems.map(({ name, href }) => {
+            return (
+              <MenuItem
+                key={name}
+                name={name}
+                href={href}
+                onClick={() => setHambuger(false)}
                 current={href === section}
               />
             );

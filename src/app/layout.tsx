@@ -1,13 +1,7 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
-import InViewSectionContextProvider from "./_context/inViewSectionContext";
+import { Body } from "@/app/_components";
 import { NavContextProvider } from "./_context/navContext";
-
-const inter = Inter({
-  subsets: ["latin", "latin-ext"],
-  weight: ["300", "400", "500", "600", "700"],
-});
 
 export const metadata: Metadata = {
   title: "Dedykowane strony internetowe i aplikacje webowe - Michał Gołda",
@@ -38,13 +32,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pl">
-      <body className={inter.className}>
-        <NavContextProvider>
-          <InViewSectionContextProvider>
-            {children}
-          </InViewSectionContextProvider>
-        </NavContextProvider>
-      </body>
+      <NavContextProvider>
+        <Body>{children}</Body>
+      </NavContextProvider>
     </html>
   );
 }

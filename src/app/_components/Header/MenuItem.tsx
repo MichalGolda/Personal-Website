@@ -4,15 +4,21 @@ export type MenuItemProps = {
   href: string;
   name: string;
   current: boolean;
+  onClick: () => void;
 };
 
-export default function MenuItem({ href, name, current }: MenuItemProps) {
+export default function MenuItem({
+  href,
+  name,
+  current,
+  onClick,
+}: MenuItemProps) {
   const [hover, setHover] = useState<boolean>(false);
 
   return (
-    <li>
+    <li onClick={onClick}>
       <a
-        className="font-medium hover:text-secondary duration-500 transition-all text-body decoration-none"
+        className="text-5xl font-medium hover:text-secondary duration-500 transition-[color] lg:text-base decoration-none"
         href={href}
         onMouseEnter={() => setHover(true)}
         onMouseLeave={() => setHover(false)}
