@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import InViewSectionContextProvider from "./_context/inViewSectionContext";
+import { NavContextProvider } from "./_context/navContext";
 
 const inter = Inter({
   subsets: ["latin", "latin-ext"],
@@ -38,7 +39,11 @@ export default function RootLayout({
   return (
     <html lang="pl">
       <body className={inter.className}>
-        <InViewSectionContextProvider>{children}</InViewSectionContextProvider>
+        <NavContextProvider>
+          <InViewSectionContextProvider>
+            {children}
+          </InViewSectionContextProvider>
+        </NavContextProvider>
       </body>
     </html>
   );

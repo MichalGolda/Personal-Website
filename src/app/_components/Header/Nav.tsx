@@ -5,9 +5,10 @@ import Image from "next/image";
 import MenuItem from "./MenuItem";
 import { Container } from "@/app/_components";
 import { useInViewSectionContext } from "@/app/_context/inViewSectionContext";
+import { useNavContext } from "@/app/_context/navContext";
 
 const useStickyNav = () => {
-  const [sticky, setSticky] = useState<boolean>(false);
+  const { sticky, setSticky } = useNavContext();
 
   const isSticky = () => window.scrollY > 128;
 
@@ -16,7 +17,7 @@ const useStickyNav = () => {
   }, []);
 
   useEffect(() => {
-    setSticky(isSticky);
+    setSticky(isSticky());
   }, []);
 
   return {
