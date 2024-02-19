@@ -36,15 +36,14 @@ export default function Nav() {
 
   return (
     <nav
-      className={`${
-        stickyNav
-          ? "fixed left-0 top-0 w-full bg-white border-b border-b-solid  border-b-lightGrey z-[999]"
-          : ""
+      className={`transition-all duration-500 border-b border-b-solid border-b-transparent bg-white ${
+        stickyNav &&
+        "!border-b-lightGrey z-[999] fixed left-0 top-0 w-full transition-all duration-500"
       }`}
     >
       <Container
-        className={`flex flex-row justify-between pt-4 pb-4 items-center ${
-          stickyNav ? "" : "!px-0"
+        className={`flex flex-row justify-between transition-[padding-top] duration-500 py-8 items-center ${
+          stickyNav ? "!py-4 transition-[padding-top] duration-500" : "!px-0"
         }`}
       >
         <a href="#top">
