@@ -79,7 +79,7 @@ export default function Nav() {
           ></div>
           <div
             className={`${
-              hamburger && "-rotate-45 translate-y-[-5px] translate-x-[-4px]"
+              hamburger && "-rotate-45 translate-y-[-4px] translate-x-[-4px]"
             } block w-8 bg-secondary h-0.5 transition-transform duration-500`}
           ></div>
         </div>
