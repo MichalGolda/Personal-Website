@@ -43,7 +43,7 @@ export default function Nav() {
     >
       <Container
         className={`flex flex-row justify-between transition-[padding-top] duration-500 py-8 items-center ${
-          stickyNav ? "!py-4 transition-[padding-top] duration-500" : "!px-0"
+          stickyNav ? "!py-4" : "!px-0"
         }`}
       >
         <a href="#top">
