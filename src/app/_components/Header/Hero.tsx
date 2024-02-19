@@ -2,7 +2,7 @@ import { PrimaryButton, SecondaryOutlinedButton } from "@/app/_components";
 
 export default function Hero() {
   return (
-    <div className="flex items-center justify-center h-[calc(100%-32px)] w-full md:-mt-8">
+    <div className="flex items-center justify-center h-[calc(100%-64px)] w-full md:-mt-8">
       <div className="text-center items-center flex flex-col">
         <h1 className="text-4xl md:text-5xl lg:text-6xl text-secondary font-bold">
           Buduje spersonalizowane <br />
