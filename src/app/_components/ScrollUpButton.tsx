@@ -11,6 +11,10 @@ export default function ScrollUpBtn() {
     window.addEventListener("scroll", () => setShow(window.scrollY > 128));
   }, []);
 
+  useEffect(() => {
+    setShow(window.scrollY > 128);
+  }, []);
+
   return (
     <a
       className={`fixed bottom-0 right-0 mb-8 mr-8 translate-x-[100vw] transition-transform duration-500 ${

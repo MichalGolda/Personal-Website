@@ -6,6 +6,24 @@ import MenuItem from "./MenuItem";
 import { Container } from "@/app/_components";
 import { useInViewSectionContext } from "@/app/_context/inViewSectionContext";
 
+const useStickyNav = () => {
+  const [sticky, setSticky] = useState<boolean>(false);
+
+  const isSticky = () => window.scrollY > 128;
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => setSticky(isSticky()));
+  }, []);
+
+  useEffect(() => {
+    setSticky(isSticky);
+  }, []);
+
+  return {
+    sticky,
+  };
+};
+
 export default function Nav() {
   const menuItems = [
     {
@@ -29,23 +47,19 @@ export default function Nav() {
       href: "#contact",
     },
   ];
-  const [stickyNav, setStickyNav] = useState<boolean>(false);
+  const { sticky } = useStickyNav();
   const { section } = useInViewSectionContext();
-
-  useEffect(() => {
-    window.addEventListener("scroll", () => setStickyNav(window.scrollY > 128));
-  }, []);
 
   return (
     <nav
       className={`transition-all duration-500 border-b border-b-solid border-b-transparent bg-white ${
-        stickyNav &&
+        sticky &&
         "!border-b-lightGrey z-[999] fixed left-0 top-0 w-full transition-all duration-500"
       }`}
     >
       <Container
         className={`flex flex-row justify-between transition-[padding-top] duration-500 py-8 items-center ${
-          stickyNav ? "!py-4" : "!px-0"
+          sticky ? "!py-4" : "!px-0"
         }`}
       >
         <a href="#top">
