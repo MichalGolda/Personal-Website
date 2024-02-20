@@ -9,8 +9,8 @@ export default function Header() {
   const { ref } = useInViewSection("#top");
 
   return (
-    <header ref={ref} className="h-screen">
-      <Container className="h-screen">
+    <header ref={ref} className="h-dvh">
+      <Container className="h-dvh">
         <Nav />
         <Hero />
       </Container>
