@@ -16,5 +16,8 @@ html {
 @layer base {
   body {
     font-weight: 300;
+    background-image: url("/background.webp");
+    background-repeat: repeat-y;
+    background-position: center;
   }
 }
