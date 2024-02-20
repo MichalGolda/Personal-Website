@@ -9,11 +9,11 @@ export default function Hero() {
           <span className="text-primary">strony internetowe</span>,{" "}
           <span className="text-primary">aplikacje webowe</span>
         </h1>
-        <p className="text-lg md:text-xl lg:text-2xl text-body font-normal max-w-3xl mt-8">
+        <p className="text-lg md:text-xl lg:text-2xl text-body font-normal max-w-3xl mt-4 md:mt-8">
           Koduję świat pełen możliwości - tworząc rozwiązania, wpisuję swoją
           pasję w cyfrową rzeczywistość.
         </p>
-        <div className="flex flex-col gap-4 md:flex-row mt-10">
+        <div className="flex flex-col gap-4 md:flex-row mt-8 md:mt-10">
           <a href="#contact">
             <PrimaryButton className="w-64">Stwórzmy coś razem</PrimaryButton>
           </a>
