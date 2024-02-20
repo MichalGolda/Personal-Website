@@ -1,5 +1,6 @@
 "use server";
 
+import { captureException } from "@sentry/nextjs";
 import nodemailer from "nodemailer"
 import { SendMessageActionStatus } from "./sendMessageTypes";
 
@@ -38,9 +39,10 @@ export default async function sendMessage(_: any, formData: FormData) {
         .then(() => {
             status = SendMessageActionStatus.SUCCESS
         })
-        .catch(() => {
+        .catch((err) => {
             status = SendMessageActionStatus.ERROR
-        });
+            captureException(err);
+          });
 
     return {
         status
