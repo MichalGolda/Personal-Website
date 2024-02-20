@@ -1,10 +1,9 @@
 "use client";
 
 import { Inter } from "next/font/google";
-import { NavContextProvider } from "../_context/navContext";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import InViewSectionContextProvider from "../_context/inViewSectionContext";
 import { useNavContext } from "../_context/navContext";
-import { useEffect } from "react";
 
 const inter = Inter({
   subsets: ["latin", "latin-ext"],
@@ -18,7 +17,10 @@ export default function Body({ children }: React.PropsWithChildren) {
     <body
       className={`${inter.className} ${hamburger ? "overflow-hidden" : ""}`}
     >
-      <InViewSectionContextProvider>{children}</InViewSectionContextProvider>
+      <InViewSectionContextProvider>
+        {children}
+        <SpeedInsights />
+      </InViewSectionContextProvider>
     </body>
   );
 }
