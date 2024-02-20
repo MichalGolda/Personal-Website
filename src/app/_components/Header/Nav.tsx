@@ -84,8 +84,8 @@ export default function Nav() {
           ></div>
         </div>
         <ul
-          className={`w-full h-full bg-lightBlue flex transition-transform duration-500 left-0 flex-col items-center pt-16 gap-y-8 fixed ${
-            sticky ? "top-[61px]" : "top-[93.8px]"
+          className={`w-full h-dvh bg-lightBlue flex transition-transform duration-500 left-0 flex-col items-center pt-16 gap-y-8 fixed ${
+            sticky ? "top-[61.8px]" : "top-[93.8px]"
           } ${hamburger ? "translate-x-[0]" : "translate-x-[-200%]"} lg:hidden`}
         >
           {menuItems.map(({ name, href }) => {
