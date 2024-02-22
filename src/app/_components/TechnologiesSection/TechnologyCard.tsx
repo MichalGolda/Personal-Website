@@ -26,6 +26,7 @@ const TechnologyCard: React.FC<TechnologyCardProps> = ({
         <div className="flex flex-row flex-wrap gap-4">
           {icons.map(({ src, alt }) => (
             <Image
+              key={src}
               className="max-w-8 max-h-8"
               src={src}
               alt={alt}
