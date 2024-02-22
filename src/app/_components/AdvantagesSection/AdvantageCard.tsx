@@ -10,9 +10,10 @@ const AdvantageCard: React.FC<AdvantageCardProps> = ({
   title,
   content,
   iconSrc,
+  ...props
 }) => {
   return (
-    <div className="flex flex-col gap-y-4 text-left justify-left">
+    <div className="flex flex-col gap-y-4 text-left justify-left" {...props}>
       <Image
         src={iconSrc}
         alt={title}

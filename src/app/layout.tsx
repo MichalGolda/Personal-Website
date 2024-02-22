@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import "aos/dist/aos.css";
 import { Body } from "@/app/_components";
 import { NavContextProvider } from "./_context/navContext";
 

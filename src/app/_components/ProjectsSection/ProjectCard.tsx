@@ -9,9 +9,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   showUrl,
   githubUrl,
   coverImageSrc,
+  ...props
 }) => {
   return (
-    <div className="flex flex-col gap-y-4">
+    <div className="flex flex-col gap-y-4" {...props}>
       <h3 className="text-secondary font-bold text-xl md:text-2xl lg:text-3xl">
         {name}
       </h3>

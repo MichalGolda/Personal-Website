@@ -10,9 +10,10 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   title,
   content,
   iconSrc,
+  ...props
 }) => {
   return (
-    <div className="flex flex-col gap-y-4">
+    <div className="flex flex-col gap-y-4" {...props}>
       <div className="flex flex-row gap-x-4 md:flex-col md:gap-y-2 lg:flex-row md:items-start lg:items-center items-center">
         <Image
           src={iconSrc}

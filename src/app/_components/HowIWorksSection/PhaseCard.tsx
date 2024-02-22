@@ -19,10 +19,12 @@ export const PhaseCard: React.FC<PhaseCardProps> = ({
   color,
   body,
   className,
+  ...props
 }) => {
   return (
     <div
       className={`flex flex-col gap-y-4 border border-solid border-lightGrey p-4 bg-white ${className}`}
+      {...props}
     >
       <div className="flex flex-col">
         <span

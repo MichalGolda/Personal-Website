@@ -18,6 +18,8 @@ export default function HowIWorksSection() {
             title="Określenie oczekiwań klienta"
             color="PHASE_ONE"
             body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus, tortor tincidunt sagittis consequat, felis nulla porttitor velit, eu ultrices sapien ex vel urna."
+            data-aos="fade-right"
+            data-aos-duration="500"
           />
           <PhaseCard
             className="w-full md:w-1/2 md:ml-[calc(50%/3)]"
@@ -25,6 +27,8 @@ export default function HowIWorksSection() {
             title="Design UX/UI"
             color="PHASE_TWO"
             body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus, tortor tincidunt sagittis consequat, felis nulla porttitor velit, eu ultrices sapien ex vel urna."
+            data-aos="fade-right"
+            data-aos-duration="1000"
           />
           <PhaseCard
             className="w-full md:w-1/2 md:ml-[calc((50%/3)*2)]"
@@ -32,6 +36,8 @@ export default function HowIWorksSection() {
             title="Budowa"
             color="PHASE_THREE"
             body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus, tortor tincidunt sagittis consequat, felis nulla porttitor velit, eu ultrices sapien ex vel urna."
+            data-aos="fade-right"
+            data-aos-duration="1500"
           />
           <PhaseCard
             className="w-full md:w-1/2 md:ml-[calc((50%/3)*3)]"
@@ -39,6 +45,8 @@ export default function HowIWorksSection() {
             title="Wdrożenie"
             color="PHASE_FOUR"
             body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus, tortor tincidunt sagittis consequat, felis nulla porttitor velit, eu ultrices sapien ex vel urna."
+            data-aos="fade-right"
+            data-aos-duration="2000"
           />
         </div>
       </Container>

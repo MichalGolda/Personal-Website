@@ -16,21 +16,29 @@ export default function ServicesSection() {
             title="Rozwiązania oparte o WordPress CMS"
             content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit justo sit amet orci interdum, facilisis commodo elit gravida. Suspendisse potenti. Cras non erat et magna aliquam convallis vel ac dolor. Vivamus eu nunc massa. Curabitur viverra neque et ligula."
             iconSrc="/wordpress.svg"
+            data-aos="fade-right"
+            data-aos-duration="500"
           />
           <ServiceCard
             title="Dedykowane aplikacje"
             content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit justo sit amet orci interdum, facilisis commodo elit gravida. Suspendisse potenti. Cras non erat et magna aliquam convallis vel ac dolor. Vivamus eu nunc massa. Curabitur viverra neque et ligula."
             iconSrc="/development.svg"
+            data-aos="fade-left"
+            data-aos-duration="1000"
           />
           <ServiceCard
             title="Optymalizacja treści (SEO)"
             content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit justo sit amet orci interdum, facilisis commodo elit gravida. Suspendisse potenti. Cras non erat et magna aliquam convallis vel ac dolor. Vivamus eu nunc massa. Curabitur viverra neque et ligula."
             iconSrc="/seo.svg"
+            data-aos="fade-right"
+            data-aos-duration="1500"
           />
           <ServiceCard
             title="Optymalizacja treści (SEO)"
             content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit justo sit amet orci interdum, facilisis commodo elit gravida. Suspendisse potenti. Cras non erat et magna aliquam convallis vel ac dolor. Vivamus eu nunc massa. Curabitur viverra neque et ligula."
             iconSrc="/seo.svg"
+            data-aos="fade-left"
+            data-aos-duration="2000"
           />
         </div>
       </Container>

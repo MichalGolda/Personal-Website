@@ -30,6 +30,8 @@ export default function ProjectsSection({ data }: ProjectsSectionProps) {
                 githubUrl={project.githubUrl}
                 coverImageSrc={project.coverImageSrc}
                 showUrl={project.showUrl}
+                data-aos="zoom-in"
+                data-aos-duration="500"
               />
             );
           })}
