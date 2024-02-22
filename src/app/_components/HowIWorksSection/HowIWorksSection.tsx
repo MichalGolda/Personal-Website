@@ -20,21 +20,21 @@ export default function HowIWorksSection() {
             body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus, tortor tincidunt sagittis consequat, felis nulla porttitor velit, eu ultrices sapien ex vel urna."
           />
           <PhaseCard
-            className="w-full md:w-1/2 md:ml-[50%]"
+            className="w-full md:w-1/2 md:ml-[calc(50%/3)]"
             headline="faza 2"
             title="Design UX/UI"
             color="PHASE_TWO"
             body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus, tortor tincidunt sagittis consequat, felis nulla porttitor velit, eu ultrices sapien ex vel urna."
           />
           <PhaseCard
-            className="w-full md:w-1/2"
+            className="w-full md:w-1/2 md:ml-[calc((50%/3)*2)]"
             headline="faza 3"
             title="Budowa"
             color="PHASE_THREE"
             body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus, tortor tincidunt sagittis consequat, felis nulla porttitor velit, eu ultrices sapien ex vel urna."
           />
           <PhaseCard
-            className="w-full md:w-1/2 md:ml-[50%]"
+            className="w-full md:w-1/2 md:ml-[calc((50%/3)*3)]"
             headline="faza 4"
             title="Wdrożenie"
             color="PHASE_FOUR"
