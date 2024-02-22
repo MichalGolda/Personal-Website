@@ -20,3 +20,4 @@ export { default as SuccessAlert } from "./Alert/SuccessAlert";
 export { default as ErrorAlert } from "./Alert/ErrorAlert";
 export { default as Container } from "./Container";
 export { default as Body } from "./Body";
+export { default as HowIWorksSection } from "./HowIWorksSection/HowIWorksSection";

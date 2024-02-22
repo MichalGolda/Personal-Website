@@ -11,6 +11,7 @@ import {
   TechnologiesSection,
   ProjectsSection,
   Container,
+  HowIWorksSection,
 } from "@/app/_components";
 import ScrollUpBtn from "@/app/_components/ScrollUpButton";
 import { fetchContent } from "@/app/_utils/fetchContent";
@@ -34,6 +35,7 @@ export default async function Index() {
         <Banner />
         <ProjectsSection data={portfolioSectionData} />
         <TechnologiesSection />
+        <HowIWorksSection />
         <ContactSection />
       </main>
       <ScrollUpBtn />
