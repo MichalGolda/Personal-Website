@@ -21,7 +21,9 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
           height={64}
           className="w-[48px] lg:w-[64px]"
         />
-        <h4 className="font-bold text-lg md:text-xl lg:text-2xl">{title}</h4>
+        <h4 className="font-bold text-lg md:text-xl lg:text-2xl text-secondary">
+          {title}
+        </h4>
       </div>
       <p className="text-body text-sm md:text-base">{content}</p>
       <span className="block bg-primary w-32 h-0.5"></span>
