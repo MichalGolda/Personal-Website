@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function ContactDetails() {
   return (
     <div className="w-full flex justify-center">
-      <div className="flex flex-col sm:grid sm:grid-rows-2 sm:gap-x-4 sm:grid-cols-2 lg:flex lg:flex-col gap-y-16 gap-x-8">
+      <div className="flex flex-col sm:grid sm:grid-rows-2 sm:gap-x-4 sm:grid-cols-2 lg:sticky lg:top-20 lg:h-fit lg:flex lg:flex-col gap-y-16 gap-x-8">
         <div className="flex flex-row gap-x-4 items-center underline">
           <Image
             src="/github-square.svg"
