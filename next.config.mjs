@@ -2,11 +2,7 @@ import { withSentryConfig } from "@sentry/nextjs";
 import path from "path";
 
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  env: {
-    contentFolderPath: path.join(process.cwd(), "content"),
-  },
-};
+const nextConfig = {};
 
 export default withSentryConfig(
   nextConfig,
