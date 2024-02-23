@@ -15,10 +15,12 @@
     "@next/third-parties": "^14.1.0",
     "@sentry/nextjs": "^7.102.0",
     "@sentry/utils": "^7.102.0",
+    "@types/postmark": "^2.0.3",
     "@vercel/speed-insights": "^1.0.10",
     "aos": "3.0.0-beta.6",
     "next": "14.1.0",
     "nodemailer": "^6.9.9",
+    "postmark": "^4.0.2",
     "react": "^18",
     "react-dom": "^18",
     "react-intersection-observer": "^9.8.0"
