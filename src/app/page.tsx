@@ -49,6 +49,7 @@ export default async function Index() {
       </main>
       <ScrollUpBtn />
       <Footer />
+      <CookieConsent hidden={cookieConsent} />
     </>
   );
 }

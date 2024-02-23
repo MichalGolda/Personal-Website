@@ -17,7 +17,7 @@ export default function CookieConsent({ hidden = true }: CookieConsentProps) {
 
   return (
     <div
-      className={`duration-500 fixed bottom-0 w-[calc(100%-16px)] transition-transform md:max-w-96 left-0 mx-4 mb-4 bg-secondary p-4 ${
+      className={`duration-500 fixed bottom-0 w-full sm:max-w-96 transition-transform md:max-w-96 left-0 sm:ml-4 sm:mb-4 bg-secondary p-4 ${
         hidden ? "translate-x-[-200%]" : "translate-x-[0]"
       }`}
     >
