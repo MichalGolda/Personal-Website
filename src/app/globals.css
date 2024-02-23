@@ -19,5 +19,6 @@ html {
     background-image: url("/background.webp");
     background-repeat: repeat-y;
     background-position: center;
+    overflow-x: hidden;
   }
 }
