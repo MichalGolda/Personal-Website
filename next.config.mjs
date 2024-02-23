@@ -4,7 +4,7 @@ import path from "path";
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   env: {
-    contentFolderPath: path.resolve("./src/content"),
+    contentFolderPath: path.join(process.cwd(), "src/content"),
   },
 };
 
