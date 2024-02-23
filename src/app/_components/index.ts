@@ -22,3 +22,4 @@ export { default as Container } from "./Container";
 export { default as Body } from "./Body";
 export { default as HowIWorksSection } from "./HowIWorksSection/HowIWorksSection";
 export { default as CookieConsent } from "./CookieConsent";
+export { default as ScrollUpButton } from "./ScrollUpButton";

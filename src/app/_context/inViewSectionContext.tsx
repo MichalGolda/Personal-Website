@@ -3,26 +3,12 @@
 import { createContext, useContext, useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 
-export type InViewSectionContextType = {
-  section: string | null;
-  setSection: (id: string | null) => void;
-};
-
-export const InViewSectionContext = createContext<InViewSectionContextType>({
-  section: null,
-  setSection: () => {},
+export const InViewSectionContext = createContext({
+  section: "",
+  setSection: (id: string) => {},
 });
 
 export const useInViewSectionContext = () => useContext(InViewSectionContext);
-
-const useInViewSectionContextProvider = () => {
-  const [section, setSection] = useState<string | null>(null);
-
-  return {
-    section,
-    setSection,
-  };
-};
 
 export const useInViewSection = (id: string) => {
   const { ref, inView } = useInView({
@@ -34,9 +20,12 @@ export const useInViewSection = (id: string) => {
     inView && setSection(id);
   }, [inView]);
 
-  return {
-    ref,
-  };
+  return { ref };
+};
+
+const useInViewSectionContextProvider = () => {
+  const [section, setSection] = useState<string>("");
+  return { section, setSection };
 };
 
 export default function InViewSectionContextProvider({
