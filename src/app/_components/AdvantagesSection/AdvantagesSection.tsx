@@ -19,22 +19,22 @@ export default function AdvantagesSection() {
             data-aos="fade-up"
             data-aos-duration="1000"
           />
-          <AdvantageCard
-            title="Rozwiązania dopasowane do oczekiwań klienta"
-            content="Każdy projekt rozpoczynam od zebrania szczegółowych informacji na temat tego jak ma wyglądać końcowe rozwiązanie. W trakcie realizacji konsultuje postępy po to żeby jak najlepiej wpasować się w twoje oczekiwania."
-            iconSrc="/measure.svg"
-            data-aos="fade-right"
-            data-aos-duration="500"
-          />
-          <div className="col-span-2 lg:col-span-1">
+          <div className="col-span-2 order-2 lg:col-span-1 lg:order-[0]">
             <AdvantageCard
-              title="Realizacja w określonym terminie"
-              content="Szczegółowo planuje etapy pracy dzięki czemu każde rozwiązanie jest gotowe na czas."
-              iconSrc="/calendar.svg"
-              data-aos="fade-left"
-              data-aos-duration="1500"
+              title="Rozwiązania dopasowane do oczekiwań klienta"
+              content="Każdy projekt rozpoczynam od zebrania szczegółowych informacji na temat tego jak ma wyglądać końcowe rozwiązanie. W trakcie realizacji konsultuje postępy po to żeby jak najlepiej wpasować się w twoje oczekiwania."
+              iconSrc="/measure.svg"
+              data-aos="fade-right"
+              data-aos-duration="500"
             />
           </div>
+          <AdvantageCard
+            title="Realizacja w określonym terminie"
+            content="Szczegółowo planuje etapy pracy dzięki czemu każde rozwiązanie jest gotowe na czas."
+            iconSrc="/calendar.svg"
+            data-aos="fade-left"
+            data-aos-duration="1500"
+          />
         </div>
       </Container>
     </section>
