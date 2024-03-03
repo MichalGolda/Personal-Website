@@ -17,7 +17,7 @@ export default function HowIWorksSection() {
             headline="faza 1"
             title="Określenie oczekiwań klienta"
             color="PHASE_ONE"
-            body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus, tortor tincidunt sagittis consequat, felis nulla porttitor velit, eu ultrices sapien ex vel urna."
+            body="W pierwszej fazie dokładnie analizuję oczekiwania klienta, te nformacje stanowią fundament, na którym opiera się proces przygotowania ostatecznego rozwiązania."
             data-aos="fade-right"
             data-aos-duration="500"
           />
@@ -26,7 +26,7 @@ export default function HowIWorksSection() {
             headline="faza 2"
             title="Design UX/UI"
             color="PHASE_TWO"
-            body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus, tortor tincidunt sagittis consequat, felis nulla porttitor velit, eu ultrices sapien ex vel urna."
+            body="Na bazie zebranych informacji tworzę projekt graficzny. W trakcie projektowania regularnie konsultuję się z klientem, aby na bieżąco uwzględniać wprowadzane zmiany. Przechodzę do kolejnego etapu dopiero po uzyskaniu pełnej akceptacji."
             data-aos="fade-right"
             data-aos-duration="1000"
           />
@@ -35,7 +35,7 @@ export default function HowIWorksSection() {
             headline="faza 3"
             title="Budowa"
             color="PHASE_THREE"
-            body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus, tortor tincidunt sagittis consequat, felis nulla porttitor velit, eu ultrices sapien ex vel urna."
+            body="W trzeciej fazie przystępuję do budowy rozwiązania, począwszy od kodowania aż po testowanie. Zapewniam, że każdy element jest starannie sprawdzany i testowany, aby dostarczyć wysokiej jakości produkt."
             data-aos="fade-right"
             data-aos-duration="1500"
           />
@@ -44,7 +44,7 @@ export default function HowIWorksSection() {
             headline="faza 4"
             title="Wdrożenie"
             color="PHASE_FOUR"
-            body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus, tortor tincidunt sagittis consequat, felis nulla porttitor velit, eu ultrices sapien ex vel urna."
+            body="Po zatwierdzeniu projektu przechodzę do wdrożenia na serwer produkcyjny. Dodatkowo integruję narzędzia takie jak Google Analytics, Sentry, Google Search Console. Przeprowadzam również kompleksową optymalizację SEO."
             data-aos="fade-right"
             data-aos-duration="2000"
           />
