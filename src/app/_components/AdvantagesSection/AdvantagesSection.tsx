@@ -16,7 +16,7 @@ export default function AdvantagesSection() {
             title="Przejrzyste rozliczenia"
             content="Przed rozpoczęciem projektu dokonuje wyceny w której zawarte są wszystkie wykonywane usługi. Dzięki, temu wiesz za co płacisz."
             iconSrc="/dollar.svg"
-            data-aos="fade-up"
+            data-aos="fade-right"
             data-aos-duration="1000"
           />
           <div className="col-span-2 order-2 lg:col-span-1 lg:order-[0]">
@@ -25,15 +25,15 @@ export default function AdvantagesSection() {
               content="Każdy projekt rozpoczynam od zebrania szczegółowych informacji na temat tego jak ma wyglądać końcowe rozwiązanie. W trakcie realizacji konsultuje postępy po to żeby jak najlepiej wpasować się w twoje oczekiwania."
               iconSrc="/measure.svg"
               data-aos="fade-right"
-              data-aos-duration="500"
+              data-aos-duration="1500"
             />
           </div>
           <AdvantageCard
             title="Realizacja w określonym terminie"
             content="Szczegółowo planuje etapy pracy dzięki czemu każde rozwiązanie jest gotowe na czas."
             iconSrc="/calendar.svg"
-            data-aos="fade-left"
-            data-aos-duration="1500"
+            data-aos="fade-right"
+            data-aos-duration="2000"
           />
         </div>
       </Container>
