@@ -1,11 +1,16 @@
 "use server";
 
 import { captureException } from "@sentry/nextjs";
-import { ServerClient as PostmarkServerClient } from "postmark";
+import Mailgun from "mailgun.js";
 import { SendMessageActionStatus } from "./sendMessageTypes";
 
 // @ts-ignore
-const postmarkClient = new PostmarkServerClient(process.env.POSTMARK_SERVER_TOKEN);
+const mailgun = new Mailgun(FormData);
+const mailgunClient = mailgun.client({
+  username: "api",
+  // @ts-ignore
+  key: process.env.MAILGUN_API_KEY,
+});
 
 export default async function sendMessage(_: any, formData: FormData) {
     const email = formData.get('email');
@@ -14,20 +19,21 @@ export default async function sendMessage(_: any, formData: FormData) {
     
     let status = null;
 
-    await postmarkClient.sendEmailWithTemplate({
-      "TemplateId": 35003582,
-      "From": "kontakt@michalgolda.com",
-      "To": "kontakt@michalgolda.com",
-      "TemplateModel": {
-        email,
-        phoneNumber,
-        messageContent
-      }
-    }).then(() => {
+   await mailgunClient.messages.create("sandbox78c601f25ef14b2ea4d15e9e2d809e12.mailgun.org", {
+    from: "System",
+    to: "kontakt@michalgolda.com",
+    template: "Contact",
+    'h:X-Mailgun-Variables': JSON.stringify({
+      email,
+      phoneNumber,
+      messageContent
+    })
+   })
+    .then(() => {
       status = SendMessageActionStatus.SUCCESS
     }).catch((err) => {
       captureException(err);
-      status = SendMessageActionStatus.ERROR
+      status = SendMessageActionStatus.ERROR;
     });
 
     return {
