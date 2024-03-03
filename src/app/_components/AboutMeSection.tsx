@@ -11,13 +11,11 @@ export default function AboutMeSection() {
       <Container>
         <SectionHeading headline="O mnie" title="Kilka słów o tym kim jestem" />
         <p className="mt-16 text-body max-w-3xl text-sm md:text-base mx-auto text-center">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempus
-          velit augue, eu venenatis quam venenatis quis. Mauris sodales urna
-          dignissim libero dictum accumsan. Vivamus sed tempor mi, vitae sodales
-          nibh. Proin viverra congue diam, nec faucibus lorem sollicitudin
-          lacinia. Ut eros nibh, porttitor sit amet cursus sit amet, gravida
-          vitae nisl. Pellentesque ultrices hendrerit molestie. Nulla congue
-          rhoncus metus, non efficitur ante vulputate aliquam.
+          Cześć, jestem Michał. Od kilku lat interesuje się programowaniem i
+          tworzeniem stron internetowych. Swoją dotychczasową wiedzę poszerzałem
+          głównie poprzez realizację projektów we własnym zakresie. Staram się
+          być na bieżąco z aktualnymi trendami na rynku, zdobywać nową wiedzę,
+          aby dostarczać rozwiązania spełniające aktualne standardy jakości.
         </p>
       </Container>
     </section>
