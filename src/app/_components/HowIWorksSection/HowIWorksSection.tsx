@@ -17,7 +17,7 @@ export default function HowIWorksSection() {
             headline="faza 1"
             title="Określenie oczekiwań klienta"
             color="PHASE_ONE"
-            body="W pierwszej fazie dokładnie analizuję oczekiwania klienta, te nformacje stanowią fundament, na którym opiera się proces przygotowania ostatecznego rozwiązania."
+            body="W pierwszej fazie dokładnie analizuję oczekiwania klienta, te informacje stanowią fundament, na którym opiera się proces przygotowania ostatecznego rozwiązania."
             data-aos="fade-right"
             data-aos-duration="500"
           />
