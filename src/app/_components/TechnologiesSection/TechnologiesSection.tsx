@@ -27,7 +27,7 @@ export default function TechnologiesSection() {
                 <b className="text-primary">React</b>,{" "}
                 <b className="text-primary">Vue</b>,{" "}
                 <b className="text-primary">Next.js</b>,{" "}
-                <b className="text-primary">Nuxt.js</b>,
+                <b className="text-primary">Nuxt.js</b>,{" "}
                 <b className="text-primary">sass</b>,{" "}
                 <b className="text-primary">tailwindcss</b>.
               </>
@@ -80,7 +80,7 @@ export default function TechnologiesSection() {
             content={() => (
               <>
                 Jakość kodu i finalnego projektu zapewniam dzięki:{" "}
-                <b className="text-primary">Clean Code</b>,
+                <b className="text-primary">Clean Code</b>,{" "}
                 <b className="text-primary">KISS</b>,{" "}
                 <b className="text-primary">DRY</b>,{" "}
                 <b className="text-primary">YAGNI</b>,{" "}
