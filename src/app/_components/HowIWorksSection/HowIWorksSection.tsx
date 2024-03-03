@@ -35,7 +35,7 @@ export default function HowIWorksSection() {
             headline="faza 3"
             title="Budowa"
             color="PHASE_THREE"
-            body="W trzeciej fazie przystępuję do budowy rozwiązania, począwszy od kodowania aż po testowanie. Zapewniam, że każdy element jest starannie sprawdzany i testowany, aby dostarczyć wysokiej jakości produkt."
+            body="W trzeciej fazie przystępuję do budowy rozwiązania, począwszy od kodowania aż po testowanie. Zapewniam, że każdy element jest starannie sprawdzany i testowany."
             data-aos="fade-right"
             data-aos-duration="1500"
           />
