@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export type ServiceCardProps = {
   title: string;
-  content: string;
+  content: () => React.ReactElement;
   iconSrc: string;
 };
 
@@ -26,7 +26,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
           {title}
         </h4>
       </div>
-      <p className="text-body text-sm md:text-base">{content}</p>
+      <p className="text-body text-sm md:text-base">{content()}</p>
       <span className="block bg-primary w-32 h-0.5"></span>
     </div>
   );
