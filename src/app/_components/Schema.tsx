@@ -11,12 +11,6 @@ export default function Schema() {
       "@id": "https://michalgolda.com/#about-me",
     },
     inLanguage: "pl-PL",
-    potentialAction: [
-      {
-        "@type": "ConsumeAction",
-        target: "https://michalgolda.com/",
-      },
-    ],
     offers: {
       "@type": "Service",
       priceCurrency: "PLN",
