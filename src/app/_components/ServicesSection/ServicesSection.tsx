@@ -48,7 +48,7 @@ export default function ServicesSection() {
                   <br />
                   Projektowanie i rozwój stron typu landing page, blogów oraz
                   innych platform internetowych, zapewniających atrakcyjność
-                  wizualną i doskonałą użyteczność.
+                  wizualną, użyteczność i dostępnosć do dowolnym urządzeniu.
                 </>
               );
             }}
@@ -81,8 +81,8 @@ export default function ServicesSection() {
               return (
                 <>
                   Integracje z zewnętrznymi API, umożliwiającymi rozszerzenie
-                  funkcjonalności strony poprzez połączenie z różnymi serwisami
-                  i platformami. <br />
+                  funkcjonalności strony internetowej poprzez połączenie z
+                  różnymi serwisami i platformami. <br />
                   <br />
                   Podpięcie narzędzi analitycznych, takich jak Google Analytics,
                   Sentry i inne, aby dostarczyć klientom kompleksowe
