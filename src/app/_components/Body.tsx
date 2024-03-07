@@ -7,6 +7,7 @@ import InViewSectionContextProvider from "../_context/inViewSectionContext";
 import { useNavContext } from "../_context/navContext";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { useEffect } from "react";
+import Schema from "./Schema";
 
 const inter = Inter({
   subsets: ["latin", "latin-ext"],
@@ -28,6 +29,7 @@ export default function Body({ children }: React.PropsWithChildren) {
       <InViewSectionContextProvider>{children}</InViewSectionContextProvider>
       <SpeedInsights />
       <GoogleAnalytics gaId="G-5LGQ62V141" />
+      <Schema />
     </body>
   );
 }
