@@ -13,7 +13,7 @@ export default function Schema() {
     inLanguage: "pl-PL",
     potentialAction: [
       {
-        "@type": "ReadAction",
+        "@type": "ConsumeAction",
         target: "https://michalgolda.com/",
       },
     ],
