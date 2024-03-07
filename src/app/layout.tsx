@@ -11,7 +11,7 @@ export const viewport = {
 export const metadata: Metadata = {
   title: "Dedykowane strony internetowe i aplikacje webowe - Michał Gołda",
   description:
-    "Szukasz profesjonalnych usług tworzenia dedykowanych aplikacji webowych lub stron internetowych? Dobrze trafiłeś, jeśli potrzebujesz wsparcia w zakresie tworzenia stron internetowych, aplikacji webowych lub chcesz porozmawiać o współpracy, skontaktuj się ze mną.",
+    "Szukasz profesjonalnych usług tworzenia stron internetowych lub aplikacji webowych? Dobrze trafiłeś, chcesz porozmawiać o współpracy, skontaktuj się ze mną.",
   keywords:
     "Full-stack developer, Portfolio, Tworzenie stron internetowych, Tworzenie aplikacji webowych, Optymalizacja stron internetowych, Programowanie, UX, UI, Wordpress, Wordpress CMS, Core Web Vitals, Optymalizacja, Konfiguracja, Personalizacja motywu, Połączenie usług analitycznych, Konfiguracja domeny i serwera, Konfiguracja kont pocztowych, Integracje API, Instalacja i konfiguracja wtyczek Wordpress, Wtyczki wordpress, Szkolenie z obsługi strony, Migracja starej strony na Wordpress CMS, Aktualizacja strony, szablonu i wtyczek, Instalacja usługi livechat, Aktywacja certyfikatu SSL, Konfiguracja formularzy kontaktowych, Zabezpieczenie strony, Unikalna strona www",
   authors: {
