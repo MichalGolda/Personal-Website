@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AdvantageCard component renders unchanged 1`] = `
+<div>
+  <div
+    class="flex flex-col gap-y-4 text-left justify-left"
+    data-testid="advantage-card"
+  >
+    <img
+      alt="test title"
+      class="w-[48px] lg:w-[64px]"
+      data-nimg="1"
+      decoding="async"
+      height="64"
+      loading="lazy"
+      src="/_next/image?url=%2Ftest.png&w=128&q=75"
+      srcset="/_next/image?url=%2Ftest.png&w=64&q=75 1x, /_next/image?url=%2Ftest.png&w=128&q=75 2x"
+      style="color: transparent;"
+      width="64"
+    />
+    <h4
+      class="font-bold text-lg md:text-xl lg:text-2xl text-secondary"
+    >
+      test title
+    </h4>
+    <p
+      class="text-sm md:text-base text-body"
+    >
+      test content
+    </p>
+  </div>
+</div>
+`;
