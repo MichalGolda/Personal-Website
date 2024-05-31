@@ -2,13 +2,15 @@
 
 import { useInViewSection } from "@/app/_context/inViewSectionContext";
 import AdvantageCard from "./AdvantageCard";
-import { Container, SectionHeading } from "@/app/_components";
+// import { Container, SectionHeading } from "@/app/_components";
+import Container from "../Container";
+import SectionHeading from "../SectionHeading";
 
-export default function AdvantagesSection() {
+export default function AdvantagesSection(props: React.ComponentProps<"section">) {
   const { ref } = useInViewSection("#about-me");
 
   return (
-    <section ref={ref} id="advantages" className="my-64">
+    <section ref={ref} id="advantages" className="my-64" {...props}>
       <Container>
         <SectionHeading headline="zalety" title="Dlaczego warto mi zaufać?" />
         <div className="my-16 gap-16 lg:grid-cols-3 flex flex-col gap-y-16 md:grid md:grid-cols-2 items-start">
