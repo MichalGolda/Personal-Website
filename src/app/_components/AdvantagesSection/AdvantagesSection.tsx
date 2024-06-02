@@ -1,7 +1,7 @@
 "use client";
 
-import { useInViewSection } from "@/app/_context/inViewSectionContext";
 import AdvantageCard from "./AdvantageCard";
+import { Container, SectionHeading } from "@/app/_components";
 import { useInViewSection } from "@/app/_hooks/useInViewSection";
 
 export type AdvantagesSectionProps = React.ComponentProps<"section">;
