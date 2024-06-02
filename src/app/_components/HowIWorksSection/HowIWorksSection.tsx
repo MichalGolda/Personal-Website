@@ -1,6 +1,6 @@
 "use client";
 
-import { useInViewSection } from "@/app/_context/inViewSectionContext";
+import { useInViewSection } from "@/app/_hooks/useInViewSection";
 import { Container, SectionHeading } from "@/app/_components";
 import { PhaseCard } from "./PhaseCard";
 

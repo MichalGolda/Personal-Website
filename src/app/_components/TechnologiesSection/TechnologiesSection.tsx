@@ -2,7 +2,7 @@
 
 import { Container, SectionHeading } from "@/app/_components";
 import TechnologyCard from "./TechnologyCard";
-import { useInViewSection } from "@/app/_context/inViewSectionContext";
+import { useInViewSection } from "@/app/_hooks/useInViewSection";
 
 export default function TechnologiesSection() {
   const { ref } = useInViewSection("");

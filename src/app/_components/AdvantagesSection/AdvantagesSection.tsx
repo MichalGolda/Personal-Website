@@ -2,9 +2,7 @@
 
 import { useInViewSection } from "@/app/_context/inViewSectionContext";
 import AdvantageCard from "./AdvantageCard";
-// import { Container, SectionHeading } from "@/app/_components";
-import Container from "../Container";
-import SectionHeading from "../SectionHeading";
+import { useInViewSection } from "@/app/_hooks/useInViewSection";
 
 export default function AdvantagesSection(props: React.ComponentProps<"section">) {
   const { ref } = useInViewSection("#about-me");

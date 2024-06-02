@@ -4,7 +4,7 @@ import { Project } from "@/app/_types/project";
 import { SectionHeading, Container } from "@/app/_components";
 import ProjectCard from "./ProjectCard";
 import YourProjectCard from "./YourProjectCard";
-import { useInViewSection } from "@/app/_context/inViewSectionContext";
+import { useInViewSection } from "@/app/_hooks/useInViewSection";
 
 export type ProjectsSectionProps = {
   data: Project[];

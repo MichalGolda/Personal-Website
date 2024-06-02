@@ -1,27 +1,14 @@
 "use client";
 
-import { createContext, useContext, useState } from "react";
+import { createContext } from "react";
+import { useNavContextProvider } from "../_hooks/useNavContextProvider";
 
 export const NavContext = createContext({
   sticky: false,
   setSticky: (sticky: boolean) => {},
-  hamburger: false,
-  setHambuger: (hamburger: boolean) => {},
+  hamburgerIsShown: false,
+  showHamburger: (hamburgerIsShown: boolean) => {},
 });
-
-export const useNavContext = () => useContext(NavContext);
-
-const useNavContextProvider = () => {
-  const [sticky, setSticky] = useState<boolean>(false);
-  const [hamburger, setHambuger] = useState<boolean>(false);
-
-  return {
-    sticky,
-    setSticky,
-    hamburger,
-    setHambuger,
-  };
-};
 
 export function NavContextProvider({ children }: React.PropsWithChildren) {
   const provider = useNavContextProvider();

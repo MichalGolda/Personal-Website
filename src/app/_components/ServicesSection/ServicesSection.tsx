@@ -2,7 +2,7 @@
 
 import { SectionHeading, Container } from "@/app/_components";
 import ServiceCard from "./ServiceCard";
-import { useInViewSection } from "@/app/_context/inViewSectionContext";
+import { useInViewSection } from "@/app/_hooks/useInViewSection";
 
 export default function ServicesSection() {
   const { ref } = useInViewSection("#services");

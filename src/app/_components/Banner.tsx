@@ -1,7 +1,7 @@
 "use client";
 
 import { SecondaryButton } from "@/app/_components";
-import { useInViewSection } from "../_context/inViewSectionContext";
+import { useInViewSection } from "../_hooks/useInViewSection";
 
 export default function Banner() {
   const { ref } = useInViewSection("");

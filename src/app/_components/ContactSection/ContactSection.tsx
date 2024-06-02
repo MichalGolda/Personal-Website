@@ -3,7 +3,7 @@
 import { SectionHeading, Container } from "@/app/_components";
 import ContactForm from "./ContactForm";
 import ContactDetails from "./ContactDetails";
-import { useInViewSection } from "@/app/_context/inViewSectionContext";
+import { useInViewSection } from "@/app/_hooks/useInViewSection";
 
 export default function ContactSection() {
   const { ref } = useInViewSection("#contact");

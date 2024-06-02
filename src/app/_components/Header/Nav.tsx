@@ -4,28 +4,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import MenuItem from "./MenuItem";
 import { Container } from "@/app/_components";
-import { useInViewSectionContext } from "@/app/_context/inViewSectionContext";
-import { useNavContext } from "@/app/_context/navContext";
-
-const useStickyNav = () => {
-  const { sticky, setSticky, hamburger, setHambuger } = useNavContext();
-
-  const isSticky = () => window.scrollY > 128;
-
-  useEffect(() => {
-    window.addEventListener("scroll", () => setSticky(isSticky()));
-  }, []);
-
-  useEffect(() => {
-    setSticky(isSticky());
-  }, []);
-
-  return {
-    sticky,
-    hamburger,
-    setHambuger,
-  };
-};
+import { useInViewSectionContext } from "@/app/_hooks/useInViewSectionContext";
 
 export default function Nav() {
   const menuItems = [
@@ -52,6 +31,7 @@ export default function Nav() {
   ];
   const { sticky, hamburger, setHambuger } = useStickyNav();
   const { section } = useInViewSectionContext();
+  const { sticky, hamburgerIsShown, showHamburger } = useStickyNav();
 
   return (
     <nav
