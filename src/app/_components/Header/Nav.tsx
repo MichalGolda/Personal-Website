@@ -1,35 +1,13 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import Image from "next/image";
-import MenuItem from "./MenuItem";
 import { Container } from "@/app/_components";
 import { useInViewSectionContext } from "@/app/_hooks/useInViewSectionContext";
+import { MapMenuItems } from "./MapMenuItems";
+import { useStickyNav } from "./hooks/useStickyNav";
+import { Hamburger } from "./Hamburger";
+import { Logo } from "./Logo";
 
 export default function Nav() {
-  const menuItems = [
-    {
-      name: "Start",
-      href: "#top",
-    },
-    {
-      name: "O mnie",
-      href: "#about-me",
-    },
-    {
-      name: "Usługi",
-      href: "#services",
-    },
-    {
-      name: "Portfolio",
-      href: "#portfolio",
-    },
-    {
-      name: "Kontakt",
-      href: "#contact",
-    },
-  ];
-  const { sticky, hamburger, setHambuger } = useStickyNav();
   const { section } = useInViewSectionContext();
   const { sticky, hamburgerIsShown, showHamburger } = useStickyNav();
 
@@ -45,53 +23,28 @@ export default function Nav() {
           sticky ? "!py-4" : "!px-0"
         }`}
       >
-        <a href="#top">
-          <Image src="/logo.svg" alt="logo" width={151} height={29} />
-        </a>
-        <div
-          onClick={() => setHambuger(!hamburger)}
-          className="flex flex-col gap-y-2 cursor-pointer lg:hidden"
-        >
-          <div
-            className={`${
-              hamburger && "rotate-45 translate-y-[4px] translate-x-[-4px]"
-            } block w-8 bg-secondary h-0.5 transition-transform duration-500`}
-          ></div>
-          <div
-            className={`${
-              hamburger && "-rotate-45 translate-y-[-5px] translate-x-[-4px]"
-            } block w-8 bg-secondary h-0.5 transition-transform duration-500`}
-          ></div>
-        </div>
+        <Logo />
+        <Hamburger
+          onClick={() => showHamburger(!hamburgerIsShown)}
+          isShown={hamburgerIsShown}
+        />
         <ul
           className={`w-full h-dvh bg-lightBlue flex transition-transform duration-500 left-0 flex-col items-center pt-16 gap-y-8 fixed ${
             sticky ? "top-[61.8px]" : "top-[61.8px] md:top-[93.8px]"
-          } ${hamburger ? "translate-x-[0]" : "translate-x-[-200%]"} lg:hidden`}
+          } ${
+            hamburgerIsShown ? "translate-x-[0]" : "translate-x-[-200%]"
+          } lg:hidden`}
         >
-          {menuItems.map(({ name, href }) => {
-            return (
-              <MenuItem
-                key={name}
-                name={name}
-                href={href}
-                onClick={() => setHambuger(false)}
-                current={href === section}
-              />
-            );
-          })}
+          <MapMenuItems
+            section={section}
+            onClick={() => showHamburger(false)}
+          />
         </ul>
         <ul className={`hidden lg:flex lg:flex-row lg:gap-x-8`}>
-          {menuItems.map(({ name, href }) => {
-            return (
-              <MenuItem
-                key={name}
-                name={name}
-                href={href}
-                onClick={() => setHambuger(false)}
-                current={href === section}
-              />
-            );
-          })}
+          <MapMenuItems
+            section={section}
+            onClick={() => showHamburger(false)}
+          />
         </ul>
       </Container>
     </nav>
