@@ -4,7 +4,9 @@ import { useInViewSection } from "@/app/_context/inViewSectionContext";
 import AdvantageCard from "./AdvantageCard";
 import { useInViewSection } from "@/app/_hooks/useInViewSection";
 
-export default function AdvantagesSection(props: React.ComponentProps<"section">) {
+export type AdvantagesSectionProps = React.ComponentProps<"section">;
+
+export default function AdvantagesSection(props: AdvantagesSectionProps) {
   const { ref } = useInViewSection("#about-me");
 
   return (
