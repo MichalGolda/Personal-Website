@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer component renders unchanged 1`] = `
+<div>
+  <footer
+    class="py-8"
+  >
+    <div
+      class="md:max-w-[1024px] lg:max-w-[1320px] w-full mx-auto md:px-16 px-4 flex flex-col gap-y-4 lg:flex-row justify-between items-center"
+    >
+      <a
+        href="#top"
+      >
+        <img
+          alt="logo"
+          data-nimg="1"
+          decoding="async"
+          height="29"
+          loading="lazy"
+          src="/logo.svg"
+          style="color: transparent;"
+          width="151"
+        />
+      </a>
+      <span
+        class="text-body text-xs text-center"
+      >
+        © 
+        2024
+         Wszelkie prawa zastrzeżone. 
+        <br />
+        <span
+          class="font-medium"
+        >
+          Zaprojektowane & Wdrożone przez Michał Gołda
+        </span>
+      </span>
+      <div
+        class="flex flex-row gap-x-4"
+      >
+        <a
+          href="https://github.com/michalgolda"
+        >
+          <img
+            alt="github"
+            data-nimg="1"
+            decoding="async"
+            height="24"
+            loading="lazy"
+            src="/github.svg"
+            style="color: transparent;"
+            width="24"
+          />
+        </a>
+        <a
+          href="https://linkedin.com/michalgolda"
+        >
+          <img
+            alt="linkedin"
+            data-nimg="1"
+            decoding="async"
+            height="24"
+            loading="lazy"
+            src="/linkedin.svg"
+            style="color: transparent;"
+            width="24"
+          />
+        </a>
+      </div>
+    </div>
+  </footer>
+</div>
+`;
