@@ -1,11 +1,10 @@
 "use client";
 
-import { Container } from "@/app/_components";
+import { Container, Logo } from "@/app/_components";
 import { useInViewSectionContext } from "@/app/_hooks/useInViewSectionContext";
 import { MapMenuItems } from "./MapMenuItems";
 import { useStickyNav } from "./hooks/useStickyNav";
 import { Hamburger } from "./Hamburger";
-import { Logo } from "./Logo";
 
 export default function Nav() {
   const { section } = useInViewSectionContext();

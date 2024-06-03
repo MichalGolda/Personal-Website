@@ -1,4 +1,4 @@
-export { default as ScrollDown  } from "./ScrollDown";
+export { default as ScrollDown } from "./ScrollDown";
 export { default as SectionHeading } from "./SectionHeading";
 export { default as TextField } from "./TextField";
 export { default as Footer } from "./Footer";
@@ -23,3 +23,4 @@ export { default as Body } from "./Body";
 export { default as HowIWorksSection } from "./HowIWorksSection/HowIWorksSection";
 export { default as CookieConsent } from "./CookieConsent";
 export { default as ScrollUpButton } from "./ScrollUpButton";
+export { default as Logo } from "./Logo";
