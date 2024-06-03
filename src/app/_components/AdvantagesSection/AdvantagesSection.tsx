@@ -17,7 +17,7 @@ export default function AdvantagesSection(props: AdvantagesSectionProps) {
           <AdvantageCard
             title="Przejrzyste rozliczenia"
             content="Przed rozpoczęciem projektu dokonuje wyceny w której zawarte są wszystkie wykonywane usługi. Dzięki, temu wiesz za co płacisz."
-            iconSrc="/dollar.svg"
+            iconSrc="/dollar.webp"
             data-aos="fade-right"
             data-aos-duration="1000"
           />
@@ -25,7 +25,7 @@ export default function AdvantagesSection(props: AdvantagesSectionProps) {
             <AdvantageCard
               title="Rozwiązania dopasowane do oczekiwań klienta"
               content="Każdy projekt rozpoczynam od zebrania szczegółowych informacji na temat tego jak ma wyglądać końcowe rozwiązanie. W trakcie realizacji konsultuje postępy po to żeby jak najlepiej wpasować się w twoje oczekiwania."
-              iconSrc="/measure.svg"
+              iconSrc="/measure.webp"
               data-aos="fade-right"
               data-aos-duration="1500"
             />
@@ -33,7 +33,7 @@ export default function AdvantagesSection(props: AdvantagesSectionProps) {
           <AdvantageCard
             title="Realizacja w określonym terminie"
             content="Szczegółowo planuje etapy pracy dzięki czemu każde rozwiązanie jest gotowe na czas."
-            iconSrc="/calendar.svg"
+            iconSrc="/calendar.webp"
             data-aos="fade-right"
             data-aos-duration="2000"
           />

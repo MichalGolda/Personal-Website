@@ -38,7 +38,8 @@ exports[`AdvantagesSection component renders unchanged 1`] = `
             decoding="async"
             height="64"
             loading="lazy"
-            src="/dollar.svg"
+            src="/_next/image?url=%2Fdollar.webp&w=128&q=75"
+            srcset="/_next/image?url=%2Fdollar.webp&w=64&q=75 1x, /_next/image?url=%2Fdollar.webp&w=128&q=75 2x"
             style="color: transparent;"
             width="64"
           />
@@ -68,7 +69,8 @@ exports[`AdvantagesSection component renders unchanged 1`] = `
               decoding="async"
               height="64"
               loading="lazy"
-              src="/measure.svg"
+              src="/_next/image?url=%2Fmeasure.webp&w=128&q=75"
+              srcset="/_next/image?url=%2Fmeasure.webp&w=64&q=75 1x, /_next/image?url=%2Fmeasure.webp&w=128&q=75 2x"
               style="color: transparent;"
               width="64"
             />
@@ -96,7 +98,8 @@ exports[`AdvantagesSection component renders unchanged 1`] = `
             decoding="async"
             height="64"
             loading="lazy"
-            src="/calendar.svg"
+            src="/_next/image?url=%2Fcalendar.webp&w=128&q=75"
+            srcset="/_next/image?url=%2Fcalendar.webp&w=64&q=75 1x, /_next/image?url=%2Fcalendar.webp&w=128&q=75 2x"
             style="color: transparent;"
             width="64"
           />

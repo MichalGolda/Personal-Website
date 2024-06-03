@@ -11,7 +11,10 @@ describe("Logo component", () => {
 
     expect(link).toHaveAttribute("href", "#top");
 
-    expect(image).toHaveAttribute("src", "/logo.svg");
+    expect(image).toHaveAttribute(
+      "src",
+      "/_next/image?url=%2Flogo.webp&w=384&q=75"
+    );
     expect(image).toHaveAttribute("alt", "logo");
     expect(image).toHaveAttribute("width", "151");
     expect(image).toHaveAttribute("height", "29");

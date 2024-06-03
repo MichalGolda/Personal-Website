@@ -23,7 +23,7 @@ export default function ScrollUpBtn() {
       href="#top"
     >
       <PrimaryButton className="!px-2 !py-2">
-        <Image src="/arrow-up.svg" alt="arrow up" width={32} height={32} />
+        <Image src="/arrow-up.webp" alt="arrow up" width={32} height={32} />
       </PrimaryButton>
     </a>
   );

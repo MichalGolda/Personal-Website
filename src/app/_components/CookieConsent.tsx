@@ -20,7 +20,7 @@ export default function CookieConsent({ hidden = true }: CookieConsentProps) {
     >
       <div className="flex flex-row items-center gap-x-4">
         <Image
-          src="/cookie.svg"
+          src="/cookie.webp"
           className="h-10 w-10 md:w-16 md:h-16"
           alt="cookie"
           width={64}

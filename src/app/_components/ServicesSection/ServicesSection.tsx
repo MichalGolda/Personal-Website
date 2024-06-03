@@ -33,7 +33,7 @@ export default function ServicesSection() {
                 </>
               );
             }}
-            iconSrc="/wordpress.svg"
+            iconSrc="/wordpress.webp"
             data-aos="fade-right"
             data-aos-duration="500"
           />
@@ -52,7 +52,7 @@ export default function ServicesSection() {
                 </>
               );
             }}
-            iconSrc="/development.svg"
+            iconSrc="/development.webp"
             data-aos="fade-left"
             data-aos-duration="1000"
           />
@@ -71,7 +71,7 @@ export default function ServicesSection() {
                 </>
               );
             }}
-            iconSrc="/seo.svg"
+            iconSrc="/seo.webp"
             data-aos="fade-right"
             data-aos-duration="1500"
           />
@@ -91,7 +91,7 @@ export default function ServicesSection() {
                 </>
               );
             }}
-            iconSrc="/integration.svg"
+            iconSrc="/integration.webp"
             data-aos="fade-left"
             data-aos-duration="2000"
           />

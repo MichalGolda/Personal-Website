@@ -23,7 +23,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             href={showUrl}
           >
             Pokaż
-            <Image src="/arrow.svg" alt="arrow" width={32} height={0} />
+            <Image src="/arrow.png" alt="arrow" width={32} height={0} />
           </a>
         )}
         {githubUrl && (
@@ -32,7 +32,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             href={githubUrl}
           >
             Github
-            <Image src="/arrow.svg" alt="arrow" width={32} height={0} />
+            <Image src="/arrow.png" alt="arrow" width={32} height={0} />
           </a>
         )}
       </div>

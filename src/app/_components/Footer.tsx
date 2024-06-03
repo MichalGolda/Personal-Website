@@ -19,10 +19,10 @@ export default function Footer() {
         </span>
         <div className="flex flex-row gap-x-4">
           <a href="https://github.com/michalgolda">
-            <Image src="/github.svg" width={24} height={24} alt="github" />
+            <Image src="/github.webp" width={24} height={24} alt="github" />
           </a>
           <a href="https://linkedin.com/michalgolda">
-            <Image src="/linkedin.svg" width={24} height={24} alt="linkedin" />
+            <Image src="/linkedin.webp" width={24} height={24} alt="linkedin" />
           </a>
         </div>
       </Container>

@@ -17,7 +17,8 @@ exports[`Footer component renders unchanged 1`] = `
           decoding="async"
           height="29"
           loading="lazy"
-          src="/logo.svg"
+          src="/_next/image?url=%2Flogo.webp&w=384&q=75"
+          srcset="/_next/image?url=%2Flogo.webp&w=256&q=75 1x, /_next/image?url=%2Flogo.webp&w=384&q=75 2x"
           style="color: transparent;"
           width="151"
         />
@@ -47,7 +48,8 @@ exports[`Footer component renders unchanged 1`] = `
             decoding="async"
             height="24"
             loading="lazy"
-            src="/github.svg"
+            src="/_next/image?url=%2Fgithub.webp&w=48&q=75"
+            srcset="/_next/image?url=%2Fgithub.webp&w=32&q=75 1x, /_next/image?url=%2Fgithub.webp&w=48&q=75 2x"
             style="color: transparent;"
             width="24"
           />
@@ -61,7 +63,8 @@ exports[`Footer component renders unchanged 1`] = `
             decoding="async"
             height="24"
             loading="lazy"
-            src="/linkedin.svg"
+            src="/_next/image?url=%2Flinkedin.webp&w=48&q=75"
+            srcset="/_next/image?url=%2Flinkedin.webp&w=32&q=75 1x, /_next/image?url=%2Flinkedin.webp&w=48&q=75 2x"
             style="color: transparent;"
             width="24"
           />

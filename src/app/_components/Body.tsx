@@ -2,7 +2,7 @@
 
 import AOS from "aos";
 import { Inter } from "next/font/google";
-import { SpeedInsights } from "@vercel/speed-insights/next";
+// import { SpeedInsights } from "@vercel/speed-insights/next";
 import InViewSectionContextProvider from "../_context/inViewSectionContext";
 import { useNavContext } from "@/app/_hooks/useNavContext";
 import { GoogleAnalytics } from "@next/third-parties/google";
@@ -29,7 +29,7 @@ export default function Body({ children }: React.PropsWithChildren) {
       }`}
     >
       <InViewSectionContextProvider>{children}</InViewSectionContextProvider>
-      <SpeedInsights />
+      {/* <SpeedInsights /> */}
       <GoogleAnalytics gaId="G-5LGQ62V141" />
       <Schema />
     </body>
