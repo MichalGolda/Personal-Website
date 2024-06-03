@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Container component renders unchanged 1`] = `
+<div>
+  <div
+    class="md:max-w-[1024px] lg:max-w-[1320px] w-full mx-auto md:px-16 px-4 test"
+  >
+    <div />
+  </div>
+</div>
+`;
