@@ -1,8 +1,8 @@
 "use client";
 
-import Image from "next/image";
 import { useCurrentYear } from "@/app/_hooks/useCurrentYear";
 import { Container, Logo } from "@/app/_components";
+import { GithubSocialIcon, LinkedInSocialIcon } from "./SocialIcon";
 
 export default function Footer() {
   const currentYear = useCurrentYear();
@@ -18,12 +18,8 @@ export default function Footer() {
           </span>
         </span>
         <div className="flex flex-row gap-x-4">
-          <a href="https://github.com/michalgolda">
-            <Image src="/github.webp" width={24} height={24} alt="github" />
-          </a>
-          <a href="https://linkedin.com/michalgolda">
-            <Image src="/linkedin.webp" width={24} height={24} alt="linkedin" />
-          </a>
+          <GithubSocialIcon />
+          <LinkedInSocialIcon />
         </div>
       </Container>
     </footer>

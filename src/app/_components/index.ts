@@ -1,7 +1,7 @@
 export { default as ScrollDown } from "./ScrollDown";
 export { default as SectionHeading } from "./SectionHeading";
 export { default as TextField } from "./TextField";
-export { default as Footer } from "./Footer";
+export { default as Footer } from "./Footer/Footer";
 export { default as Checkbox } from "./Checkbox";
 export { default as Banner } from "./Banner";
 export { default as AboutMeSection } from "./AboutMeSection";
