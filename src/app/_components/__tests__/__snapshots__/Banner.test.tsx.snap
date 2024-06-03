@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Banner component renders unchanged 1`] = `
+<div>
+  <div
+    class="bg-primary w-full py-16 px-4 flex flex-col gap-y-8 text-center items-center"
+  >
+    <h2
+      class="text-2xl md:text-3xl lg:text-4xl font-bold text-white max-w-3xl"
+    >
+      Masz pomysł na projekt? Skontaktuj się ze mną i stwórzmy razem coś wyjątkowego
+    </h2>
+    <div
+      class="flex flex-col gap-y-1"
+    >
+      <h4
+        class="text-lg md:text-xl lg:text-2xl text-white font-semibold"
+      >
+        <span
+          class="text-[#B6C2FF80] font-bold text-3xl md:text-4xl lg:text-5xl px-2"
+        >
+          ”
+        </span>
+        Początek jest najważniejszą częścią pracy
+      </h4>
+      <span
+        class="text-white text-sm md:text-base text-secondary font-medium"
+      >
+        Platon
+      </span>
+    </div>
+    <a
+      href="#contact"
+    >
+      <button
+        class="py-4 px-8 font-bold text-sm md:text-base transition-all duration-500 disabled:bg-lightGrey disabled:text-body bg-secondary text-white hover:bg-secondary/90 active:bg-secondary/80 border border-transparent w-fit"
+        type="button"
+      >
+        Skontaktuj się
+      </button>
+    </a>
+  </div>
+</div>
+`;
