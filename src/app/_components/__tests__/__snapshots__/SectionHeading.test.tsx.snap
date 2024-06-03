@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SectionHeading component renders unchanged 1`] = `
+<div>
+  <div
+    class="text-center max-w-3xl mx-auto"
+  >
+    <span
+      class="text-primary font-semibold text-md md:text-lg lg:text-xl uppercase"
+    >
+      test headline
+    </span>
+    <h2
+      class="text-2xl md:text-3xl lg:text-4xl text-secondary font-bold"
+    >
+      test title
+    </h2>
+    <p
+      class="text-sm md:text-base text-body mt-4"
+    >
+      test body
+    </p>
+  </div>
+</div>
+`;
