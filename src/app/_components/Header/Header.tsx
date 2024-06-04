@@ -3,7 +3,7 @@
 import Hero from "./Hero";
 import Nav from "./Nav";
 import { Container } from "@/app/_components";
-import { useInViewSection } from "@/app/_context/inViewSectionContext";
+import { useInViewSection } from "@/app/_hooks/useInViewSection";
 
 export default function Header() {
   const { ref } = useInViewSection("#top");

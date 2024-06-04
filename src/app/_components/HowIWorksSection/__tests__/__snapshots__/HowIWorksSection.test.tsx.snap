@@ -1,0 +1,132 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HowIWorksSection component renders unchanged 1`] = `
+<div>
+  <div
+    class="my-64"
+  >
+    <div
+      class="md:max-w-[1024px] lg:max-w-[1320px] w-full mx-auto md:px-16 px-4 "
+    >
+      <div
+        class="text-center max-w-3xl mx-auto"
+      >
+        <span
+          class="text-primary font-semibold text-md md:text-lg lg:text-xl uppercase"
+        >
+          proces
+        </span>
+        <h2
+          class="text-2xl md:text-3xl lg:text-4xl text-secondary font-bold"
+        >
+          Jak działam?
+        </h2>
+      </div>
+      <div
+        class="flex flex-col gap-y-16 w-full mt-32"
+      >
+        <div
+          class="flex flex-col gap-y-4 border border-solid border-lightGrey p-4 bg-white w-full md:w-1/2"
+          data-aos="fade-right"
+          data-aos-duration="500"
+        >
+          <div
+            class="flex flex-col"
+          >
+            <span
+              class="before:block flex items-center gap-x-2 text-sm md:text-base font-semibold uppercase before:w-2 before:h-2 before:bg-[#30E6FF] text-[#30E6FF]"
+            >
+              faza 1
+            </span>
+            <h4
+              class="text-lg md:text-xl lg:text-2xl text-secondary font-bold text-secondary"
+            >
+              Określenie oczekiwań klienta
+            </h4>
+          </div>
+          <p
+            class="text-body text-sm md:text-base"
+          >
+            W pierwszej fazie dokładnie analizuję oczekiwania klienta, te informacje stanowią fundament, na którym opiera się proces przygotowania ostatecznego rozwiązania.
+          </p>
+        </div>
+        <div
+          class="flex flex-col gap-y-4 border border-solid border-lightGrey p-4 bg-white w-full md:w-1/2 md:ml-[calc(50%/3)]"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
+          <div
+            class="flex flex-col"
+          >
+            <span
+              class="before:block flex items-center gap-x-2 text-sm md:text-base font-semibold uppercase before:w-2 before:h-2 before:bg-[#FFB930] text-[#FFB930]"
+            >
+              faza 2
+            </span>
+            <h4
+              class="text-lg md:text-xl lg:text-2xl text-secondary font-bold text-secondary"
+            >
+              Design UX/UI
+            </h4>
+          </div>
+          <p
+            class="text-body text-sm md:text-base"
+          >
+            Na bazie zebranych informacji tworzę projekt graficzny. W trakcie projektowania regularnie konsultuję się z klientem, aby na bieżąco uwzględniać wprowadzane zmiany. Przechodzę do kolejnego etapu dopiero po uzyskaniu pełnej akceptacji.
+          </p>
+        </div>
+        <div
+          class="flex flex-col gap-y-4 border border-solid border-lightGrey p-4 bg-white w-full md:w-1/2 md:ml-[calc((50%/3)*2)]"
+          data-aos="fade-right"
+          data-aos-duration="1500"
+        >
+          <div
+            class="flex flex-col"
+          >
+            <span
+              class="before:block flex items-center gap-x-2 text-sm md:text-base font-semibold uppercase before:w-2 before:h-2 before:bg-[#FF4930] text-[#FF4930]"
+            >
+              faza 3
+            </span>
+            <h4
+              class="text-lg md:text-xl lg:text-2xl text-secondary font-bold text-secondary"
+            >
+              Budowa
+            </h4>
+          </div>
+          <p
+            class="text-body text-sm md:text-base"
+          >
+            W trzeciej fazie przystępuję do budowy rozwiązania, począwszy od kodowania aż po testowanie. Zapewniam, że każdy element jest starannie sprawdzany i testowany.
+          </p>
+        </div>
+        <div
+          class="flex flex-col gap-y-4 border border-solid border-lightGrey p-4 bg-white w-full md:w-1/2 md:ml-[calc((50%/3)*3)]"
+          data-aos="fade-right"
+          data-aos-duration="2000"
+        >
+          <div
+            class="flex flex-col"
+          >
+            <span
+              class="before:block flex items-center gap-x-2 text-sm md:text-base font-semibold uppercase before:w-2 before:h-2 before:bg-[#B130FF] text-[#B130FF]"
+            >
+              faza 4
+            </span>
+            <h4
+              class="text-lg md:text-xl lg:text-2xl text-secondary font-bold text-secondary"
+            >
+              Wdrożenie
+            </h4>
+          </div>
+          <p
+            class="text-body text-sm md:text-base"
+          >
+            Po zatwierdzeniu projektu przechodzę do wdrożenia na serwer produkcyjny. Dodatkowo integruję narzędzia takie jak Google Analytics, Sentry, Google Search Console. Przeprowadzam również kompleksową optymalizację SEO.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

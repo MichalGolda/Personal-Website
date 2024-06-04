@@ -1,0 +1,192 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ServicesSection component renders unchanged 1`] = `
+<div>
+  <section
+    class="w-full bg-lightBlue py-32"
+    id="services"
+  >
+    <div
+      class="md:max-w-[1024px] lg:max-w-[1320px] w-full mx-auto md:px-16 px-4 "
+    >
+      <div
+        class="text-center max-w-3xl mx-auto"
+      >
+        <span
+          class="text-primary font-semibold text-md md:text-lg lg:text-xl uppercase"
+        >
+          usługi
+        </span>
+        <h2
+          class="text-2xl md:text-3xl lg:text-4xl text-secondary font-bold"
+        >
+          Moje usługi
+        </h2>
+      </div>
+      <div
+        class="my-16 grid grid-cols-1 md:grid-rows-2 md:grid-cols-2 lg:gap-16 md:gap-x-8 md:gap-y-16 gap-16"
+      >
+        <div
+          class="flex flex-col gap-y-4"
+          data-aos="fade-right"
+          data-aos-duration="500"
+        >
+          <div
+            class="flex flex-row gap-x-4 md:flex-col md:gap-y-2 lg:flex-row md:items-start lg:items-center items-center"
+          >
+            <img
+              alt="wordpress"
+              class="w-[48px] lg:w-[64px]"
+              data-nimg="1"
+              decoding="async"
+              height="64"
+              loading="lazy"
+              src="/_next/image?url=%2Fwordpress%20(services-section).webp&w=128&q=75"
+              srcset="/_next/image?url=%2Fwordpress%20(services-section).webp&w=64&q=75 1x, /_next/image?url=%2Fwordpress%20(services-section).webp&w=128&q=75 2x"
+              style="color: transparent;"
+              width="64"
+            />
+            <h4
+              class="font-bold text-lg md:text-xl lg:text-2xl text-secondary"
+            >
+              Rozwiązania oparte o WordPress CMS
+            </h4>
+          </div>
+          <p
+            class="text-body text-sm md:text-base"
+          >
+            Tworzenie niestandardowych szablonów, dostosowanych do indywidualnych potrzeb i wizji klienta. 
+            <br />
+            <br />
+            Konfiguracja wtyczek i optymalizacja funkcjonalnośći i wydajnośći strony. 
+            <br />
+            <br />
+            Modernizacja istniejących stron opartych na WordPress, w tym aktualizacja szablonów, wtyczek i optymalizacja wydajności. 
+            <br />
+            <br />
+            Migracja ze starej platformy na WordPress, zapewniając bezpieczne przeniesienie danych i zachowanie integralności strony.
+          </p>
+          <span
+            class="block bg-primary w-32 h-0.5"
+          />
+        </div>
+        <div
+          class="flex flex-col gap-y-4"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+        >
+          <div
+            class="flex flex-row gap-x-4 md:flex-col md:gap-y-2 lg:flex-row md:items-start lg:items-center items-center"
+          >
+            <img
+              alt="development"
+              class="w-[48px] lg:w-[64px]"
+              data-nimg="1"
+              decoding="async"
+              height="64"
+              loading="lazy"
+              src="/_next/image?url=%2Fdevelopment.webp&w=128&q=75"
+              srcset="/_next/image?url=%2Fdevelopment.webp&w=64&q=75 1x, /_next/image?url=%2Fdevelopment.webp&w=128&q=75 2x"
+              style="color: transparent;"
+              width="64"
+            />
+            <h4
+              class="font-bold text-lg md:text-xl lg:text-2xl text-secondary"
+            >
+              Dedykowane aplikacje
+            </h4>
+          </div>
+          <p
+            class="text-body text-sm md:text-base"
+          >
+            Tworzenie dedykowanych aplikacji webowych i desktopowych, dostosowanych do indywidualnych potrzeb klienta i rozwiązujących konkretny problem.
+             
+            <br />
+            <br />
+            Projektowanie i rozwój stron typu landing page, blogów oraz innych platform internetowych, zapewniających atrakcyjność wizualną, użyteczność i dostępnosć do dowolnym urządzeniu.
+          </p>
+          <span
+            class="block bg-primary w-32 h-0.5"
+          />
+        </div>
+        <div
+          class="flex flex-col gap-y-4"
+          data-aos="fade-right"
+          data-aos-duration="1500"
+        >
+          <div
+            class="flex flex-row gap-x-4 md:flex-col md:gap-y-2 lg:flex-row md:items-start lg:items-center items-center"
+          >
+            <img
+              alt="seo"
+              class="w-[48px] lg:w-[64px]"
+              data-nimg="1"
+              decoding="async"
+              height="64"
+              loading="lazy"
+              src="/_next/image?url=%2Fseo.webp&w=128&q=75"
+              srcset="/_next/image?url=%2Fseo.webp&w=64&q=75 1x, /_next/image?url=%2Fseo.webp&w=128&q=75 2x"
+              style="color: transparent;"
+              width="64"
+            />
+            <h4
+              class="font-bold text-lg md:text-xl lg:text-2xl text-secondary"
+            >
+              Optymalizacja treści (SEO) oraz szybkości ładowania
+            </h4>
+          </div>
+          <p
+            class="text-body text-sm md:text-base"
+          >
+            Badanie słów kluczowych i ich strategiczne umieszczanie w treściach, aby poprawić widoczność strony w wynikach wyszukiwania 
+            <br />
+            <br />
+            Optymalizacją kątem prędkości ładowania, uwzględniając wytyczne Core Web Vitals, co pozytywnie wpływa na doświadczenie użytkownika i ranking strony w wyszukiwarkach.
+          </p>
+          <span
+            class="block bg-primary w-32 h-0.5"
+          />
+        </div>
+        <div
+          class="flex flex-col gap-y-4"
+          data-aos="fade-left"
+          data-aos-duration="2000"
+        >
+          <div
+            class="flex flex-row gap-x-4 md:flex-col md:gap-y-2 lg:flex-row md:items-start lg:items-center items-center"
+          >
+            <img
+              alt="integration"
+              class="w-[48px] lg:w-[64px]"
+              data-nimg="1"
+              decoding="async"
+              height="64"
+              loading="lazy"
+              src="/_next/image?url=%2Fintegration.webp&w=128&q=75"
+              srcset="/_next/image?url=%2Fintegration.webp&w=64&q=75 1x, /_next/image?url=%2Fintegration.webp&w=128&q=75 2x"
+              style="color: transparent;"
+              width="64"
+            />
+            <h4
+              class="font-bold text-lg md:text-xl lg:text-2xl text-secondary"
+            >
+              Integracje z API i usługami analitycznymi
+            </h4>
+          </div>
+          <p
+            class="text-body text-sm md:text-base"
+          >
+            Integracje z zewnętrznymi API, umożliwiającymi rozszerzenie funkcjonalności strony internetowej poprzez połączenie z różnymi serwisami i platformami. 
+            <br />
+            <br />
+            Podpięcie narzędzi analitycznych, takich jak Google Analytics, Sentry i inne, aby dostarczyć klientom kompleksowe raportowanie i analizę danych dotyczących ruchu na stronie oraz wykrywanie ewentualnych problemów.
+          </p>
+          <span
+            class="block bg-primary w-32 h-0.5"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+`;

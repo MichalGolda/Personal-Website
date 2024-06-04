@@ -1,19 +1,14 @@
-const PhaseCardColors = {
-  PHASE_ONE: "before:bg-[#30E6FF] text-[#30E6FF]",
-  PHASE_TWO: "before:bg-[#FFB930] text-[#FFB930]",
-  PHASE_THREE: "before:bg-[#FF4930] text-[#FF4930]",
-  PHASE_FOUR: "before:bg-[#B130FF] text-[#B130FF]",
-};
+import { PhaseCardColors } from "./constants";
 
 export type PhaseCardProps = {
   title: string;
   headline: string;
   body: string;
-  color: keyof typeof PhaseCardColors;
+  color: PhaseCardColors;
   className?: string;
 };
 
-export const PhaseCard: React.FC<PhaseCardProps> = ({
+const PhaseCard: React.FC<PhaseCardProps> = ({
   title,
   headline,
   color,
@@ -28,7 +23,7 @@ export const PhaseCard: React.FC<PhaseCardProps> = ({
     >
       <div className="flex flex-col">
         <span
-          className={`before:block flex items-center gap-x-2 text-sm md:text-base font-semibold uppercase before:w-2 before:h-2 ${PhaseCardColors[color]}`}
+          className={`before:block flex items-center gap-x-2 text-sm md:text-base font-semibold uppercase before:w-2 before:h-2 ${color}`}
         >
           {headline}
         </span>
@@ -40,3 +35,5 @@ export const PhaseCard: React.FC<PhaseCardProps> = ({
     </div>
   );
 };
+
+export default PhaseCard;

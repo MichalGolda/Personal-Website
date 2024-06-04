@@ -3,7 +3,7 @@
 import { FAQ } from "@/app/_types/faq";
 import FAQStack from "./FAQStack";
 import { SectionHeading, Container } from "@/app/_components";
-import { useInViewSection } from "@/app/_context/inViewSectionContext";
+import { useInViewSection } from "@/app/_hooks/useInViewSection";
 
 export type FAQSectionProps = {
   data: FAQ[];

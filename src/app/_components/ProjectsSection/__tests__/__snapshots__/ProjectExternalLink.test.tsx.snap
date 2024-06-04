@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProjectExternalLink component renders unchanged 1`] = `
+<div>
+  <a
+    class="text-primary text-sm md:text-base font-bold flex flex-row gap-x-4"
+    href="https://test.pl"
+  >
+    test name
+    <img
+      alt="arrow"
+      data-nimg="1"
+      decoding="async"
+      height="0"
+      loading="lazy"
+      src="/arrow.svg"
+      style="color: transparent;"
+      width="32"
+    />
+  </a>
+</div>
+`;

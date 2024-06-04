@@ -6,7 +6,7 @@ export default function ContactDetails() {
       <div className="flex flex-col sm:grid sm:grid-rows-2 sm:gap-x-4 sm:grid-cols-2 lg:sticky lg:top-20 lg:h-fit lg:flex lg:flex-col gap-y-16 gap-x-8">
         <div className="flex flex-row gap-x-4 items-center underline">
           <Image
-            src="/github-square.svg"
+            src="/github-square.webp"
             alt="github"
             width={64}
             height={64}
@@ -21,7 +21,7 @@ export default function ContactDetails() {
         </div>
         <div className="flex flex-row gap-x-4 items-center underline">
           <Image
-            src="/linkedin-square.svg"
+            src="/linkedin-square.webp"
             alt="linkedin"
             width={64}
             height={64}
@@ -36,7 +36,7 @@ export default function ContactDetails() {
         </div>
         <div className="flex flex-row gap-x-4 items-center underline">
           <Image
-            src="/email-square.svg"
+            src="/email-square.webp"
             alt="email"
             width={64}
             height={64}
@@ -51,7 +51,7 @@ export default function ContactDetails() {
         </div>
         <div className="flex flex-row gap-x-4 items-center">
           <Image
-            src="/phone-square.svg"
+            src="/phone-square.webp"
             alt="phone"
             width={64}
             height={64}

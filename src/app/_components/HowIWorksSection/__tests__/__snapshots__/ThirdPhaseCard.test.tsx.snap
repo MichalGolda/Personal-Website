@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ThirdPhaseCard component renders unchanged 1`] = `
+<div>
+  <div
+    class="flex flex-col gap-y-4 border border-solid border-lightGrey p-4 bg-white w-full md:w-1/2 md:ml-[calc((50%/3)*2)]"
+    data-aos="fade-right"
+    data-aos-duration="1500"
+  >
+    <div
+      class="flex flex-col"
+    >
+      <span
+        class="before:block flex items-center gap-x-2 text-sm md:text-base font-semibold uppercase before:w-2 before:h-2 before:bg-[#FF4930] text-[#FF4930]"
+      >
+        faza 3
+      </span>
+      <h4
+        class="text-lg md:text-xl lg:text-2xl text-secondary font-bold text-secondary"
+      >
+        Budowa
+      </h4>
+    </div>
+    <p
+      class="text-body text-sm md:text-base"
+    >
+      W trzeciej fazie przystępuję do budowy rozwiązania, począwszy od kodowania aż po testowanie. Zapewniam, że każdy element jest starannie sprawdzany i testowany.
+    </p>
+  </div>
+</div>
+`;

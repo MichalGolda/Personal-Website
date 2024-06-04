@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Alert component renders unchanged 1`] = `
+<div>
+  <div
+    class="w-full p-4 text-white bottom-0 left-0 font-bold text-sm md:text-base text-center fixed z-[999]  undefined"
+    data-testid="alert"
+  >
+    <p>
+      test message
+    </p>
+  </div>
+</div>
+`;

@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Logo component renders unchanged 1`] = `
+<div>
+  <a
+    href="#top"
+  >
+    <img
+      alt="logo"
+      data-nimg="1"
+      decoding="async"
+      height="29"
+      loading="lazy"
+      src="/_next/image?url=%2Flogo.webp&w=384&q=75"
+      srcset="/_next/image?url=%2Flogo.webp&w=256&q=75 1x, /_next/image?url=%2Flogo.webp&w=384&q=75 2x"
+      style="color: transparent;"
+      width="151"
+    />
+  </a>
+</div>
+`;

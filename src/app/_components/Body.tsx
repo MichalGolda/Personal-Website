@@ -2,9 +2,9 @@
 
 import AOS from "aos";
 import { Inter } from "next/font/google";
-import { SpeedInsights } from "@vercel/speed-insights/next";
+// import { SpeedInsights } from "@vercel/speed-insights/next";
 import InViewSectionContextProvider from "../_context/inViewSectionContext";
-import { useNavContext } from "../_context/navContext";
+import { useNavContext } from "@/app/_hooks/useNavContext";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { useEffect } from "react";
 import Schema from "./Schema";
@@ -15,7 +15,7 @@ const inter = Inter({
 });
 
 export default function Body({ children }: React.PropsWithChildren) {
-  const { hamburger } = useNavContext();
+  const { hamburgerIsShown } = useNavContext();
 
   useEffect(() => {
     AOS.init();
@@ -24,10 +24,12 @@ export default function Body({ children }: React.PropsWithChildren) {
 
   return (
     <body
-      className={`${inter.className} ${hamburger ? "overflow-hidden" : ""}`}
+      className={`${inter.className} ${
+        hamburgerIsShown ? "overflow-hidden" : ""
+      }`}
     >
       <InViewSectionContextProvider>{children}</InViewSectionContextProvider>
-      <SpeedInsights />
+      {/* <SpeedInsights /> */}
       <GoogleAnalytics gaId="G-5LGQ62V141" />
       <Schema />
     </body>

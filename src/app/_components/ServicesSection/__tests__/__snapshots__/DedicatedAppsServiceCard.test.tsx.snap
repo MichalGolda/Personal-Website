@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DedicatedAppsServiceCard component renders unchanged 1`] = `
+<div>
+  <div
+    class="flex flex-col gap-y-4"
+    data-aos="fade-left"
+    data-aos-duration="1000"
+  >
+    <div
+      class="flex flex-row gap-x-4 md:flex-col md:gap-y-2 lg:flex-row md:items-start lg:items-center items-center"
+    >
+      <img
+        alt="development"
+        class="w-[48px] lg:w-[64px]"
+        data-nimg="1"
+        decoding="async"
+        height="64"
+        loading="lazy"
+        src="/_next/image?url=%2Fdevelopment.webp&w=128&q=75"
+        srcset="/_next/image?url=%2Fdevelopment.webp&w=64&q=75 1x, /_next/image?url=%2Fdevelopment.webp&w=128&q=75 2x"
+        style="color: transparent;"
+        width="64"
+      />
+      <h4
+        class="font-bold text-lg md:text-xl lg:text-2xl text-secondary"
+      >
+        Dedykowane aplikacje
+      </h4>
+    </div>
+    <p
+      class="text-body text-sm md:text-base"
+    >
+      Tworzenie dedykowanych aplikacji webowych i desktopowych, dostosowanych do indywidualnych potrzeb klienta i rozwiązujących konkretny problem.
+       
+      <br />
+      <br />
+      Projektowanie i rozwój stron typu landing page, blogów oraz innych platform internetowych, zapewniających atrakcyjność wizualną, użyteczność i dostępnosć do dowolnym urządzeniu.
+    </p>
+    <span
+      class="block bg-primary w-32 h-0.5"
+    />
+  </div>
+</div>
+`;

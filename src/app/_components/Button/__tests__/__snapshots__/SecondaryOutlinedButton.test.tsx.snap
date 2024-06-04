@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SecondaryOutlinedButton component renders unchanged 1`] = `
+<div>
+  <button
+    class="py-4 px-8 font-bold text-sm md:text-base transition-all duration-500 disabled:bg-lightGrey disabled:text-body bg-transparent border-secondary border border-solid hover:bg-secondary active:bg-secondary/80 hover:text-white text-secondary "
+    type="button"
+  >
+    Button test
+  </button>
+</div>
+`;

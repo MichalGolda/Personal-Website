@@ -1,0 +1,121 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AdvantagesSection component renders unchanged 1`] = `
+<div>
+  <section
+    class="my-64"
+    id="advantages"
+  >
+    <div
+      class="md:max-w-[1024px] lg:max-w-[1320px] w-full mx-auto md:px-16 px-4 "
+    >
+      <div
+        class="text-center max-w-3xl mx-auto"
+      >
+        <span
+          class="text-primary font-semibold text-md md:text-lg lg:text-xl uppercase"
+        >
+          zalety
+        </span>
+        <h2
+          class="text-2xl md:text-3xl lg:text-4xl text-secondary font-bold"
+        >
+          Dlaczego warto mi zaufać?
+        </h2>
+      </div>
+      <div
+        class="my-16 gap-16 lg:grid-cols-3 flex flex-col gap-y-16 md:grid md:grid-cols-2 items-start"
+      >
+        <div
+          class="flex flex-col gap-y-4 text-left justify-left"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
+          <img
+            alt="dollar"
+            class="w-[48px] lg:w-[64px]"
+            data-nimg="1"
+            decoding="async"
+            height="64"
+            loading="lazy"
+            src="/_next/image?url=%2Fdollar.webp&w=128&q=75"
+            srcset="/_next/image?url=%2Fdollar.webp&w=64&q=75 1x, /_next/image?url=%2Fdollar.webp&w=128&q=75 2x"
+            style="color: transparent;"
+            width="64"
+          />
+          <h4
+            class="font-bold text-lg md:text-xl lg:text-2xl text-secondary"
+          >
+            Przejrzyste rozliczenia
+          </h4>
+          <p
+            class="text-sm md:text-base text-body"
+          >
+            Przed rozpoczęciem projektu dokonuje wyceny w której zawarte są wszystkie wykonywane usługi. Dzięki, temu wiesz za co płacisz.
+          </p>
+        </div>
+        <div
+          class="col-span-2 order-2 lg:col-span-1 lg:order-[0]"
+        >
+          <div
+            class="flex flex-col gap-y-4 text-left justify-left"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+          >
+            <img
+              alt="measure"
+              class="w-[48px] lg:w-[64px]"
+              data-nimg="1"
+              decoding="async"
+              height="64"
+              loading="lazy"
+              src="/_next/image?url=%2Fmeasure.webp&w=128&q=75"
+              srcset="/_next/image?url=%2Fmeasure.webp&w=64&q=75 1x, /_next/image?url=%2Fmeasure.webp&w=128&q=75 2x"
+              style="color: transparent;"
+              width="64"
+            />
+            <h4
+              class="font-bold text-lg md:text-xl lg:text-2xl text-secondary"
+            >
+              Rozwiązania dopasowane do oczekiwań klienta
+            </h4>
+            <p
+              class="text-sm md:text-base text-body"
+            >
+              Każdy projekt rozpoczynam od zebrania szczegółowych informacji na temat tego jak ma wyglądać końcowe rozwiązanie. W trakcie realizacji konsultuje postępy po to żeby jak najlepiej wpasować się w twoje oczekiwania.
+            </p>
+          </div>
+        </div>
+        <div
+          class="flex flex-col gap-y-4 text-left justify-left"
+          data-aos="fade-right"
+          data-aos-duration="2000"
+        >
+          <img
+            alt="calendar"
+            class="w-[48px] lg:w-[64px]"
+            data-nimg="1"
+            decoding="async"
+            height="64"
+            loading="lazy"
+            src="/_next/image?url=%2Fcalendar.webp&w=128&q=75"
+            srcset="/_next/image?url=%2Fcalendar.webp&w=64&q=75 1x, /_next/image?url=%2Fcalendar.webp&w=128&q=75 2x"
+            style="color: transparent;"
+            width="64"
+          />
+          <h4
+            class="font-bold text-lg md:text-xl lg:text-2xl text-secondary"
+          >
+            Realizacja w określonym terminie
+          </h4>
+          <p
+            class="text-sm md:text-base text-body"
+          >
+            Szczegółowo planuje etapy pracy dzięki czemu każde rozwiązanie jest gotowe na czas.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+`;

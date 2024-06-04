@@ -1,14 +1,7 @@
-import Image from "next/image";
-
-type TechnologyIcon = {
-  src: string;
-  alt: string;
-};
-
 export type TechnologyCardProps = {
   title: string;
-  content: () => React.ReactElement;
-  icons?: TechnologyIcon[];
+  content: React.ReactNode;
+  icons?: React.ReactElement;
 };
 
 const TechnologyCard: React.FC<TechnologyCardProps> = ({
@@ -21,21 +14,8 @@ const TechnologyCard: React.FC<TechnologyCardProps> = ({
       <h4 className="text-lg md:text-xl lg:text-2xl text-secondary font-bold">
         {title}
       </h4>
-      <p className="text-sm md:text-base text-body">{content()}</p>
-      {icons && (
-        <div className="flex flex-row flex-wrap gap-4">
-          {icons.map(({ src, alt }) => (
-            <Image
-              key={src}
-              className="max-w-8 max-h-8"
-              src={src}
-              alt={alt}
-              width={32}
-              height={32}
-            />
-          ))}
-        </div>
-      )}
+      <p className="text-sm md:text-base text-body">{content}</p>
+      {icons && <div className="flex flex-row flex-wrap gap-4">{icons}</div>}
     </div>
   );
 };

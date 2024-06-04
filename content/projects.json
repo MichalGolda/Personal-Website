@@ -3,14 +3,14 @@
     "name": "Pichkrakow.pl",
     "description": "Strona internetowa dla Gabinetu Psychoterapeutycznego",
     "coverImageSrc": "/pichkrakow.webp",
-    "showUrl": "https://pichkrakow.pl/beta"
+    "previewUrl": "https://pichkrakow.pl/beta"
   },
   {
     "name": "Animal-Houses",
     "description": "Aplikacja do zarządzania sprzedażą domków dla zwierząt.",
     "coverImageSrc": "/animal-houses.webp",
     "githubUrl": "https://github.com/michalgolda/animal-houses",
-    "showUrl": "https://animal-houses.vercel.app/"
+    "previewUrl": "https://animal-houses.vercel.app/"
   },
   {
     "name": "Cashly",

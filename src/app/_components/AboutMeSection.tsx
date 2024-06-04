@@ -1,7 +1,7 @@
 "use client";
 
 import { SectionHeading, Container } from "@/app/_components";
-import { useInViewSection } from "../_context/inViewSectionContext";
+import { useInViewSection } from "../_hooks/useInViewSection";
 
 export default function AboutMeSection() {
   const { ref } = useInViewSection("#about-me");

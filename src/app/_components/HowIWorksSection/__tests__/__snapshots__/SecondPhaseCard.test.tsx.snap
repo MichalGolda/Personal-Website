@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SecondPhaseCard component renders unchanged 1`] = `
+<div>
+  <div
+    class="flex flex-col gap-y-4 border border-solid border-lightGrey p-4 bg-white w-full md:w-1/2 md:ml-[calc(50%/3)]"
+    data-aos="fade-right"
+    data-aos-duration="1000"
+  >
+    <div
+      class="flex flex-col"
+    >
+      <span
+        class="before:block flex items-center gap-x-2 text-sm md:text-base font-semibold uppercase before:w-2 before:h-2 before:bg-[#FFB930] text-[#FFB930]"
+      >
+        faza 2
+      </span>
+      <h4
+        class="text-lg md:text-xl lg:text-2xl text-secondary font-bold text-secondary"
+      >
+        Design UX/UI
+      </h4>
+    </div>
+    <p
+      class="text-body text-sm md:text-base"
+    >
+      Na bazie zebranych informacji tworzę projekt graficzny. W trakcie projektowania regularnie konsultuję się z klientem, aby na bieżąco uwzględniać wprowadzane zmiany. Przechodzę do kolejnego etapu dopiero po uzyskaniu pełnej akceptacji.
+    </p>
+  </div>
+</div>
+`;

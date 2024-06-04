@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProjectCard component renders unchanged 1`] = `
+<div>
+  <div
+    class="flex flex-col gap-y-4"
+  >
+    <h3
+      class="text-secondary font-bold text-xl md:text-2xl lg:text-3xl"
+    >
+      test name
+    </h3>
+    <div
+      class="flex flex-row gap-x-4"
+    >
+      <a
+        class="text-primary text-sm md:text-base font-bold flex flex-row gap-x-4"
+        href="test preview url"
+      >
+        Podgląd
+        <img
+          alt="arrow"
+          data-nimg="1"
+          decoding="async"
+          height="0"
+          loading="lazy"
+          src="/arrow.svg"
+          style="color: transparent;"
+          width="32"
+        />
+      </a>
+      <a
+        class="text-primary text-sm md:text-base font-bold flex flex-row gap-x-4"
+        href="test github url"
+      >
+        Github
+        <img
+          alt="arrow"
+          data-nimg="1"
+          decoding="async"
+          height="0"
+          loading="lazy"
+          src="/arrow.svg"
+          style="color: transparent;"
+          width="32"
+        />
+      </a>
+    </div>
+    <p
+      class="text-body"
+    >
+      test description
+    </p>
+    <img
+      alt="test name"
+      class="!relative object-contain !h-fit"
+      data-nimg="fill"
+      decoding="async"
+      loading="lazy"
+      sizes="100vw"
+      src="/_next/image?url=%2Fproject.webp&w=3840&q=75"
+      srcset="/_next/image?url=%2Fproject.webp&w=640&q=75 640w, /_next/image?url=%2Fproject.webp&w=750&q=75 750w, /_next/image?url=%2Fproject.webp&w=828&q=75 828w, /_next/image?url=%2Fproject.webp&w=1080&q=75 1080w, /_next/image?url=%2Fproject.webp&w=1200&q=75 1200w, /_next/image?url=%2Fproject.webp&w=1920&q=75 1920w, /_next/image?url=%2Fproject.webp&w=2048&q=75 2048w, /_next/image?url=%2Fproject.webp&w=3840&q=75 3840w"
+      style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+    />
+  </div>
+</div>
+`;

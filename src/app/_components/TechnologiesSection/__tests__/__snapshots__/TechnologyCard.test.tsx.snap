@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TechnologyCard component renders unchanged 1`] = `
+<div>
+  <div
+    class="w-full flex flex-col gap-y-4"
+  >
+    <h4
+      class="text-lg md:text-xl lg:text-2xl text-secondary font-bold"
+    >
+      test title
+    </h4>
+    <p
+      class="text-sm md:text-base text-body"
+    >
+      test content
+    </p>
+    <div
+      class="flex flex-row flex-wrap gap-4"
+    >
+      test icons
+    </div>
+  </div>
+</div>
+`;

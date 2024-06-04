@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AdvantageIcon component renders unchanged 1`] = `
+<div>
+  <img
+    alt="test alt"
+    class="w-[48px] lg:w-[64px]"
+    data-nimg="1"
+    decoding="async"
+    height="64"
+    loading="lazy"
+    src="/_next/image?url=%2Ftest.webp&w=128&q=75"
+    srcset="/_next/image?url=%2Ftest.webp&w=64&q=75 1x, /_next/image?url=%2Ftest.webp&w=128&q=75 2x"
+    style="color: transparent;"
+    width="64"
+  />
+</div>
+`;
