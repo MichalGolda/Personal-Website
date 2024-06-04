@@ -21,7 +21,7 @@ describe("PhaseCard component", () => {
     expect(container.firstChild).toHaveClass("test class");
 
     expect(title).toBeInTheDocument();
-    expect(title.tagName).toBe("h4");
+    expect(title.tagName).toBe("H4");
 
     expect(headline).toBeInTheDocument();
     expect(headline).toHaveClass("before:bg-[#30E6FF]");
