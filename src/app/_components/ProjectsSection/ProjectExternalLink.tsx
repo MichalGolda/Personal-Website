@@ -11,7 +11,7 @@ const ProjectExternalLink = ({ href, name }: ProjectExternalLinkProps) => (
     href={href}
   >
     {name}
-    <Image src="/arrow.png" alt="arrow" width={32} height={0} />
+    <Image src="/arrow.webp" alt="arrow" width={32} height={0} />
   </a>
 );
 
