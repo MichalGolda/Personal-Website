@@ -1,0 +1,175 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FrontendTechnologyCard component renders unchanged 1`] = `
+<div>
+  <div
+    class="w-full flex flex-col gap-y-4"
+  >
+    <h4
+      class="text-lg md:text-xl lg:text-2xl text-secondary font-bold"
+    >
+      Frontend
+    </h4>
+    <p
+      class="text-sm md:text-base text-body"
+    >
+      Wykonany z dbałością o szczegóły, seo-friendly, spójny, działający na dowolnym urządzeniu: 
+      <b
+        class="text-primary"
+      >
+        Javascript
+      </b>
+      ,
+       
+      <b
+        class="text-primary"
+      >
+        Typescript
+      </b>
+      ,
+       
+      <b
+        class="text-primary"
+      >
+        React
+      </b>
+      ,
+       
+      <b
+        class="text-primary"
+      >
+        Vue
+      </b>
+      ,
+       
+      <b
+        class="text-primary"
+      >
+        Next.js
+      </b>
+      ,
+       
+      <b
+        class="text-primary"
+      >
+        Nuxt.js
+      </b>
+      ,
+       
+      <b
+        class="text-primary"
+      >
+        sass
+      </b>
+      ,
+       
+      <b
+        class="text-primary"
+      >
+        tailwindcss
+      </b>
+      .
+    </p>
+    <div
+      class="flex flex-row flex-wrap gap-4"
+    >
+      <img
+        alt="typescript"
+        class="max-w-8 max-h-8"
+        data-nimg="1"
+        decoding="async"
+        height="32"
+        loading="lazy"
+        src="/_next/image?url=%2Ftypescript.webp&w=64&q=75"
+        srcset="/_next/image?url=%2Ftypescript.webp&w=32&q=75 1x, /_next/image?url=%2Ftypescript.webp&w=64&q=75 2x"
+        style="color: transparent;"
+        width="32"
+      />
+      <img
+        alt="javascript"
+        class="max-w-8 max-h-8"
+        data-nimg="1"
+        decoding="async"
+        height="32"
+        loading="lazy"
+        src="/_next/image?url=%2Fjavascript.webp&w=64&q=75"
+        srcset="/_next/image?url=%2Fjavascript.webp&w=32&q=75 1x, /_next/image?url=%2Fjavascript.webp&w=64&q=75 2x"
+        style="color: transparent;"
+        width="32"
+      />
+      <img
+        alt="react"
+        class="max-w-8 max-h-8"
+        data-nimg="1"
+        decoding="async"
+        height="32"
+        loading="lazy"
+        src="/_next/image?url=%2Freact.webp&w=64&q=75"
+        srcset="/_next/image?url=%2Freact.webp&w=32&q=75 1x, /_next/image?url=%2Freact.webp&w=64&q=75 2x"
+        style="color: transparent;"
+        width="32"
+      />
+      <img
+        alt="vue"
+        class="max-w-8 max-h-8"
+        data-nimg="1"
+        decoding="async"
+        height="32"
+        loading="lazy"
+        src="/_next/image?url=%2Fvue.webp&w=64&q=75"
+        srcset="/_next/image?url=%2Fvue.webp&w=32&q=75 1x, /_next/image?url=%2Fvue.webp&w=64&q=75 2x"
+        style="color: transparent;"
+        width="32"
+      />
+      <img
+        alt="nextjs"
+        class="max-w-8 max-h-8"
+        data-nimg="1"
+        decoding="async"
+        height="32"
+        loading="lazy"
+        src="/_next/image?url=%2Fnextjs.webp&w=64&q=75"
+        srcset="/_next/image?url=%2Fnextjs.webp&w=32&q=75 1x, /_next/image?url=%2Fnextjs.webp&w=64&q=75 2x"
+        style="color: transparent;"
+        width="32"
+      />
+      <img
+        alt="nuxtjs"
+        class="max-w-8 max-h-8"
+        data-nimg="1"
+        decoding="async"
+        height="32"
+        loading="lazy"
+        src="/_next/image?url=%2Fnuxtjs.webp&w=64&q=75"
+        srcset="/_next/image?url=%2Fnuxtjs.webp&w=32&q=75 1x, /_next/image?url=%2Fnuxtjs.webp&w=64&q=75 2x"
+        style="color: transparent;"
+        width="32"
+      />
+      <img
+        alt="sass"
+        class="max-w-8 max-h-8"
+        data-nimg="1"
+        decoding="async"
+        height="32"
+        loading="lazy"
+        src="/_next/image?url=%2Fsass.webp&w=64&q=75"
+        srcset="/_next/image?url=%2Fsass.webp&w=32&q=75 1x, /_next/image?url=%2Fsass.webp&w=64&q=75 2x"
+        style="color: transparent;"
+        width="32"
+      />
+      <img
+        alt="tailwindcss"
+        class="max-w-8 max-h-8"
+        data-nimg="1"
+        decoding="async"
+        height="32"
+        loading="lazy"
+        src="/_next/image?url=%2Ftailwindcss.webp&w=64&q=75"
+        srcset="/_next/image?url=%2Ftailwindcss.webp&w=32&q=75 1x, /_next/image?url=%2Ftailwindcss.webp&w=64&q=75 2x"
+        style="color: transparent;"
+        width="32"
+      />
+    </div>
+  </div>
+</div>
+`;
