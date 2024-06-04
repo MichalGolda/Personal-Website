@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ServiceCard component renders unchanged 1`] = `
+<div>
+  <div
+    class="flex flex-col gap-y-4"
+  >
+    <div
+      class="flex flex-row gap-x-4 md:flex-col md:gap-y-2 lg:flex-row md:items-start lg:items-center items-center"
+    >
+      test icon
+      <h4
+        class="font-bold text-lg md:text-xl lg:text-2xl text-secondary"
+      >
+        test title
+      </h4>
+    </div>
+    <p
+      class="text-body text-sm md:text-base"
+    >
+      test content
+    </p>
+    <span
+      class="block bg-primary w-32 h-0.5"
+    />
+  </div>
+</div>
+`;
