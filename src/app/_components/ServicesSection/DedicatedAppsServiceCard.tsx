@@ -2,7 +2,7 @@ import ServiceCard from "./ServiceCard";
 import ServiceIcon from "./ServiceIcon";
 
 const DevelopmentServiceIcon = () => (
-  <ServiceIcon src="development.webp" alt="development" />
+  <ServiceIcon src="/development.webp" alt="development" />
 );
 
 const DedicatedAppsServiceCard = () => (
