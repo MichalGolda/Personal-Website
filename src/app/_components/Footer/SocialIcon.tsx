@@ -9,7 +9,7 @@ export type FooterIconProps = {
 const SocialIcon = ({ src, alt, href }: FooterIconProps) => {
   return (
     <a href={href}>
-      <Image src={src} width={24} height={24} alt={alt} />;
+      <Image src={src} width={24} height={24} alt={alt} />
     </a>
   );
 };
