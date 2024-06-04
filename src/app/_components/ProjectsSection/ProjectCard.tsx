@@ -1,12 +1,13 @@
 import Image from "next/image";
 import { Project } from "@/app/_types/project";
+import ProjectExternalLink from "./ProjectExternalLink";
 
 export type ProjectCardProps = Project;
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
   name,
   description,
-  showUrl,
+  previewUrl,
   githubUrl,
   coverImageSrc,
   ...props
@@ -17,24 +18,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         {name}
       </h3>
       <div className="flex flex-row gap-x-4">
-        {showUrl && (
-          <a
-            className="text-primary text-sm md:text-base font-bold flex flex-row gap-x-4"
-            href={showUrl}
-          >
-            Pokaż
-            <Image src="/arrow.png" alt="arrow" width={32} height={0} />
-          </a>
-        )}
-        {githubUrl && (
-          <a
-            className="text-primary font-bold flex flex-row gap-x-4"
-            href={githubUrl}
-          >
-            Github
-            <Image src="/arrow.png" alt="arrow" width={32} height={0} />
-          </a>
-        )}
+        {previewUrl && <ProjectExternalLink name="Podgląd" href={previewUrl} />}
+        {githubUrl && <ProjectExternalLink name="Github" href={githubUrl} />}
       </div>
       <p className="text-body">{description}</p>
       <Image
