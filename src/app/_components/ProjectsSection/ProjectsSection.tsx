@@ -29,7 +29,7 @@ export default function ProjectsSection({ data }: ProjectsSectionProps) {
                 description={project.description}
                 githubUrl={project.githubUrl}
                 coverImageSrc={project.coverImageSrc}
-                showUrl={project.showUrl}
+                previewUrl={project.previewUrl}
                 data-aos="zoom-in"
                 data-aos-duration="500"
               />
