@@ -3,7 +3,7 @@ import ServiceIcon from "./ServiceIcon";
 
 const SEOServiceIcon = () => <ServiceIcon src="/seo.webp" alt="seo" />;
 
-export const SEOServiceCard = () => (
+const SEOServiceCard = () => (
   <ServiceCard
     title="Optymalizacja treści (SEO) oraz szybkości ładowania"
     content={
@@ -21,3 +21,5 @@ export const SEOServiceCard = () => (
     data-aos-duration="1500"
   />
 );
+
+export default SEOServiceCard;

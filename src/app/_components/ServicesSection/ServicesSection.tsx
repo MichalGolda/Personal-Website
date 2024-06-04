@@ -4,7 +4,7 @@ import { SectionHeading, Container } from "@/app/_components";
 import { useInViewSection } from "@/app/_hooks/useInViewSection";
 import WordpressSolutionsServiceCard from "./WordpressSolutionsServiceCard";
 import DedicatedAppsServiceCard from "./DedicatedAppsServiceCard";
-import { SEOServiceCard } from "./SEOServiceCard";
+import SEOServiceCard from "./SEOServiceCard";
 import IntegrationsServiceCard from "./IntegrationsServiceCard";
 
 export default function ServicesSection() {
