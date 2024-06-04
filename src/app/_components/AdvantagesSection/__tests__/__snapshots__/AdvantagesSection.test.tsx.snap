@@ -32,7 +32,7 @@ exports[`AdvantagesSection component renders unchanged 1`] = `
           data-aos-duration="1000"
         >
           <img
-            alt="Przejrzyste rozliczenia"
+            alt="dollar"
             class="w-[48px] lg:w-[64px]"
             data-nimg="1"
             decoding="async"
@@ -63,7 +63,7 @@ exports[`AdvantagesSection component renders unchanged 1`] = `
             data-aos-duration="1500"
           >
             <img
-              alt="Rozwiązania dopasowane do oczekiwań klienta"
+              alt="measure"
               class="w-[48px] lg:w-[64px]"
               data-nimg="1"
               decoding="async"
@@ -92,7 +92,7 @@ exports[`AdvantagesSection component renders unchanged 1`] = `
           data-aos-duration="2000"
         >
           <img
-            alt="Realizacja w określonym terminie"
+            alt="calendar"
             class="w-[48px] lg:w-[64px]"
             data-nimg="1"
             decoding="async"
