@@ -1,0 +1,556 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TechnologiesSection component renders unchanged 1`] = `
+<div>
+  <section
+    class="my-64"
+    id="technologies"
+  >
+    <div
+      class="md:max-w-[1024px] lg:max-w-[1320px] w-full mx-auto md:px-16 px-4 "
+    >
+      <div
+        class="text-center max-w-3xl mx-auto"
+      >
+        <span
+          class="text-primary font-semibold text-md md:text-lg lg:text-xl uppercase"
+        >
+          technologie
+        </span>
+        <h2
+          class="text-2xl md:text-3xl lg:text-4xl text-secondary font-bold"
+        >
+          Pracuje z technologiami przyszłości
+        </h2>
+        <p
+          class="text-sm md:text-base text-body mt-4"
+        >
+          Stosuje najnowsze technologie i rozwiązania używane w zaawansowanych aplikacjach webowych.
+        </p>
+      </div>
+      <div
+        class="grid grid-rows-2 grid-cols-1 md:grid-cols-2 gap-16 mt-16"
+      >
+        <div
+          class="w-full flex flex-col gap-y-4"
+        >
+          <h4
+            class="text-lg md:text-xl lg:text-2xl text-secondary font-bold"
+          >
+            Frontend
+          </h4>
+          <p
+            class="text-sm md:text-base text-body"
+          >
+            Wykonany z dbałością o szczegóły, seo-friendly, spójny, działający na dowolnym urządzeniu: 
+            <b
+              class="text-primary"
+            >
+              Javascript
+            </b>
+            ,
+             
+            <b
+              class="text-primary"
+            >
+              Typescript
+            </b>
+            ,
+             
+            <b
+              class="text-primary"
+            >
+              React
+            </b>
+            ,
+             
+            <b
+              class="text-primary"
+            >
+              Vue
+            </b>
+            ,
+             
+            <b
+              class="text-primary"
+            >
+              Next.js
+            </b>
+            ,
+             
+            <b
+              class="text-primary"
+            >
+              Nuxt.js
+            </b>
+            ,
+             
+            <b
+              class="text-primary"
+            >
+              sass
+            </b>
+            ,
+             
+            <b
+              class="text-primary"
+            >
+              tailwindcss
+            </b>
+            .
+          </p>
+          <div
+            class="flex flex-row flex-wrap gap-4"
+          >
+            <img
+              alt="typescript"
+              class="max-w-8 max-h-8"
+              data-nimg="1"
+              decoding="async"
+              height="32"
+              loading="lazy"
+              src="/_next/image?url=%2Ftypescript.webp&w=64&q=75"
+              srcset="/_next/image?url=%2Ftypescript.webp&w=32&q=75 1x, /_next/image?url=%2Ftypescript.webp&w=64&q=75 2x"
+              style="color: transparent;"
+              width="32"
+            />
+            <img
+              alt="javascript"
+              class="max-w-8 max-h-8"
+              data-nimg="1"
+              decoding="async"
+              height="32"
+              loading="lazy"
+              src="/_next/image?url=%2Fjavascript.webp&w=64&q=75"
+              srcset="/_next/image?url=%2Fjavascript.webp&w=32&q=75 1x, /_next/image?url=%2Fjavascript.webp&w=64&q=75 2x"
+              style="color: transparent;"
+              width="32"
+            />
+            <img
+              alt="react"
+              class="max-w-8 max-h-8"
+              data-nimg="1"
+              decoding="async"
+              height="32"
+              loading="lazy"
+              src="/_next/image?url=%2Freact.webp&w=64&q=75"
+              srcset="/_next/image?url=%2Freact.webp&w=32&q=75 1x, /_next/image?url=%2Freact.webp&w=64&q=75 2x"
+              style="color: transparent;"
+              width="32"
+            />
+            <img
+              alt="vue"
+              class="max-w-8 max-h-8"
+              data-nimg="1"
+              decoding="async"
+              height="32"
+              loading="lazy"
+              src="/_next/image?url=%2Fvue.webp&w=64&q=75"
+              srcset="/_next/image?url=%2Fvue.webp&w=32&q=75 1x, /_next/image?url=%2Fvue.webp&w=64&q=75 2x"
+              style="color: transparent;"
+              width="32"
+            />
+            <img
+              alt="nextjs"
+              class="max-w-8 max-h-8"
+              data-nimg="1"
+              decoding="async"
+              height="32"
+              loading="lazy"
+              src="/_next/image?url=%2Fnextjs.webp&w=64&q=75"
+              srcset="/_next/image?url=%2Fnextjs.webp&w=32&q=75 1x, /_next/image?url=%2Fnextjs.webp&w=64&q=75 2x"
+              style="color: transparent;"
+              width="32"
+            />
+            <img
+              alt="nuxtjs"
+              class="max-w-8 max-h-8"
+              data-nimg="1"
+              decoding="async"
+              height="32"
+              loading="lazy"
+              src="/_next/image?url=%2Fnuxtjs.webp&w=64&q=75"
+              srcset="/_next/image?url=%2Fnuxtjs.webp&w=32&q=75 1x, /_next/image?url=%2Fnuxtjs.webp&w=64&q=75 2x"
+              style="color: transparent;"
+              width="32"
+            />
+            <img
+              alt="sass"
+              class="max-w-8 max-h-8"
+              data-nimg="1"
+              decoding="async"
+              height="32"
+              loading="lazy"
+              src="/_next/image?url=%2Fsass.webp&w=64&q=75"
+              srcset="/_next/image?url=%2Fsass.webp&w=32&q=75 1x, /_next/image?url=%2Fsass.webp&w=64&q=75 2x"
+              style="color: transparent;"
+              width="32"
+            />
+            <img
+              alt="tailwindcss"
+              class="max-w-8 max-h-8"
+              data-nimg="1"
+              decoding="async"
+              height="32"
+              loading="lazy"
+              src="/_next/image?url=%2Ftailwindcss.webp&w=64&q=75"
+              srcset="/_next/image?url=%2Ftailwindcss.webp&w=32&q=75 1x, /_next/image?url=%2Ftailwindcss.webp&w=64&q=75 2x"
+              style="color: transparent;"
+              width="32"
+            />
+          </div>
+        </div>
+        <div
+          class="w-full flex flex-col gap-y-4"
+        >
+          <h4
+            class="text-lg md:text-xl lg:text-2xl text-secondary font-bold"
+          >
+            Backend
+          </h4>
+          <p
+            class="text-sm md:text-base text-body"
+          >
+            Dostępność, skalowalność osiągam dzięki sprawdzonym rozwiązaniom:
+             
+            <b
+              class="text-primary"
+            >
+              Python
+            </b>
+            ,
+             
+            <b
+              class="text-primary"
+            >
+              Django
+            </b>
+            ,
+             
+            <b
+              class="text-primary"
+            >
+              PHP
+            </b>
+            ,
+             
+            <b
+              class="text-primary"
+            >
+              Wordpress
+            </b>
+            ,
+             
+            <b
+              class="text-primary"
+            >
+              Docker
+            </b>
+            ,
+             
+            <b
+              class="text-primary"
+            >
+              NodeJs
+            </b>
+            ,
+             
+            <b
+              class="text-primary"
+            >
+              Nest.js
+            </b>
+            ,
+             
+            <b
+              class="text-primary"
+            >
+              PostgreSQL
+            </b>
+            ,
+             
+            <b
+              class="text-primary"
+            >
+              AWS
+            </b>
+            ,
+             
+            <b
+              class="text-primary"
+            >
+              GCP
+            </b>
+            ,
+             
+            <b
+              class="text-primary"
+            >
+              Azure
+            </b>
+            .
+          </p>
+          <div
+            class="flex flex-row flex-wrap gap-4"
+          >
+            <img
+              alt="typescript"
+              class="max-w-8 max-h-8"
+              data-nimg="1"
+              decoding="async"
+              height="32"
+              loading="lazy"
+              src="/_next/image?url=%2Ftypescript.webp&w=64&q=75"
+              srcset="/_next/image?url=%2Ftypescript.webp&w=32&q=75 1x, /_next/image?url=%2Ftypescript.webp&w=64&q=75 2x"
+              style="color: transparent;"
+              width="32"
+            />
+            <img
+              alt="javascript"
+              class="max-w-8 max-h-8"
+              data-nimg="1"
+              decoding="async"
+              height="32"
+              loading="lazy"
+              src="/_next/image?url=%2Fjavascript.webp&w=64&q=75"
+              srcset="/_next/image?url=%2Fjavascript.webp&w=32&q=75 1x, /_next/image?url=%2Fjavascript.webp&w=64&q=75 2x"
+              style="color: transparent;"
+              width="32"
+            />
+            <img
+              alt="django"
+              class="max-w-8 max-h-8"
+              data-nimg="1"
+              decoding="async"
+              height="32"
+              loading="lazy"
+              src="/_next/image?url=%2Fdjango.webp&w=64&q=75"
+              srcset="/_next/image?url=%2Fdjango.webp&w=32&q=75 1x, /_next/image?url=%2Fdjango.webp&w=64&q=75 2x"
+              style="color: transparent;"
+              width="32"
+            />
+            <img
+              alt="docker"
+              class="max-w-8 max-h-8"
+              data-nimg="1"
+              decoding="async"
+              height="32"
+              loading="lazy"
+              src="/_next/image?url=%2Fdocker.webp&w=64&q=75"
+              srcset="/_next/image?url=%2Fdocker.webp&w=32&q=75 1x, /_next/image?url=%2Fdocker.webp&w=64&q=75 2x"
+              style="color: transparent;"
+              width="32"
+            />
+            <img
+              alt="nodejs"
+              class="max-w-8 max-h-8"
+              data-nimg="1"
+              decoding="async"
+              height="32"
+              loading="lazy"
+              src="/_next/image?url=%2Fnodejs.webp&w=64&q=75"
+              srcset="/_next/image?url=%2Fnodejs.webp&w=32&q=75 1x, /_next/image?url=%2Fnodejs.webp&w=64&q=75 2x"
+              style="color: transparent;"
+              width="32"
+            />
+            <img
+              alt="nestjs"
+              class="max-w-8 max-h-8"
+              data-nimg="1"
+              decoding="async"
+              height="32"
+              loading="lazy"
+              src="/_next/image?url=%2Fnestjs.webp&w=64&q=75"
+              srcset="/_next/image?url=%2Fnestjs.webp&w=32&q=75 1x, /_next/image?url=%2Fnestjs.webp&w=64&q=75 2x"
+              style="color: transparent;"
+              width="32"
+            />
+            <img
+              alt="postgresql"
+              class="max-w-8 max-h-8"
+              data-nimg="1"
+              decoding="async"
+              height="32"
+              loading="lazy"
+              src="/_next/image?url=%2Fpostgresql.webp&w=64&q=75"
+              srcset="/_next/image?url=%2Fpostgresql.webp&w=32&q=75 1x, /_next/image?url=%2Fpostgresql.webp&w=64&q=75 2x"
+              style="color: transparent;"
+              width="32"
+            />
+            <img
+              alt="aws"
+              class="max-w-8 max-h-8"
+              data-nimg="1"
+              decoding="async"
+              height="32"
+              loading="lazy"
+              src="/_next/image?url=%2Faws.webp&w=64&q=75"
+              srcset="/_next/image?url=%2Faws.webp&w=32&q=75 1x, /_next/image?url=%2Faws.webp&w=64&q=75 2x"
+              style="color: transparent;"
+              width="32"
+            />
+            <img
+              alt="gcp"
+              class="max-w-8 max-h-8"
+              data-nimg="1"
+              decoding="async"
+              height="32"
+              loading="lazy"
+              src="/_next/image?url=%2Fgcp.webp&w=64&q=75"
+              srcset="/_next/image?url=%2Fgcp.webp&w=32&q=75 1x, /_next/image?url=%2Fgcp.webp&w=64&q=75 2x"
+              style="color: transparent;"
+              width="32"
+            />
+            <img
+              alt="azure"
+              class="max-w-8 max-h-8"
+              data-nimg="1"
+              decoding="async"
+              height="32"
+              loading="lazy"
+              src="/_next/image?url=%2Fazure.webp&w=64&q=75"
+              srcset="/_next/image?url=%2Fazure.webp&w=32&q=75 1x, /_next/image?url=%2Fazure.webp&w=64&q=75 2x"
+              style="color: transparent;"
+              width="32"
+            />
+          </div>
+        </div>
+        <div
+          class="w-full flex flex-col gap-y-4"
+        >
+          <h4
+            class="text-lg md:text-xl lg:text-2xl text-secondary font-bold"
+          >
+            QA
+          </h4>
+          <p
+            class="text-sm md:text-base text-body"
+          >
+            Jakość kodu i finalnego projektu zapewniam dzięki:
+             
+            <b
+              class="text-primary"
+            >
+              Clean Code
+            </b>
+            ,
+             
+            <b
+              class="text-primary"
+            >
+              KISS
+            </b>
+            ,
+             
+            <b
+              class="text-primary"
+            >
+              DRY
+            </b>
+            ,
+             
+            <b
+              class="text-primary"
+            >
+              YAGNI
+            </b>
+            ,
+             
+            <b
+              class="text-primary"
+            >
+              Testy jednostkowe
+            </b>
+            ,
+             
+            <b
+              class="text-primary"
+            >
+              Testy integracyjne
+            </b>
+            ,
+             
+            <b
+              class="text-primary"
+            >
+              prettier
+            </b>
+            ,
+             
+            <b
+              class="text-primary"
+            >
+              eslint
+            </b>
+            .
+          </p>
+          <div
+            class="flex flex-row flex-wrap gap-4"
+          >
+            <img
+              alt="prettier"
+              class="max-w-8 max-h-8"
+              data-nimg="1"
+              decoding="async"
+              height="32"
+              loading="lazy"
+              src="/_next/image?url=%2Fprettier.webp&w=64&q=75"
+              srcset="/_next/image?url=%2Fprettier.webp&w=32&q=75 1x, /_next/image?url=%2Fprettier.webp&w=64&q=75 2x"
+              style="color: transparent;"
+              width="32"
+            />
+            <img
+              alt="eslint"
+              class="max-w-8 max-h-8"
+              data-nimg="1"
+              decoding="async"
+              height="32"
+              loading="lazy"
+              src="/_next/image?url=%2Feslint.webp&w=64&q=75"
+              srcset="/_next/image?url=%2Feslint.webp&w=32&q=75 1x, /_next/image?url=%2Feslint.webp&w=64&q=75 2x"
+              style="color: transparent;"
+              width="32"
+            />
+          </div>
+        </div>
+        <div
+          class="w-full flex flex-col gap-y-4"
+        >
+          <h4
+            class="text-lg md:text-xl lg:text-2xl text-secondary font-bold"
+          >
+            Design UX/UI
+          </h4>
+          <p
+            class="text-sm md:text-base text-body"
+          >
+            Spójny i z dbałością o szczegóły projekt przygotowuję z pomocą:
+             
+            <b
+              class="text-primary"
+            >
+              Figma
+            </b>
+          </p>
+          <div
+            class="flex flex-row flex-wrap gap-4"
+          >
+            <img
+              alt="figma"
+              class="max-w-8 max-h-8"
+              data-nimg="1"
+              decoding="async"
+              height="32"
+              loading="lazy"
+              src="/_next/image?url=%2Ffigma.webp&w=64&q=75"
+              srcset="/_next/image?url=%2Ffigma.webp&w=32&q=75 1x, /_next/image?url=%2Ffigma.webp&w=64&q=75 2x"
+              style="color: transparent;"
+              width="32"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+`;
