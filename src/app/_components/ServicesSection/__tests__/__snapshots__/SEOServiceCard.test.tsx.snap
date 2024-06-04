@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SEOServiceCard component renders unchanged 1`] = `
+<div>
+  <div
+    class="flex flex-col gap-y-4"
+    data-aos="fade-right"
+    data-aos-duration="1500"
+  >
+    <div
+      class="flex flex-row gap-x-4 md:flex-col md:gap-y-2 lg:flex-row md:items-start lg:items-center items-center"
+    >
+      <img
+        alt="seo"
+        class="w-[48px] lg:w-[64px]"
+        data-nimg="1"
+        decoding="async"
+        height="64"
+        loading="lazy"
+        src="/_next/image?url=%2Fseo.webp&w=128&q=75"
+        srcset="/_next/image?url=%2Fseo.webp&w=64&q=75 1x, /_next/image?url=%2Fseo.webp&w=128&q=75 2x"
+        style="color: transparent;"
+        width="64"
+      />
+      <h4
+        class="font-bold text-lg md:text-xl lg:text-2xl text-secondary"
+      >
+        Optymalizacja treści (SEO) oraz szybkości ładowania
+      </h4>
+    </div>
+    <p
+      class="text-body text-sm md:text-base"
+    >
+      Badanie słów kluczowych i ich strategiczne umieszczanie w treściach, aby poprawić widoczność strony w wynikach wyszukiwania 
+      <br />
+      <br />
+      Optymalizacją kątem prędkości ładowania, uwzględniając wytyczne Core Web Vitals, co pozytywnie wpływa na doświadczenie użytkownika i ranking strony w wyszukiwarkach.
+    </p>
+    <span
+      class="block bg-primary w-32 h-0.5"
+    />
+  </div>
+</div>
+`;
