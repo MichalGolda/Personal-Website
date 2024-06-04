@@ -33,7 +33,7 @@ const BackendTechnologyCard = () => {
   return (
     <TechnologyCard
       title="Backend"
-      content={() => (
+      content={
         <>
           Dostępność, skalowalność osiągam dzięki sprawdzonym rozwiązaniom:{" "}
           <b className="text-primary">Python</b>,{" "}
@@ -48,7 +48,7 @@ const BackendTechnologyCard = () => {
           <b className="text-primary">GCP</b>,{" "}
           <b className="text-primary">Azure</b>.
         </>
-      )}
+      }
       icons={<Icons />}
     />
   );

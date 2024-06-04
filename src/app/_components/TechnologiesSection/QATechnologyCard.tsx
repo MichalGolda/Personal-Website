@@ -14,7 +14,7 @@ const QATechnologyCard = () => {
   return (
     <TechnologyCard
       title="QA"
-      content={() => (
+      content={
         <>
           Jakość kodu i finalnego projektu zapewniam dzięki:{" "}
           <b className="text-primary">Clean Code</b>,{" "}
@@ -26,7 +26,7 @@ const QATechnologyCard = () => {
           <b className="text-primary">prettier</b>,{" "}
           <b className="text-primary">eslint</b>.
         </>
-      )}
+      }
       icons={<Icons />}
     />
   );

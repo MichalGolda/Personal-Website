@@ -29,7 +29,7 @@ const FrontendTechnologyCard = () => {
   return (
     <TechnologyCard
       title="Frontend"
-      content={() => (
+      content={
         <>
           Wykonany z dbałością o szczegóły, seo-friendly, spójny, działający na
           dowolnym urządzeniu: <b className="text-primary">Javascript</b>,{" "}
@@ -41,7 +41,7 @@ const FrontendTechnologyCard = () => {
           <b className="text-primary">sass</b>,{" "}
           <b className="text-primary">tailwindcss</b>.
         </>
-      )}
+      }
       icons={<Icons />}
     />
   );
