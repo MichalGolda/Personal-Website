@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProjectExternalLink component renders unchanged 1`] = `
+<div>
+  <a
+    class="text-primary text-sm md:text-base font-bold flex flex-row gap-x-4"
+    href="https://test.pl"
+  >
+    test name
+    <img
+      alt="arrow"
+      data-nimg="1"
+      decoding="async"
+      height="0"
+      loading="lazy"
+      src="/_next/image?url=%2Farrow.webp&w=64&q=75"
+      srcset="/_next/image?url=%2Farrow.webp&w=32&q=75 1x, /_next/image?url=%2Farrow.webp&w=64&q=75 2x"
+      style="color: transparent;"
+      width="32"
+    />
+  </a>
+</div>
+`;
