@@ -14,12 +14,12 @@ import {
   CookieConsent,
   ScrollUpButton,
 } from "@/app/_components";
-import { getCookieConsent } from "@/app/_utils/getCookieConsent";
-import { fetchProjects } from "@/app/_utils/fetchContent";
+import { useCookieConsent } from "./_hooks/useCookieConsent";
+import { useFetchProjects } from "./_hooks/useFetchProjects";
 
 export default async function Index() {
-  const portfolioSectionData = await fetchProjects();
-  const cookieConsent = getCookieConsent();
+  const projectsSectionData = await useFetchProjects();
+  const cookieConsent = useCookieConsent();
 
   return (
     <>
@@ -32,7 +32,7 @@ export default async function Index() {
         <AdvantagesSection />
         <ServicesSection />
         <Banner />
-        <ProjectsSection data={portfolioSectionData} />
+        <ProjectsSection data={projectsSectionData} />
         <TechnologiesSection />
         <HowIWorksSection />
         <ContactSection />
