@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SocialIcon component renders unchanged 1`] = `
+<div>
+  <a
+    href="https://test.pl"
+  >
+    <img
+      alt="test"
+      data-nimg="1"
+      decoding="async"
+      height="24"
+      loading="lazy"
+      src="/_next/image?url=%2Ftest.webp&w=48&q=75"
+      srcset="/_next/image?url=%2Ftest.webp&w=32&q=75 1x, /_next/image?url=%2Ftest.webp&w=48&q=75 2x"
+      style="color: transparent;"
+      width="24"
+    />
+    ;
+  </a>
+</div>
+`;
