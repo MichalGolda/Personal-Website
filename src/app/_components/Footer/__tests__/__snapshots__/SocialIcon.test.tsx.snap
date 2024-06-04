@@ -16,7 +16,6 @@ exports[`SocialIcon component renders unchanged 1`] = `
       style="color: transparent;"
       width="24"
     />
-    ;
   </a>
 </div>
 `;

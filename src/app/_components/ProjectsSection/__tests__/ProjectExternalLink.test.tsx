@@ -16,10 +16,7 @@ describe("ProjectExternalLink component", () => {
     expect(link?.textContent).toBe("test name");
 
     expect(image).toBeInTheDocument();
-    expect(image).toHaveAttribute(
-      "src",
-      "/_next/image?url=%2Farrow.webp&w=64&q=75"
-    );
+    expect(image).toHaveAttribute("src", "/arrow.svg");
     expect(image).toHaveAttribute("alt", "arrow");
     expect(image).toHaveAttribute("width", "32");
     expect(image).toHaveAttribute("height", "0");

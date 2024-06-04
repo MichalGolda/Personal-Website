@@ -53,7 +53,6 @@ exports[`Footer component renders unchanged 1`] = `
             style="color: transparent;"
             width="24"
           />
-          ;
         </a>
         <a
           href="https://linkedin.com/michalgolda"
@@ -69,7 +68,6 @@ exports[`Footer component renders unchanged 1`] = `
             style="color: transparent;"
             width="24"
           />
-          ;
         </a>
       </div>
     </div>

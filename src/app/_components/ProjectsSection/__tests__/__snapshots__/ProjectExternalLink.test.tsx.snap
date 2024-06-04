@@ -13,8 +13,7 @@ exports[`ProjectExternalLink component renders unchanged 1`] = `
       decoding="async"
       height="0"
       loading="lazy"
-      src="/_next/image?url=%2Farrow.webp&w=64&q=75"
-      srcset="/_next/image?url=%2Farrow.webp&w=32&q=75 1x, /_next/image?url=%2Farrow.webp&w=64&q=75 2x"
+      src="/arrow.svg"
       style="color: transparent;"
       width="32"
     />
