@@ -28,7 +28,7 @@ export default function CookieConsent({ hidden = true }: CookieConsentProps) {
         />
         <p className="text-sm md:text-base text-white font-medium">
           Strona korzysta z ciasteczek, aby zapewnić najlepszą jakość
-          korzystania z witryny.
+          korzystania.
         </p>
       </div>
       <PrimaryButton
